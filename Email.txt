@@ -1,0 +1,4 @@
+TEST: Triggering ATCA:
+Coordinates: RA = 14:28:02.35 Dec = -42:05:22.56
+Source = GRB
+ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-13T02:42:00.00_285247711-561
