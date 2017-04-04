@@ -7,9 +7,6 @@ from time import gmtime, strftime
 import os
 import logging
 
-import requests.packages.urllib3
-requests.packages.urllib3.disable_warnings()
-
 logging.basicConfig(filename='atca.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
 logger = logging.getLogger('notifier')
 logger.handlers.append(logging.StreamHandler(sys.stdout))
