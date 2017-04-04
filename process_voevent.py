@@ -11,36 +11,17 @@ import sys
 import voeventparse
 import os
 import logging
-logging.basicConfig(filename='atca.log',level=logging.DEBUG)
+logging.basicConfig(filename='atca.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
 logger = logging.getLogger('notifier')
 logger.handlers.append(logging.StreamHandler(sys.stdout))
 from fourpiskytools.notify import Notifier
 
-
-
 def main():
     stdin = sys.stdin.read()
     v = voeventparse.loads(stdin)
-    handle_voevent(v)
-    # For testing only.
-    trigger = False
-    if trigger:
-       ivorn = v.attrib['ivorn']
-       c = voeventparse.get_event_position(v)
-       text = "Coords are RA="+str(c.ra)+" Dec="+str(c.dec)
-       os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+ivorn)
-       n = Notifier()
-       n.send_notification(title="TRIGGERING",
-                        text=text)
-    return 0
-
-def handle_voevent(v):
     if is_grb(v):
-        handle_grb(v)
-    elif is_ping_packet(v):
-        handle_ping_packet(v)
-    else:
-        handle_other(v)
+       handle_grb(v)
+    return 0
 
 def is_grb(v):
     ivorn = v.attrib['ivorn']
@@ -48,38 +29,27 @@ def is_grb(v):
         return True
     return False
 
-def is_ping_packet(v):
-    ivorn = v.attrib['ivorn']
-    role = v.attrib['role']
-    ivorn_tail = ivorn.rsplit('/', 1)[-1]
-    stream = ivorn_tail.split('#')[0]
-    if ( role == voeventparse.definitions.roles.test and
-         stream == 'TEST'
-        ):
-        return True
-    return False
+def is_short(v):
+    INTEG_TIME = v.find(".//Param[@name='Integ_Time']").attrib['value']
+    RATE_SIGNIF = v.find(".//Param[@name='Rate_Signif']").attrib['value']
+    if (float(INTEG_TIME) < 2.0) and (float(RATE_SIGNIF) > 0.0):
+       return True
+    else: 
+       return False
 
 def handle_grb(v):
-    coords = voeventparse.pull_astro_coords(v)
-    c = voeventparse.get_event_position(v)
-    os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec))
-    text = "Swift packet received, coords are {}".format(coords)
-    n = Notifier()
-    n.send_notification(title="NEW SWIFT GRB!",
-                        text=text)
-    handle_other(v)
-
-def handle_ping_packet(v):
-    n = Notifier()
-    n.send_notification(title="Ping!",
-                        text="Packet received matches 'ping packet' filter.")
-    handle_other(v)
-
-def handle_other(v):
     ivorn = v.attrib['ivorn']
-    n = Notifier()
-    n.send_notification(title="VOEvent received",
-                        text="IVORN: "+ivorn)
+    short = is_short(v) # Work out if it is short or long: 
+    if short:
+       coords = voeventparse.pull_astro_coords(v)
+       c = voeventparse.get_event_position(v)
+       TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
+       web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
+       os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link)
+       text = "Coords are {}".format(coords)
+       n = Notifier()
+       n.send_notification(title="NEW SWIFT SHORT GRB >> TRIGGERING!",
+                        text=text)
 
 if __name__ == '__main__':
     sys.exit(main())
