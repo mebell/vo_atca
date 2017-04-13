@@ -11,6 +11,7 @@ logging.basicConfig(filename='atca.log',level=logging.DEBUG, format='%(asctime)s
 logger = logging.getLogger('notifier')
 logger.handlers.append(logging.StreamHandler(sys.stdout))
 
+from fourpiskytools.notify import Notifier
 #### Coordinate conversion ####
 
 def deg2sex(deg):
@@ -100,7 +101,7 @@ calScan = schedule.addCalibrator(bestCal['calibrator'], scan1, { 'scanLength': "
 # of these two scans. Remembering that the library will take care of
 # associating a calibrator to each source, we only need to copy the source
 # scan.
-for i in xrange(0, 36):
+for i in xrange(0, 32): 
     schedule.copyScans([ scan1.getId() ])
 
 # Tell the library that we won't be looping, so there will be a calibrator scan at the
@@ -122,7 +123,7 @@ schedString = schedule.toString()
 rapidObj = { 'schedule': schedString }
 # The authentication token needs to go with it, and we point to the file that
 # contains the token.
-rapidObj['authenticationTokenFile'] = "authorisation_token_test_C3204_2016OCT.jwt"
+rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2017APR.jwt"
 # The name of the main target needs to be specified.
 rapidObj['nameTarget'] = "SHORT_GRB"
 # So does the name of the calibrator.
@@ -134,20 +135,24 @@ rapidObj['usePreviousFrequencies'] = True
 
 # Because this is a test run, we'll specify a few parameters to just try things out.
 rapidObj['test'] = True
-rapidObj['emailOnly'] = "Jamie.Stevens@csiro.au"
+#rapidObj['emailOnly'] = "Martin.Bell@csiro.au"
 rapidObj['noTimeLimit'] = True
 rapidObj['noScoreLimit'] = True
 #rapidObj['noEmail'] = True
+rapidObj['minimumTime'] = 0.5
 
 # Send the request.
-request = arrApi.api(rapidObj)
-try:
-    response = request.send()
-except arrApi.responseError as r:
-    print r.value
-#############################
-
-# Send out email
-send_mail(ra, dec, details)
-
-
+send = False # Toggle to actually trigger or not
+if send:
+   request = arrApi.api(rapidObj)
+   try:
+      response = request.send()
+   except arrApi.responseError as r:
+      print r.value
+   #############################
+   # Send out email from our end. ATCA will also send a bunch
+   send_mail(ra, dec, details)
+   # Add log
+   text = "Schedule file created"
+   n = Notifier()
+   n.send_notification(title="ATCA Trigger sucessfully delivered", text=text)

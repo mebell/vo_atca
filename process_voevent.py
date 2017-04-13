@@ -11,9 +11,11 @@ import sys
 import voeventparse
 import os
 import logging
+
 logging.basicConfig(filename='atca.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
 logger = logging.getLogger('notifier')
 logger.handlers.append(logging.StreamHandler(sys.stdout))
+
 from fourpiskytools.notify import Notifier
 
 def main():
@@ -21,6 +23,8 @@ def main():
     v = voeventparse.loads(stdin)
     if is_grb(v):
        handle_grb(v)
+    if is_flare_star(v):
+       handle_flare_star(v)
     return 0
 
 def is_grb(v):
@@ -32,7 +36,7 @@ def is_grb(v):
 def is_short(v):
     INTEG_TIME = v.find(".//Param[@name='Integ_Time']").attrib['value']
     RATE_SIGNIF = v.find(".//Param[@name='Rate_Signif']").attrib['value']
-    if (float(INTEG_TIME) < 2.0) and (float(RATE_SIGNIF) > 0.0):
+    if (float(INTEG_TIME) < 1.0) and (float(RATE_SIGNIF) > 0.0):
        return True
     else: 
        return False
@@ -49,6 +53,26 @@ def handle_grb(v):
        text = "Coords are {}".format(coords)
        n = Notifier()
        n.send_notification(title="NEW SWIFT SHORT GRB >> TRIGGERING!",
+                        text=text)
+
+def is_flare_star(v):
+    flare_stars = ['Wolf424', 'YZ_CMi', 'CN_Leo', 'V1054Oph', 'V645Cen', 'ROSS1280', 'DM-216267', 'GRS_1915+105']
+    name = v.Why.Inference.Name
+    for star in flare_stars:
+        if star == name:
+           return True
+    return False 
+
+def handle_flare_star(v):
+    ivorn = v.attrib['ivorn']
+    name = v.Why.Inference.Name
+    web_link = name
+    coords = voeventparse.pull_astro_coords(v)
+    c = voeventparse.get_event_position(v)
+    os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link)
+    text = "Coords are {}".format(coords)
+    n = Notifier()
+    n.send_notification(title="FLARE STAR "+name+" DETECTED >> TRIGGERING!",
                         text=text)
 
 if __name__ == '__main__':
