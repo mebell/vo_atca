@@ -55,13 +55,23 @@ def handle_grb(v):
        n.send_notification(title="NEW SWIFT SHORT GRB >> TRIGGERING!",
                         text=text)
 
+def get_name(v):
+    try:
+       name = v.Why.Inference.Name
+       return name
+    except:
+       pass;
+       return None
+
 def is_flare_star(v):
-    flare_stars = ['Wolf424', 'YZ_CMi', 'CN_Leo', 'V1054Oph', 'V645Cen', 'ROSS1280', 'DM-216267', 'GRS_1915+105']
-    name = v.Why.Inference.Name
-    for star in flare_stars:
-        if star == name:
-           return True
-    return False 
+    flare_stars = ['Wolf424', 'YZ_CMi', 'CN_Leo', 'V1054Oph', 'V645Cen', 'ROSS1280', 'DM-216267', 'UV_Ceti', 'V1216Sgr', 'DG_CVn',' II_Peg', 'HR1099', 'UX_Ari', 'CF_Tuc', 'AT_Mic', 'AU_Mic', 'UV_Cet', 'AD_Leo', 'GRS_1915+105']
+    name = get_name(v)
+    if name is not  None:
+       for star in flare_stars:
+           if star == name:
+              return True
+    else:
+       return False 
 
 def handle_flare_star(v):
     ivorn = v.attrib['ivorn']
