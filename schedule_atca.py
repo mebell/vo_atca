@@ -134,7 +134,7 @@ rapidObj['email'] = "Martin.Bell@csiro.au"
 rapidObj['usePreviousFrequencies'] = True
 
 # Because this is a test run, we'll specify a few parameters to just try things out.
-rapidObj['test'] = True
+rapidObj['test'] = False
 #rapidObj['emailOnly'] = "Martin.Bell@csiro.au"
 rapidObj['noTimeLimit'] = True
 rapidObj['noScoreLimit'] = True
@@ -142,7 +142,7 @@ rapidObj['noScoreLimit'] = True
 rapidObj['minimumTime'] = 0.5
 
 # Send the request.
-send = False # Toggle to actually trigger or not
+send = True # Toggle to actually trigger or not
 if send:
    request = arrApi.api(rapidObj)
    try:

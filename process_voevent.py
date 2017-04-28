@@ -64,7 +64,7 @@ def get_name(v):
        return None
 
 def is_flare_star(v):
-    flare_stars = ['Wolf424', 'YZ_CMi', 'CN_Leo', 'V1054Oph', 'V645Cen', 'ROSS1280', 'DM-216267', 'UV_Ceti', 'V1216Sgr', 'DG_CVn',' II_Peg', 'HR1099', 'UX_Ari', 'CF_Tuc', 'AT_Mic', 'AU_Mic', 'UV_Cet', 'AD_Leo', 'GRS_1915+105']
+    flare_stars = ['Wolf424', 'YZ_CMi', 'CN_Leo', 'V1054Oph', 'V645Cen', 'ROSS1280', 'DM-216267', 'UV_Cet', 'V1216Sgr', 'DG_CVn',' II_Peg', 'HR_1099', 'UX_Ari', 'CF_Tuc', 'AT_Mic', 'AU_Mic', 'AD_Leo']
     name = get_name(v)
     if name is not  None:
        for star in flare_stars:
