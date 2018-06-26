@@ -11,6 +11,7 @@ import sys
 import voeventparse
 import os
 import logging
+from time import gmtime, strftime
 
 logging.basicConfig(filename='atca.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
 logger = logging.getLogger('notifier')
@@ -27,11 +28,29 @@ def main():
        handle_flare_star(v)
     return 0
 
+def send_mail(details):
+    # Send out email alert:
+    f = open('False_Email.txt','w')
+    time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
+    f.write('Not Triggering ATCA:')
+    f.write('\n')
+    f.write("Time is "+time)
+    f.write('\n')
+    f.write(details)
+    f.close()
+    # Send out email alert
+    os.system("mail -s \"Not Triggering ATCA\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au < False_Email.txt")
+
 def is_grb(v):
     ivorn = v.attrib['ivorn']
-    if ivorn.find("ivo://nasa.gsfc.gcn/SWIFT#BAT_GRB_Pos") == 0:
+    GRB_ident = v.find(".//Param[@name='GRB_Identified']").attrib['value']
+    if (ivorn.find("ivo://nasa.gsfc.gcn/SWIFT#BAT_GRB_Pos") == 0) and (GRB_ident == 'true')   :
         return True
-    return False
+    else:
+        TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
+        web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
+        send_mail("Not a GRB: not triggering "+web_link)
+        return False
 
 def is_short(v):
     INTEG_TIME = v.find(".//Param[@name='Integ_Time']").attrib['value']
@@ -43,17 +62,22 @@ def is_short(v):
 
 def handle_grb(v):
     ivorn = v.attrib['ivorn']
+    TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
+    web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
     short = is_short(v) # Work out if it is short or long: 
     if short:
        coords = voeventparse.pull_astro_coords(v)
        c = voeventparse.get_event_position(v)
-       TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
-       web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
-       os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link)
-       text = "Coords are {}".format(coords)
-       n = Notifier()
-       n.send_notification(title="NEW SWIFT SHORT GRB >> TRIGGERING!",
+       if c.dec > 10.0:
+          send_mail("GRB above declination cutoff of +10 degrees  "+web_link)
+       else:
+          os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link+' '+'SHORT_GRB')
+          text = "Coords are {}".format(coords)
+          n = Notifier()
+          n.send_notification(title="NEW SWIFT SHORT GRB >> TRIGGERING!",
                         text=text)
+    else:
+       send_mail("Long GRB not triggering "+web_link) 
 
 def get_name(v):
     try:
@@ -64,7 +88,37 @@ def get_name(v):
        return None
 
 def is_flare_star(v):
-    flare_stars = ['Wolf424', 'YZ_CMi', 'CN_Leo', 'V1054Oph', 'V645Cen', 'ROSS1280', 'DM-216267', 'UV_Cet', 'V1216Sgr', 'DG_CVn',' II_Peg', 'HR_1099', 'UX_Ari', 'CF_Tuc', 'AT_Mic', 'AU_Mic', 'AD_Leo']
+    flare_stars = ['Wolf424', 
+                   'YZ_CMi',
+                   'YZCMi', 
+                   'YZ CMi', 
+                   'CN_Leo', 
+                   'CNLeo', 
+                   'CN Leo', 
+                   'V1054Oph', 
+                   'V645Cen', 
+                   'ROSS1280', 
+                   'DM-216267', 
+                   'V1216Sgr', 
+                   'HR_1099', 
+                   'HR 1099', 
+                   'HR1099', 
+                   'CF_Tuc', 
+                   'CFTuc', 
+                   'CF Tuc', 
+                   'AT_Mic', 
+                   'AT Mic', 
+                   'ATMic', 
+                   'AU_Mic', 
+                   'AUMic', 
+                   'AU Mic', 
+                   'UV_Cet', 
+                   'UV Cet', 
+                   'UVCet', 
+                   'HD 8357',
+                   'HD_8357',
+                   'HD8357']
+
     name = get_name(v)
     if name is not  None:
        for star in flare_stars:
@@ -73,16 +127,90 @@ def is_flare_star(v):
     else:
        return False 
 
+def get_flare_RA(name):
+    ra_dict = {'Wolf424'  : '12:33:17.383', 
+               'YZ_CMi'   : '07:44:40.17401', 
+               'YZCMi'    : '07:44:40.17401', 
+               'YZ CMi'   : '07:44:40.17401', 
+               'CN_Leo'   : '10:56:28.865', 
+               'CN Leo'   : '10:56:28.865', 
+               'CNLeo'    : '10:56:28.865', 
+               'V1054Oph' : '16:55:28.75758', 
+               'V645Cen'  : '14:29:42.94853',  
+               'ROSS1280' : '11:47:44.3974', 
+               'DM-216267': '22:38:45.5747', 
+               'V1216Sgr' : '18:49:49.36216', 
+               'HR_1099'  : '03:36:47.29038', 
+               'HR1099'   : '03:36:47.29038', 
+               'HR 1099'  : '03:36:47.29038', 
+               'CF_Tuc'   : '00:53:07.7675', 
+               'CFTuc'    : '00:53:07.7675', 
+               'CF Tuc'   : '00:53:07.7675', 
+               'AT_Mic'   : '20:41:51.15925', 
+               'AT Mic'   : '20:41:51.15925', 
+               'ATMic'    : '20:41:51.15925', 
+               'AU_Mic'   : '20:45:09.53147', 
+               'AUMic'    : '20:45:09.53147', 
+               'AU Mic'   : '20:45:09.53147', 
+               'UV_Cet'   : '01:39:01.54', 
+               'UVCet'    : '01:39:01.54', 
+               'UV Cet'   : '01:39:01.54', 
+               'HD 8357'  : '01:22:56.7570',
+               'HD_8357'  : '01:22:56.7570',
+               'HD8357'   : '01:22:56.7570'}
+
+    return ra_dict[name] 
+
+def get_flare_DEC(name):
+    dec_dict = {'Wolf424' :  '09:01:15.77', 
+               'YZ_CMi'   :  '03:33:08.8350', 
+               'YZCMi'    :  '03:33:08.8350', 
+               'YZ CMi'   :  '03:33:08.8350', 
+               'CN_Leo'   :  '07:00:52.77', 
+               'CNLeo'    :  '07:00:52.77', 
+               'CN Leo'   :  '07:00:52.77', 
+               'V1054Oph' :  '-08:20:10.7876', 
+               'V645Cen'  :  '-62:40:46.1631', 
+               'ROSS1280' :  '00:48:16.395', 
+               'DM-216267':  '-20:37:16.081', 
+               'V1216Sgr' :  '-23:50:10.4291', 
+               'HR_1099'  :  '00:35:15.9327', 
+               'HR1099'   :  '00:35:15.9327', 
+               'HR 1099'  :  '00:35:15.9327', 
+               'CF_Tuc'   :  '-74:39:05.609', 
+               'CFTuc'    :  '-74:39:05.609', 
+               'CF Tuc'   :  '-74:39:05.609', 
+               'AT_Mic'   :  '-32:26:06.8283', 
+               'ATMic'    :  '-32:26:06.8283', 
+               'AT Mic'   :  '-32:26:06.8283', 
+               'AU_Mic'   :  '-31:20:27.2425', 
+               'AU Mic'   :  '-31:20:27.2425', 
+               'AUMic'    :  '-31:20:27.2425', 
+               'UV_Cet'   :  '-17:57:00.4', 
+               'UVCet'    :  '-17:57:00.4', 
+               'UV Cet'   :  '-17:57:00.4', 
+               'HD 8357'  :  '07:25:09.336',
+               'HD_8357'  :  '07:25:09.336',
+               'HD8357'   :  '07:25:09.336'}
+
+    return dec_dict[name] 
+
 def handle_flare_star(v):
     ivorn = v.attrib['ivorn']
     name = v.Why.Inference.Name
-    web_link = name
+    TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
+    web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
     coords = voeventparse.pull_astro_coords(v)
     c = voeventparse.get_event_position(v)
-    os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link)
-    text = "Coords are {}".format(coords)
-    n = Notifier()
-    n.send_notification(title="FLARE STAR "+name+" DETECTED >> TRIGGERING!",
+    if c.dec > 10.0:
+       send_mail("Flare Star above "+name+" declination cutoff of +10 degrees")
+    else:
+        ra =  get_flare_RA(name)
+        dec = get_flare_DEC(name)
+        os.system('python schedule_atca.py '+str(ra)+' '+str(dec)+' '+web_link+' '+'STAR')
+        text = "Coords are {}".format(coords)
+        n = Notifier()
+        n.send_notification(title="FLARE STAR "+name+" DETECTED >> TRIGGERING!",
                         text=text)
 
 if __name__ == '__main__':

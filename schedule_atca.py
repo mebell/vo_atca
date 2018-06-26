@@ -1,4 +1,4 @@
-# Include the library.
+#Include the library.
 import cabb_scheduler as cabb
 import atca_rapid_response_api as arrApi
 import sys
@@ -12,8 +12,8 @@ logger = logging.getLogger('notifier')
 logger.handlers.append(logging.StreamHandler(sys.stdout))
 
 from fourpiskytools.notify import Notifier
-#### Coordinate conversion ####
 
+#### Coordinate conversion ####
 def deg2sex(deg):
     sign = -1 if deg < 0 else 1
     adeg = abs(deg)
@@ -45,24 +45,28 @@ def send_mail(ra, dec, details):
     f.write('\n')
     f.write('Coordinates: RA = '+(ra)+' Dec = '+str(dec))
     f.write('\n')
-    f.write('Source = Short GRB')
-    f.write('\n')
+    f.write('Source: ')
     f.write(details)
     f.close()
     # Send out email alert
-    os.system("mail -s \"Triggering ATCA on short GRB\" martin.bell@csiro.au, gemma.anderson@curtin.edu.au < Email.txt")
+    os.system("mail -s \"Triggering ATCA\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au < Email.txt")
 
 ################################
 
-ra_in = sys.argv[1]
-dec_in = sys.argv[2]
+ra_in   = sys.argv[1]
+dec_in  = sys.argv[2]
 details = sys.argv[3]
+what    = sys.argv[4]
 
 print "VO Details:"
 print details
 
-ra = deg2hms(float(ra_in))
-dec = deg2dms(float(dec_in))
+if what=="SHORT_GRB":
+   ra = deg2hms(float(ra_in))
+   dec = deg2dms(float(dec_in))
+else:
+   ra  = ra_in
+   dec = dec_in
 
 print "RA, Dec:"
 print ra, dec
@@ -71,10 +75,17 @@ print ra, dec
 schedule = cabb.schedule()
 
 # Add a scan to look at the VO coordinates.
-scan1 = schedule.addScan(
-    { 'source': "SHORT_GRB", 'rightAscension': ra, 'declination': dec,
-      'freq1': 5500, 'freq2': 9000, 'project': "C3204", 'scanLength': "00:20:00", 'scanType': "Dwell" }
-)
+if what == "SHORT_GRB":
+	scan1 = schedule.addScan(
+	    { 'source': "SHORT_GRB", 'rightAscension': ra, 'declination': dec,
+	      'freq1': 5500, 'freq2': 9000, 'project': "C3204", 'scanLength': "00:20:00", 'scanType': "Dwell" }
+	)
+
+if what == "STAR":
+        scan1 = schedule.addScan(
+            { 'source': "FLARE_STAR", 'rightAscension': ra, 'declination': dec,
+              'freq1': 5500, 'freq2': 9000, 'project': "C3200", 'scanLength': "00:20:00", 'scanType': "Dwell" }
+        )
 
 # Since we definitely want to get onto source as quickly as possible, we tell the
 # library not to go to the calibrator first.
@@ -118,20 +129,32 @@ schedule.write(name=fname)
 # We need to turn this schedule into a string.
 schedString = schedule.toString()
 
+# Log schedule file creation
+n = Notifier()
+n.send_notification(title="Schedule", text='Schedule file created')
+
 # We have our schedule now, so we need to craft the service request to submit it to
 # the rapid response service.
 rapidObj = { 'schedule': schedString }
+
 # The authentication token needs to go with it, and we point to the file that
 # contains the token.
-rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2017APR.jwt"
-# The name of the main target needs to be specified.
-rapidObj['nameTarget'] = "SHORT_GRB"
+if what=="SHORT_GRB":
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2018APR.jwt"
+        # The name of the main target needs to be specified.
+        rapidObj['nameTarget'] = "SHORT_GRB"
+
+if what=="STAR":
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3200_2018APR.jwt"
+        # The name of the main target needs to be specified.
+        rapidObj['nameTarget'] = "FLARE_STAR"
+
 # So does the name of the calibrator.
 rapidObj['nameCalibrator'] = bestCal['calibrator'].getName()
 # The email address of the requester needs to be there.
-rapidObj['email'] = "Martin.Bell@csiro.au"
+rapidObj['email'] = "martinbell81@googlemail.com"
 # We want to use whatever frequencies are running at the time.
-rapidObj['usePreviousFrequencies'] = True
+rapidObj['usePreviousFrequencies'] = False
 
 # Because this is a test run, we'll specify a few parameters to just try things out.
 rapidObj['test'] = False
@@ -139,7 +162,10 @@ rapidObj['test'] = False
 rapidObj['noTimeLimit'] = True
 rapidObj['noScoreLimit'] = True
 #rapidObj['noEmail'] = True
-rapidObj['minimumTime'] = 0.5
+rapidObj['minimumTime'] = 2.0
+
+# Send out email from our end. ATCA will also send a bunch
+send_mail(ra, dec, details)
 
 # Send the request.
 send = True # Toggle to actually trigger or not
@@ -148,11 +174,5 @@ if send:
    try:
       response = request.send()
    except arrApi.responseError as r:
-      print r.value
+      n.send_notification(title="ATCA return message:", text=r)
    #############################
-   # Send out email from our end. ATCA will also send a bunch
-   send_mail(ra, dec, details)
-   # Add log
-   text = "Schedule file created"
-   n = Notifier()
-   n.send_notification(title="ATCA Trigger sucessfully delivered", text=text)
