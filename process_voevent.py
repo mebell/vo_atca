@@ -22,13 +22,16 @@ from fourpiskytools.notify import Notifier
 def main():
     stdin = sys.stdin.read()
     v = voeventparse.loads(stdin)
-    if is_grb(v):
-       handle_grb(v)
-    if is_flare_star(v):
-       handle_flare_star(v)
+    ivorn = v.attrib['ivorn']
+    if ('SWIFT' in ivorn): 
+       if is_grb(v):
+          handle_grb(v)
+    if ('SWIFT' in ivorn)  or ('MAXI' in ivorn):
+       if is_flare_star(v):
+          handle_flare_star(v)
     return 0
 
-def send_mail(details):
+def send_mail(details, subject):
     # Send out email alert:
     f = open('False_Email.txt','w')
     time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
@@ -39,18 +42,23 @@ def send_mail(details):
     f.write(details)
     f.close()
     # Send out email alert
-    os.system("mail -s \"Not Triggering ATCA\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au < False_Email.txt")
+    os.system("mail -s \"Not Triggering ATCA: "+subject+"\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com < False_Email.txt")
 
 def is_grb(v):
     ivorn = v.attrib['ivorn']
+    TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
+    # Remove test packets
+    if TrigID == '99999':
+       return False
+    # Look for the "GRB indetified parameter - it fails if it doesn't exist". 
+    if v.find(".//Param[@name='GRB_Identified']") == None:
+       return False
+    if v.find(".//Param[@name='StarTrack_Lost_Lock']").attrib['value'] == 'true':
+       return False
     GRB_ident = v.find(".//Param[@name='GRB_Identified']").attrib['value']
     if (ivorn.find("ivo://nasa.gsfc.gcn/SWIFT#BAT_GRB_Pos") == 0) and (GRB_ident == 'true')   :
-        return True
-    else:
-        TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
-        web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
-        send_mail("Not a GRB: not triggering "+web_link)
-        return False
+           return True
+    return False
 
 def is_short(v):
     INTEG_TIME = v.find(".//Param[@name='Integ_Time']").attrib['value']
@@ -69,23 +77,32 @@ def handle_grb(v):
        coords = voeventparse.pull_astro_coords(v)
        c = voeventparse.get_event_position(v)
        if c.dec > 10.0:
-          send_mail("GRB above declination cutoff of +10 degrees  "+web_link)
+          send_mail("GRB above declination cutoff of +10 degrees  "+web_link, "Short GRB above Dec cutoff")
        else:
           os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link+' '+'SHORT_GRB')
-          text = "Coords are {}".format(coords)
           n = Notifier()
-          n.send_notification(title="NEW SWIFT SHORT GRB >> TRIGGERING!",
-                        text=text)
+          n.send_notification(title="SWIFT Short GRB >> TRIGGERING!", text = "Coords are {}".format(coords))
     else:
-       send_mail("Long GRB not triggering "+web_link) 
+       send_mail("Long GRB not triggering "+web_link, "Long GRB") 
 
 def get_name(v):
-    try:
-       name = v.Why.Inference.Name
-       return name
-    except:
-       pass;
-       return None
+    name = 'None'
+    tel  = 'None'
+    ivorn = v.attrib['ivorn']
+    if 'SWIFT' in ivorn:
+        # Swift uses the v.Why.Inference parameter
+        if hasattr(v.Why.Inference, 'Name'):
+           name = v.Why.Inference.Name
+           tel = 'SWIFT'
+    if 'MAXI' in ivorn:
+           # MAXI uses a Source_Name parameter
+           src = v.find(".//Param[@name='Source_Name']")
+           if src is None:
+              return False
+           # MAXI sometimes puts spaces at the start of the string!
+           name = src.attrib['value'].strip()
+           tel = 'MAXI'
+    return name, tel
 
 def is_flare_star(v):
     flare_stars = ['Wolf424', 
@@ -113,17 +130,24 @@ def is_flare_star(v):
                    'AUMic', 
                    'AU Mic', 
                    'UV_Cet', 
-                   'UV Cet', 
+                   'UV Cet',
+                   'Flare from UV Cet', 
                    'UVCet', 
                    'HD 8357',
                    'HD_8357',
-                   'HD8357']
+                   'HD8357',
+                   'CC Eri',
+                   'CC_Eri',
+                   'CCEri',
+                   'GT Mus',
+                   'GT_Mus',
+                   'GTMus']
 
-    name = get_name(v)
-    if name is not  None:
-       for star in flare_stars:
-           if star == name:
-              return True
+    name, tel = get_name(v)
+    if name is not None:
+          for star in flare_stars:
+              if star == name:
+                 return True
     else:
        return False 
 
@@ -153,11 +177,19 @@ def get_flare_RA(name):
                'AUMic'    : '20:45:09.53147', 
                'AU Mic'   : '20:45:09.53147', 
                'UV_Cet'   : '01:39:01.54', 
+               'UV Cet'   : '01:39:01.54', 
                'UVCet'    : '01:39:01.54', 
+               'Flare from UV Cet'    : '01:39:01.54', 
                'UV Cet'   : '01:39:01.54', 
                'HD 8357'  : '01:22:56.7570',
                'HD_8357'  : '01:22:56.7570',
-               'HD8357'   : '01:22:56.7570'}
+               'HD8357'   : '01:22:56.7570',
+               'CC Eri'   : '02:34:22.5660',
+               'CC_Eri'   : '02:34:22.5660',
+               'CCEri'    : '02:34:22.5660',
+               'GT Mus'   : '11:39:29.59368',
+               'GT_Mus'   : '11:39:29.59368',
+               'GTMus'    : '11:39:29.59368'}
 
     return ra_dict[name] 
 
@@ -188,30 +220,41 @@ def get_flare_DEC(name):
                'AUMic'    :  '-31:20:27.2425', 
                'UV_Cet'   :  '-17:57:00.4', 
                'UVCet'    :  '-17:57:00.4', 
+               'Flare from UV Cet'    :  '-17:57:00.4', 
                'UV Cet'   :  '-17:57:00.4', 
                'HD 8357'  :  '07:25:09.336',
                'HD_8357'  :  '07:25:09.336',
-               'HD8357'   :  '07:25:09.336'}
+               'HD8357'   :  '07:25:09.336',
+               'CC Eri'   :  '-43:47:46.867',
+               'CC_Eri'   :  '-43:47:46.867',
+               'CCEri'    :  '-43:47:46.867',
+               'GT Mus'   : '-65 23 51.9586',
+               'GT_Mus'   : '-65 23 51.9586',
+               'GTMus'    : '-65 23 51.9586'}
 
     return dec_dict[name] 
 
 def handle_flare_star(v):
     ivorn = v.attrib['ivorn']
-    name = v.Why.Inference.Name
-    TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
-    web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
+    name, tel = get_name(v)
+    if tel == "SWIFT":
+       TrigID   = v.find(".//Param[@name='TrigID']").attrib['value']
+       web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
+    if tel == "MAXI":
+       TrigID   = v.find(".//Param[@name='TrigID']").attrib['value']
+       web_link = 'https://gcn.gsfc.nasa.gov/other/8'+TrigID+'.maxi'
+       #web_link = 'http://gcn.gsfc.nasa.gov/maxi.html'
     coords = voeventparse.pull_astro_coords(v)
     c = voeventparse.get_event_position(v)
     if c.dec > 10.0:
-       send_mail("Flare Star above "+name+" declination cutoff of +10 degrees")
+       send_mail("Flare Star above "+name+" declination cutoff of +10 degrees", "Flare Star above 10 degrees")
+       n.send_notification(title="Flare Star above "+name+" declination cutoff of +10 degrees", text = "Coords are {}".format(coords))
     else:
         ra =  get_flare_RA(name)
         dec = get_flare_DEC(name)
-        os.system('python schedule_atca.py '+str(ra)+' '+str(dec)+' '+web_link+' '+'STAR')
-        text = "Coords are {}".format(coords)
         n = Notifier()
-        n.send_notification(title="FLARE STAR "+name+" DETECTED >> TRIGGERING!",
-                        text=text)
+        n.send_notification(title="Flare Star "+name+" Detected >> TRIGGERING!", text = "Coords are {}".format(coords))
+        os.system('python schedule_atca.py '+str(ra)+' '+str(dec)+' '+web_link+' '+tel)
 
 if __name__ == '__main__':
     sys.exit(main())

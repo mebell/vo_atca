@@ -24,7 +24,10 @@ REMOTE=voevent.4pisky.org
     --receive \
     --local-ivo=$LOCALIVORN \
     --remote=$REMOTE \
-    --cmd=$HANDLER
+    --cmd=$HANDLER \
+    --save-event \
+    --save-event-directory=/DATA/SERPENS_2/bel27a/vo_atca/achieve
+
 
 
 

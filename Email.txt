@@ -1,4 +1,4 @@
-TEST: Triggering ATCA:
-Coordinates: RA = 14:28:02.35 Dec = -42:05:22.56
-Source = GRB
-ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-13T02:42:00.00_285247711-561
+Triggering ATCA:
+Time is 2018-10-24-T04:21:29
+Coordinates: RA = 01:19:46.63 Dec = -30:20:15.36
+Source: https://gcn.gsfc.nasa.gov/other/735331.swift

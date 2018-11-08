@@ -35,7 +35,7 @@ def deg2dms(deg, format='%02d:%02d:%05.2f'):
     s = signchar + format % sex
     return s
 
-def send_mail(ra, dec, details):
+def send_mail(ra, dec, details, subject):
     # Send out email alert:
     f = open('Email.txt','w')
     time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
@@ -49,7 +49,7 @@ def send_mail(ra, dec, details):
     f.write(details)
     f.close()
     # Send out email alert
-    os.system("mail -s \"Triggering ATCA\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au < Email.txt")
+    os.system("mail -s \"Triggering ATCA: "+subject+"\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com < Email.txt")
 
 ################################
 
@@ -81,7 +81,7 @@ if what == "SHORT_GRB":
 	      'freq1': 5500, 'freq2': 9000, 'project': "C3204", 'scanLength': "00:20:00", 'scanType': "Dwell" }
 	)
 
-if what == "STAR":
+if (what == "SWIFT") or (what == "MAXI"):
         scan1 = schedule.addScan(
             { 'source': "FLARE_STAR", 'rightAscension': ra, 'declination': dec,
               'freq1': 5500, 'freq2': 9000, 'project': "C3200", 'scanLength': "00:20:00", 'scanType': "Dwell" }
@@ -131,7 +131,7 @@ schedString = schedule.toString()
 
 # Log schedule file creation
 n = Notifier()
-n.send_notification(title="Schedule", text='Schedule file created')
+n.send_notification(title='Creating schedule file', text='Schedule file created')
 
 # We have our schedule now, so we need to craft the service request to submit it to
 # the rapid response service.
@@ -140,12 +140,12 @@ rapidObj = { 'schedule': schedString }
 # The authentication token needs to go with it, and we point to the file that
 # contains the token.
 if what=="SHORT_GRB":
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2018APR.jwt"
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2018OCT.jwt"
         # The name of the main target needs to be specified.
         rapidObj['nameTarget'] = "SHORT_GRB"
 
-if what=="STAR":
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3200_2018APR.jwt"
+if (what=="MAXI") or (what=="SWIFT"):
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3200_2018OCT.jwt"
         # The name of the main target needs to be specified.
         rapidObj['nameTarget'] = "FLARE_STAR"
 
@@ -165,7 +165,12 @@ rapidObj['noScoreLimit'] = True
 rapidObj['minimumTime'] = 2.0
 
 # Send out email from our end. ATCA will also send a bunch
-send_mail(ra, dec, details)
+if what == "SHORT_GRB":
+   send_mail(ra, dec, details, subject='Short GRB')
+if what == "MAXI":
+   send_mail(ra, dec, details, subject='MAXI Flare Star')
+if what == "SWIFT":
+   send_mail(ra, dec, details, subject='SWIFT Flare Star')
 
 # Send the request.
 send = True # Toggle to actually trigger or not

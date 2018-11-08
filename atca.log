@@ -1,566 +1,2256 @@
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-09T02:32:13.35_33589285-195
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=143.4531 Dec=-62.5278
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/Fermi#GBM_Alert_2017-03-09T02:34:56.59_510719701_1-202
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=0.0 Dec=0.0
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/Fermi#GBM_Flt_Pos_2017-03-09T02:34:56.59_510719701_49-206
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=267.4333 Dec=41.0167
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-09T02:50:45.95_687896723-260
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=194.0832 Dec=-5.8148
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/GRO#Test_Pos_2017-03-09T03:02:55.00_000012-300
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=35.8192 Dec=-35.0775
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-09T03:08:16.35_50417303-319
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=171.9428 Dec=-53.3135
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://voevent.4pisky.org/voevent-broadcast#TestEvent-2017-03-09T03:10:36
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://voevent.4pisky.org/voevent-receive#TestEvent-2017-03-09T03:10:36
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Point_Dir_2017-03-09T03:24:40.00_000000-335
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=267.2123 Dec=-28.6646
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-09T03:13:39.55_1191216148-339
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=265.7003 Dec=-27.7554
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/Fermi#Point_Dir_2017-03-09T03:20:00.00_000000-0-358
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=316.903 Dec=-61.5159
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-09T03:27:25.75_2415951139-386
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=345.3051 Dec=58.8965
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Point_Dir_2017-05-23T12:05:56.08_000000-776
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#SPIACS_000000-0-777
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=3.9584 Dec=-2.4058
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=0.0 Dec=0.0
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Wakeup_Pos_000000-0-778
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=1.2343 Dec=2.3455
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Refined_Pos_000000-0-779
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=1.2343 Dec=2.3455
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Offline_Pos_000234-0-780
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=1.2343 Dec=2.3455
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Weak_Pos_000000-0-781
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=1.2343 Dec=2.3455
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-10T01:08:00.00_201413838-809
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-10T01:09:32.50_201413838-816
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://voevent.4pisky.org/voevent-broadcast#TestEvent-2017-03-10T01:10:36
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://voevent.4pisky.org/voevent-receive#TestEvent-2017-03-10T01:10:36
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/Fermi#Point_Dir_2017-03-10T01:16:00.00_000000-0-838
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-10T01:22:00.00_117475461-857
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-10T01:24:41.47_117475461-870
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Point_Dir_2017-03-10T01:28:23.00_000000-877
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943889001-946
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943889001-947
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943889761-948
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943890041-952
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943890361-954
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943890676-955
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943891001-956
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943891351-957
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943891356-958
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943891381-959
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943891381-961
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943893446-962
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943893446-963
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943893446-964
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943893756-965
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943894086-966
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943894086-968
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943894086-969
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943894396-970
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943894436-971
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943894721-972
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943894726-973
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943895036-974
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943895356-975
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943895676-976
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943895996-977
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943896046-978
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943896051-979
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943896051-980
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943896051-981
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943896316-982
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943896636-983
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943896966-984
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943896966-988
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943896966-989
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943897281-990
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943897281-991
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943897606-992
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943897606-993
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943897606-994
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943897651-995
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943897651-996
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943897656-997
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943897656-998
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943897921-999
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943897921-000
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943898236-001
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943898556-002
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943898886-003
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943898886-004
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943899201-005
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943899206-006
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943899241-007
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943899241-008
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943899516-009
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943899836-010
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900156-011
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900481-012
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943900486-013
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900801-017
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900801-018
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900846-019
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900846-020
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943900846-021
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900981-022
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900981-023
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900981-024
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900986-025
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943900986-026
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943902366-027
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943902366-028
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943902366-029
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943902676-030
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943903001-031
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943903521-032
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943903846-033
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943903846-034
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943903881-035
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943903881-036
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943904806-037
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943904806-038
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943905151-039
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943905186-040
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943905186-041
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943907196-042
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943907531-043
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943910871-044
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943910871-048
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943910906-049
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943911021-050
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943911021-051
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943911061-052
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943911061-053
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943911331-054
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943911371-055
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943916951-056
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943917006-057
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943918041-058
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943918046-059
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943918366-060
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943918366-061
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943918366-062
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943918681-063
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943918681-064
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943919496-065
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943919521-066
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943919521-067
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943920181-068
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943921001-069
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943922396-070
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943922716-071
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943923041-072
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943923681-073
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943924036-074
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943924641-075
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943924641-076
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943927041-077
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943927046-081
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943927046-082
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943927676-083
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943927996-084
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943928321-085
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943928321-086
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943928366-087
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943928366-088
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943928371-089
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943928371-090
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943928641-091
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943928641-092
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943928956-093
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943929276-094
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943929471-095
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943929471-096
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943929476-097
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943929476-098
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943930836-099
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943931481-100
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943931486-101
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943932161-102
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943932161-103
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943932441-104
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943933121-105
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943933436-106
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943933681-107
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943933681-108
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943933681-112
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943935081-113
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943935716-114
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943936041-115
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_Known_Pos_1943936046-116
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943936046-117
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943937011-118
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943937996-119
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943938681-120
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943938681-121
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943938911-122
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943938911-123
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943939881-124
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943940196-125
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943940526-126
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943940526-127
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943940526-128
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943940561-129
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943940866-130
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943941546-131
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1943941586-132
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Point_Dir_2017-03-10T02:00:05.00_000000-148
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-10T02:01:00.00_1577092977-158
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-10T02:04:23.07_1577092977-171
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://voevent.4pisky.org/voevent-broadcast#TestEvent-2017-03-10T02:10:36
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://voevent.4pisky.org/voevent-receive#TestEvent-2017-03-10T02:10:36
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-10T02:16:00.00_789256693-208
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/Fermi#Point_Dir_2017-03-10T02:16:00.00_000000-0-209
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-10T02:17:31.30_789256693-216
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-10T02:44:00.00_704673939-301
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-10T02:46:29.47_704673939-311
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-10T03:02:00.00_117475461-363
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Point_Dir_2017-03-10T03:04:58.00_000000-367
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-10T03:03:39.67_117475461-371
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-13T00:45:00.00_806033909-126
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=91.6862 Dec=-26.7874
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-13T00:46:24.54_806033909-133
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=91.6632 Dec=-26.7947
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Point_Dir_2017-05-23T12:05:56.08_000000-178
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=3.9584 Dec=-2.4058
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#SPIACS_000000-0-179
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=0.0 Dec=0.0
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Wakeup_Pos_000000-0-183
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=1.2343 Dec=2.3455
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Refined_Pos_000000-0-184
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=1.2343 Dec=2.3455
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Offline_Pos_000234-0-185
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=1.2343 Dec=2.3455
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Weak_Pos_000000-0-186
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=1.2343 Dec=2.3455
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-13T01:03:34.74_285297013-199
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=158.8178 Dec=-24.7433
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-13T01:21:00.00_67143839-258
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Point_Dir_2017-03-13T01:24:07.99_000000-265
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#FOM_Obs_16812207-302
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#FOM_Obs_16812201-303
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#FOM_Obs_16812203-304
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#FOM_Obs_16812213-305
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-13T01:32:53.34_16812213-309
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#FOM_Obs_16812214-310
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#FOM_Obs_16812196-319
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://voevent.4pisky.org/voevent-broadcast#TestEvent-2017-03-13T02:10:36
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://voevent.4pisky.org/voevent-receive#TestEvent-2017-03-13T02:10:36
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-13T02:10:53.14_100698264-451
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/Fermi#Point_Dir_2017-03-13T02:16:00.00_000000-0-467
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=227.2079 Dec=-75.8628
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-13T02:19:00.00_806033909-480
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=91.6866 Dec=-26.7856
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/HETE#Test_Pos_000023-4-481
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=72.0 Dec=34.9999
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-13T02:20:18.74_806033909-485
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=91.6913 Dec=-26.7725
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/INTEGRAL#Point_Dir_2017-03-13T02:27:50.00_000000-507
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=268.8062 Dec=-29.3603
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-13T02:37:00.00_67194519-543
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=171.937 Dec=-53.3338
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-13T02:38:29.93_67194519-551
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=171.9206 Dec=-53.35
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Point_Dir_2017-03-13T02:42:00.00_285247711-561
-INFO:notifier:TRIGGERING
-INFO:notifier:Coords are RA=217.0098 Dec=-42.0896
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945090276-562
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945090556-563
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945091201-564
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945094156-565
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945095476-566
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945095801-567
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945096116-571
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945096606-572
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945096606-573
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945096921-574
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945096926-575
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945097236-576
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945097656-577
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945097656-578
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#BAT_SubSubThresh_Pos_1945098616-579
-INFO:notifier:VOEvent received
-INFO:notifier:IVORN: ivo://nasa.gsfc.gcn/SWIFT#Actual_Point_Dir_2017-03-13T02:43:32.93_285247711-583
+2018-10-23 10:44:10,346 GRB Test Packet Not Triggering
+2018-10-23 10:44:10,346 Ignored
+2018-10-23 10:48:59,565 GRB Test Packet Not Triggering
+2018-10-23 10:48:59,565 Ignored
+2018-10-23 11:09:39,828 GRB Test Packet Not Triggering
+2018-10-23 11:09:39,828 Ignored
+2018-10-23 11:11:53,575 GRB Test Packet Not Triggering
+2018-10-23 11:11:53,576 Ignored
+2018-10-23 11:13:48,615 GRB Test Packet Not Triggering
+2018-10-23 11:13:48,615 Ignored
+2018-10-23 11:15:40,106 GRB Test Packet Not Triggering
+2018-10-23 11:15:40,106 Ignored
+2018-10-23 11:16:47,673 GRB Test Packet Not Triggering
+2018-10-23 11:16:47,673 Ignored
+2018-10-23 11:16:48,926 GRB Test Packet Not Triggering
+2018-10-23 11:16:48,927 Ignored
+2018-10-23 11:16:49,570 GRB Test Packet Not Triggering
+2018-10-23 11:16:49,570 Ignored
+2018-10-23 11:16:55,612 GRB Test Packet Not Triggering
+2018-10-23 11:16:55,612 Ignored
+2018-10-23 11:16:57,007 GRB Test Packet Not Triggering
+2018-10-23 11:16:57,007 Ignored
+2018-10-23 11:16:57,686 GRB Test Packet Not Triggering
+2018-10-23 11:16:57,686 Ignored
+2018-10-23 11:17:01,331 GRB Test Packet Not Triggering
+2018-10-23 11:17:01,332 Ignored
+2018-10-23 11:17:01,987 GRB Test Packet Not Triggering
+2018-10-23 11:17:01,987 Ignored
+2018-10-23 11:17:02,625 GRB Test Packet Not Triggering
+2018-10-23 11:17:02,625 Ignored
+2018-10-23 11:17:03,349 GRB Test Packet Not Triggering
+2018-10-23 11:17:03,349 Ignored
+2018-10-23 11:17:04,124 GRB Test Packet Not Triggering
+2018-10-23 11:17:04,124 Ignored
+2018-10-23 11:17:07,358 GRB Test Packet Not Triggering
+2018-10-23 11:17:07,359 Ignored
+2018-10-23 11:17:08,013 GRB Test Packet Not Triggering
+2018-10-23 11:17:08,013 Ignored
+2018-10-23 11:17:08,695 GRB Test Packet Not Triggering
+2018-10-23 11:17:08,696 Ignored
+2018-10-23 11:17:09,345 GRB Test Packet Not Triggering
+2018-10-23 11:17:09,346 Ignored
+2018-10-23 11:17:10,069 GRB Test Packet Not Triggering
+2018-10-23 11:17:10,069 Ignored
+2018-10-23 11:17:10,680 GRB Test Packet Not Triggering
+2018-10-23 11:17:10,680 Ignored
+2018-10-23 11:17:11,371 GRB Test Packet Not Triggering
+2018-10-23 11:17:11,371 Ignored
+2018-10-23 11:17:12,071 GRB Test Packet Not Triggering
+2018-10-23 11:17:12,071 Ignored
+2018-10-23 11:17:12,785 GRB Test Packet Not Triggering
+2018-10-23 11:17:12,786 Ignored
+2018-10-23 11:17:13,444 GRB Test Packet Not Triggering
+2018-10-23 11:17:13,444 Ignored
+2018-10-23 11:17:14,094 GRB Test Packet Not Triggering
+2018-10-23 11:17:14,094 Ignored
+2018-10-23 11:17:14,815 GRB Test Packet Not Triggering
+2018-10-23 11:17:14,815 Ignored
+2018-10-23 11:17:15,473 GRB Test Packet Not Triggering
+2018-10-23 11:17:15,473 Ignored
+2018-10-23 11:17:16,198 GRB Test Packet Not Triggering
+2018-10-23 11:17:16,199 Ignored
+2018-10-23 11:17:16,830 GRB Test Packet Not Triggering
+2018-10-23 11:17:16,831 Ignored
+2018-10-23 11:17:17,528 GRB Test Packet Not Triggering
+2018-10-23 11:17:17,528 Ignored
+2018-10-23 11:17:18,126 GRB Test Packet Not Triggering
+2018-10-23 11:17:18,126 Ignored
+2018-10-23 11:17:18,694 GRB Test Packet Not Triggering
+2018-10-23 11:17:18,694 Ignored
+2018-10-23 11:17:24,244 GRB Test Packet Not Triggering
+2018-10-23 11:17:24,244 Ignored
+2018-10-23 11:17:24,860 GRB Test Packet Not Triggering
+2018-10-23 11:17:24,860 Ignored
+2018-10-23 11:17:25,511 GRB Test Packet Not Triggering
+2018-10-23 11:17:25,511 Ignored
+2018-10-23 11:17:26,640 GRB Test Packet Not Triggering
+2018-10-23 11:17:26,640 Ignored
+2018-10-23 11:17:27,253 GRB Test Packet Not Triggering
+2018-10-23 11:17:27,253 Ignored
+2018-10-23 11:17:27,848 GRB Test Packet Not Triggering
+2018-10-23 11:17:27,848 Ignored
+2018-10-23 11:17:28,463 GRB Test Packet Not Triggering
+2018-10-23 11:17:28,463 Ignored
+2018-10-23 11:17:28,971 GRB Test Packet Not Triggering
+2018-10-23 11:17:28,971 Ignored
+2018-10-23 11:17:29,608 GRB Test Packet Not Triggering
+2018-10-23 11:17:29,608 Ignored
+2018-10-23 11:17:30,179 GRB Test Packet Not Triggering
+2018-10-23 11:17:30,179 Ignored
+2018-10-23 11:17:30,810 GRB Test Packet Not Triggering
+2018-10-23 11:17:30,810 Ignored
+2018-10-23 11:17:31,379 GRB Test Packet Not Triggering
+2018-10-23 11:17:31,379 Ignored
+2018-10-23 11:17:31,950 GRB Test Packet Not Triggering
+2018-10-23 11:17:31,950 Ignored
+2018-10-23 11:17:32,461 GRB Test Packet Not Triggering
+2018-10-23 11:17:32,462 Ignored
+2018-10-23 11:17:32,968 GRB Test Packet Not Triggering
+2018-10-23 11:17:32,968 Ignored
+2018-10-23 11:17:33,597 GRB Test Packet Not Triggering
+2018-10-23 11:17:33,597 Ignored
+2018-10-23 11:17:35,283 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:17:35,621 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:17:35,651 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:17:35,807 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 11:17:35,810 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:17:36,041 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:17:36,045 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:17:36,275 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:17:36,378 Creating schedule file
+2018-10-23 11:17:36,378 Schedule file created
+2018-10-23 11:17:36,500 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 11:17:36,501 Coords are Position2D(ra=174.9498, dec=-16.3107, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 11:17:37,174 GRB Test Packet Not Triggering
+2018-10-23 11:17:37,174 Ignored
+2018-10-23 11:17:37,875 GRB Test Packet Not Triggering
+2018-10-23 11:17:37,875 Ignored
+2018-10-23 11:17:38,578 GRB Test Packet Not Triggering
+2018-10-23 11:17:38,578 Ignored
+2018-10-23 11:17:39,213 GRB Test Packet Not Triggering
+2018-10-23 11:17:39,214 Ignored
+2018-10-23 11:17:40,543 GRB Test Packet Not Triggering
+2018-10-23 11:17:40,543 Ignored
+2018-10-23 11:17:41,199 GRB Test Packet Not Triggering
+2018-10-23 11:17:41,199 Ignored
+2018-10-23 11:17:42,613 GRB Test Packet Not Triggering
+2018-10-23 11:17:42,613 Ignored
+2018-10-23 11:17:43,337 GRB Test Packet Not Triggering
+2018-10-23 11:17:43,338 Ignored
+2018-10-23 11:17:43,982 GRB Test Packet Not Triggering
+2018-10-23 11:17:43,983 Ignored
+2018-10-23 11:17:44,739 GRB Test Packet Not Triggering
+2018-10-23 11:17:44,739 Ignored
+2018-10-23 11:17:45,409 GRB Test Packet Not Triggering
+2018-10-23 11:17:45,410 Ignored
+2018-10-23 11:17:46,047 GRB Test Packet Not Triggering
+2018-10-23 11:17:46,048 Ignored
+2018-10-23 11:17:46,695 GRB Test Packet Not Triggering
+2018-10-23 11:17:46,695 Ignored
+2018-10-23 11:17:47,285 GRB Test Packet Not Triggering
+2018-10-23 11:17:47,285 Ignored
+2018-10-23 11:17:47,906 GRB Test Packet Not Triggering
+2018-10-23 11:17:47,907 Ignored
+2018-10-23 11:17:48,604 GRB Test Packet Not Triggering
+2018-10-23 11:17:48,604 Ignored
+2018-10-23 11:17:49,137 GRB Test Packet Not Triggering
+2018-10-23 11:17:49,137 Ignored
+2018-10-23 11:17:49,748 GRB Test Packet Not Triggering
+2018-10-23 11:17:49,748 Ignored
+2018-10-23 11:17:50,375 GRB Test Packet Not Triggering
+2018-10-23 11:17:50,375 Ignored
+2018-10-23 11:17:51,007 GRB Test Packet Not Triggering
+2018-10-23 11:17:51,007 Ignored
+2018-10-23 11:17:51,636 GRB Test Packet Not Triggering
+2018-10-23 11:17:51,637 Ignored
+2018-10-23 11:17:52,229 GRB Test Packet Not Triggering
+2018-10-23 11:17:52,229 Ignored
+2018-10-23 11:17:52,826 GRB Test Packet Not Triggering
+2018-10-23 11:17:52,826 Ignored
+2018-10-23 11:17:53,442 GRB Test Packet Not Triggering
+2018-10-23 11:17:53,442 Ignored
+2018-10-23 11:17:54,061 GRB Test Packet Not Triggering
+2018-10-23 11:17:54,061 Ignored
+2018-10-23 11:17:54,667 GRB Test Packet Not Triggering
+2018-10-23 11:17:54,667 Ignored
+2018-10-23 11:17:55,084 GRB Test Packet Not Triggering
+2018-10-23 11:17:55,084 Ignored
+2018-10-23 11:17:55,714 GRB Test Packet Not Triggering
+2018-10-23 11:17:55,714 Ignored
+2018-10-23 11:17:56,166 GRB Test Packet Not Triggering
+2018-10-23 11:17:56,166 Ignored
+2018-10-23 11:17:57,425 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:17:57,777 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:17:57,794 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:17:58,018 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 11:17:58,021 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:17:58,292 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:17:58,297 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:17:58,593 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:17:58,646 Creating schedule file
+2018-10-23 11:17:58,646 Schedule file created
+2018-10-23 11:17:58,733 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 11:17:58,733 Coords are Position2D(ra=143.3794, dec=-17.3293, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 11:17:59,340 GRB Test Packet Not Triggering
+2018-10-23 11:17:59,341 Ignored
+2018-10-23 11:17:59,935 GRB Test Packet Not Triggering
+2018-10-23 11:17:59,935 Ignored
+2018-10-23 11:18:00,563 GRB Test Packet Not Triggering
+2018-10-23 11:18:00,563 Ignored
+2018-10-23 11:18:01,225 GRB Test Packet Not Triggering
+2018-10-23 11:18:01,226 Ignored
+2018-10-23 11:18:01,784 GRB Test Packet Not Triggering
+2018-10-23 11:18:01,784 Ignored
+2018-10-23 11:18:02,459 GRB Test Packet Not Triggering
+2018-10-23 11:18:02,459 Ignored
+2018-10-23 11:18:03,163 GRB Test Packet Not Triggering
+2018-10-23 11:18:03,163 Ignored
+2018-10-23 11:18:03,886 GRB Test Packet Not Triggering
+2018-10-23 11:18:03,886 Ignored
+2018-10-23 11:18:04,563 GRB Test Packet Not Triggering
+2018-10-23 11:18:04,563 Ignored
+2018-10-23 11:18:05,193 GRB Test Packet Not Triggering
+2018-10-23 11:18:05,194 Ignored
+2018-10-23 11:18:11,137 GRB Test Packet Not Triggering
+2018-10-23 11:18:11,137 Ignored
+2018-10-23 11:18:11,787 GRB Test Packet Not Triggering
+2018-10-23 11:18:11,787 Ignored
+2018-10-23 11:18:12,495 GRB Test Packet Not Triggering
+2018-10-23 11:18:12,495 Ignored
+2018-10-23 11:18:13,241 GRB Test Packet Not Triggering
+2018-10-23 11:18:13,241 Ignored
+2018-10-23 11:18:13,843 GRB Test Packet Not Triggering
+2018-10-23 11:18:13,843 Ignored
+2018-10-23 11:18:14,514 GRB Test Packet Not Triggering
+2018-10-23 11:18:14,514 Ignored
+2018-10-23 11:18:15,156 GRB Test Packet Not Triggering
+2018-10-23 11:18:15,156 Ignored
+2018-10-23 11:18:15,826 GRB Test Packet Not Triggering
+2018-10-23 11:18:15,827 Ignored
+2018-10-23 11:18:16,457 GRB Test Packet Not Triggering
+2018-10-23 11:18:16,457 Ignored
+2018-10-23 11:18:17,121 GRB Test Packet Not Triggering
+2018-10-23 11:18:17,121 Ignored
+2018-10-23 11:18:18,455 GRB Test Packet Not Triggering
+2018-10-23 11:18:18,455 Ignored
+2018-10-23 11:18:19,055 GRB Test Packet Not Triggering
+2018-10-23 11:18:19,055 Ignored
+2018-10-23 11:18:19,812 GRB Test Packet Not Triggering
+2018-10-23 11:18:19,813 Ignored
+2018-10-23 11:18:20,474 GRB Test Packet Not Triggering
+2018-10-23 11:18:20,474 Ignored
+2018-10-23 11:18:21,205 GRB Test Packet Not Triggering
+2018-10-23 11:18:21,205 Ignored
+2018-10-23 11:18:21,878 GRB Test Packet Not Triggering
+2018-10-23 11:18:21,878 Ignored
+2018-10-23 11:18:22,567 GRB Test Packet Not Triggering
+2018-10-23 11:18:22,567 Ignored
+2018-10-23 11:18:23,269 GRB Test Packet Not Triggering
+2018-10-23 11:18:23,269 Ignored
+2018-10-23 11:18:23,963 GRB Test Packet Not Triggering
+2018-10-23 11:18:23,963 Ignored
+2018-10-23 11:18:24,634 GRB Test Packet Not Triggering
+2018-10-23 11:18:24,635 Ignored
+2018-10-23 11:18:25,318 GRB Test Packet Not Triggering
+2018-10-23 11:18:25,318 Ignored
+2018-10-23 11:18:25,965 GRB Test Packet Not Triggering
+2018-10-23 11:18:25,965 Ignored
+2018-10-23 11:18:26,672 GRB Test Packet Not Triggering
+2018-10-23 11:18:26,672 Ignored
+2018-10-23 11:18:27,409 GRB Test Packet Not Triggering
+2018-10-23 11:18:27,409 Ignored
+2018-10-23 11:18:28,090 GRB Test Packet Not Triggering
+2018-10-23 11:18:28,091 Ignored
+2018-10-23 11:18:29,462 GRB Test Packet Not Triggering
+2018-10-23 11:18:29,462 Ignored
+2018-10-23 11:18:30,171 GRB Test Packet Not Triggering
+2018-10-23 11:18:30,171 Ignored
+2018-10-23 11:18:30,858 GRB Test Packet Not Triggering
+2018-10-23 11:18:30,858 Ignored
+2018-10-23 11:18:31,499 GRB Test Packet Not Triggering
+2018-10-23 11:18:31,500 Ignored
+2018-10-23 11:18:32,176 GRB Test Packet Not Triggering
+2018-10-23 11:18:32,176 Ignored
+2018-10-23 11:18:32,826 GRB Test Packet Not Triggering
+2018-10-23 11:18:32,826 Ignored
+2018-10-23 11:18:33,533 GRB Test Packet Not Triggering
+2018-10-23 11:18:33,533 Ignored
+2018-10-23 11:18:34,217 GRB Test Packet Not Triggering
+2018-10-23 11:18:34,217 Ignored
+2018-10-23 11:18:34,874 GRB Test Packet Not Triggering
+2018-10-23 11:18:34,874 Ignored
+2018-10-23 11:18:35,503 GRB Test Packet Not Triggering
+2018-10-23 11:18:35,503 Ignored
+2018-10-23 11:18:36,143 GRB Test Packet Not Triggering
+2018-10-23 11:18:36,143 Ignored
+2018-10-23 11:18:36,775 GRB Test Packet Not Triggering
+2018-10-23 11:18:36,775 Ignored
+2018-10-23 11:18:37,563 GRB Test Packet Not Triggering
+2018-10-23 11:18:37,563 Ignored
+2018-10-23 11:18:38,188 GRB Test Packet Not Triggering
+2018-10-23 11:18:38,188 Ignored
+2018-10-23 11:18:38,834 GRB Test Packet Not Triggering
+2018-10-23 11:18:38,834 Ignored
+2018-10-23 11:18:39,408 GRB Test Packet Not Triggering
+2018-10-23 11:18:39,408 Ignored
+2018-10-23 11:18:39,941 GRB Test Packet Not Triggering
+2018-10-23 11:18:39,941 Ignored
+2018-10-23 11:18:43,413 GRB Test Packet Not Triggering
+2018-10-23 11:18:43,414 Ignored
+2018-10-23 11:18:44,097 GRB Test Packet Not Triggering
+2018-10-23 11:18:44,097 Ignored
+2018-10-23 11:18:46,102 GRB Test Packet Not Triggering
+2018-10-23 11:18:46,102 Ignored
+2018-10-23 11:18:46,837 GRB Test Packet Not Triggering
+2018-10-23 11:18:46,837 Ignored
+2018-10-23 11:18:47,571 GRB Test Packet Not Triggering
+2018-10-23 11:18:47,571 Ignored
+2018-10-23 11:18:48,228 GRB Test Packet Not Triggering
+2018-10-23 11:18:48,229 Ignored
+2018-10-23 11:18:48,947 GRB Test Packet Not Triggering
+2018-10-23 11:18:48,947 Ignored
+2018-10-23 11:18:49,663 GRB Test Packet Not Triggering
+2018-10-23 11:18:49,663 Ignored
+2018-10-23 11:18:50,360 GRB Test Packet Not Triggering
+2018-10-23 11:18:50,360 Ignored
+2018-10-23 11:18:51,038 GRB Test Packet Not Triggering
+2018-10-23 11:18:51,039 Ignored
+2018-10-23 11:18:51,750 GRB Test Packet Not Triggering
+2018-10-23 11:18:51,751 Ignored
+2018-10-23 11:18:52,508 GRB Test Packet Not Triggering
+2018-10-23 11:18:52,508 Ignored
+2018-10-23 11:18:53,183 GRB Test Packet Not Triggering
+2018-10-23 11:18:53,183 Ignored
+2018-10-23 11:18:53,882 GRB Test Packet Not Triggering
+2018-10-23 11:18:53,882 Ignored
+2018-10-23 11:18:54,461 GRB Test Packet Not Triggering
+2018-10-23 11:18:54,461 Ignored
+2018-10-23 11:18:55,233 GRB Test Packet Not Triggering
+2018-10-23 11:18:55,234 Ignored
+2018-10-23 11:18:55,911 GRB Test Packet Not Triggering
+2018-10-23 11:18:55,911 Ignored
+2018-10-23 11:18:56,538 GRB Test Packet Not Triggering
+2018-10-23 11:18:56,538 Ignored
+2018-10-23 11:18:57,269 GRB Test Packet Not Triggering
+2018-10-23 11:18:57,269 Ignored
+2018-10-23 11:18:57,942 GRB Test Packet Not Triggering
+2018-10-23 11:18:57,942 Ignored
+2018-10-23 11:18:58,656 GRB Test Packet Not Triggering
+2018-10-23 11:18:58,657 Ignored
+2018-10-23 11:18:59,381 GRB Test Packet Not Triggering
+2018-10-23 11:18:59,381 Ignored
+2018-10-23 11:19:00,129 GRB Test Packet Not Triggering
+2018-10-23 11:19:00,129 Ignored
+2018-10-23 11:19:00,783 GRB Test Packet Not Triggering
+2018-10-23 11:19:00,784 Ignored
+2018-10-23 11:19:01,349 GRB Test Packet Not Triggering
+2018-10-23 11:19:01,349 Ignored
+2018-10-23 11:19:01,934 GRB Test Packet Not Triggering
+2018-10-23 11:19:01,934 Ignored
+2018-10-23 11:19:02,591 GRB Test Packet Not Triggering
+2018-10-23 11:19:02,591 Ignored
+2018-10-23 11:19:03,251 GRB Test Packet Not Triggering
+2018-10-23 11:19:03,251 Ignored
+2018-10-23 11:19:03,946 GRB Test Packet Not Triggering
+2018-10-23 11:19:03,947 Ignored
+2018-10-23 11:19:05,250 GRB Test Packet Not Triggering
+2018-10-23 11:19:05,250 Ignored
+2018-10-23 11:19:05,919 GRB Test Packet Not Triggering
+2018-10-23 11:19:05,919 Ignored
+2018-10-23 11:19:06,651 GRB Test Packet Not Triggering
+2018-10-23 11:19:06,651 Ignored
+2018-10-23 11:19:07,276 GRB Test Packet Not Triggering
+2018-10-23 11:19:07,276 Ignored
+2018-10-23 11:19:07,949 GRB Test Packet Not Triggering
+2018-10-23 11:19:07,949 Ignored
+2018-10-23 11:19:08,668 GRB Test Packet Not Triggering
+2018-10-23 11:19:08,669 Ignored
+2018-10-23 11:19:09,330 GRB Test Packet Not Triggering
+2018-10-23 11:19:09,330 Ignored
+2018-10-23 11:19:10,060 GRB Test Packet Not Triggering
+2018-10-23 11:19:10,060 Ignored
+2018-10-23 11:19:10,708 GRB Test Packet Not Triggering
+2018-10-23 11:19:10,708 Ignored
+2018-10-23 11:19:11,384 GRB Test Packet Not Triggering
+2018-10-23 11:19:11,385 Ignored
+2018-10-23 11:19:12,091 GRB Test Packet Not Triggering
+2018-10-23 11:19:12,091 Ignored
+2018-10-23 11:19:12,852 GRB Test Packet Not Triggering
+2018-10-23 11:19:12,853 Ignored
+2018-10-23 11:19:13,521 GRB Test Packet Not Triggering
+2018-10-23 11:19:13,522 Ignored
+2018-10-23 11:19:14,178 GRB Test Packet Not Triggering
+2018-10-23 11:19:14,178 Ignored
+2018-10-23 11:19:14,810 GRB Test Packet Not Triggering
+2018-10-23 11:19:14,810 Ignored
+2018-10-23 11:19:15,407 GRB Test Packet Not Triggering
+2018-10-23 11:19:15,407 Ignored
+2018-10-23 11:19:15,960 GRB Test Packet Not Triggering
+2018-10-23 11:19:15,961 Ignored
+2018-10-23 11:19:16,626 GRB Test Packet Not Triggering
+2018-10-23 11:19:16,627 Ignored
+2018-10-23 11:19:17,248 GRB Test Packet Not Triggering
+2018-10-23 11:19:17,248 Ignored
+2018-10-23 11:19:17,815 GRB Test Packet Not Triggering
+2018-10-23 11:19:17,815 Ignored
+2018-10-23 11:19:18,390 GRB Test Packet Not Triggering
+2018-10-23 11:19:18,390 Ignored
+2018-10-23 11:19:19,030 GRB Test Packet Not Triggering
+2018-10-23 11:19:19,030 Ignored
+2018-10-23 11:19:19,613 GRB Test Packet Not Triggering
+2018-10-23 11:19:19,614 Ignored
+2018-10-23 11:19:20,301 GRB Test Packet Not Triggering
+2018-10-23 11:19:20,301 Ignored
+2018-10-23 11:19:21,731 GRB Test Packet Not Triggering
+2018-10-23 11:19:21,731 Ignored
+2018-10-23 11:19:22,404 GRB Test Packet Not Triggering
+2018-10-23 11:19:22,404 Ignored
+2018-10-23 11:19:23,099 GRB Test Packet Not Triggering
+2018-10-23 11:19:23,099 Ignored
+2018-10-23 11:19:23,711 GRB Test Packet Not Triggering
+2018-10-23 11:19:23,712 Ignored
+2018-10-23 11:19:24,314 GRB Test Packet Not Triggering
+2018-10-23 11:19:24,314 Ignored
+2018-10-23 11:19:24,967 GRB Test Packet Not Triggering
+2018-10-23 11:19:24,967 Ignored
+2018-10-23 11:19:25,619 GRB Test Packet Not Triggering
+2018-10-23 11:19:25,619 Ignored
+2018-10-23 11:19:26,221 GRB Test Packet Not Triggering
+2018-10-23 11:19:26,221 Ignored
+2018-10-23 11:19:26,811 GRB Test Packet Not Triggering
+2018-10-23 11:19:26,811 Ignored
+2018-10-23 11:19:27,451 GRB Test Packet Not Triggering
+2018-10-23 11:19:27,451 Ignored
+2018-10-23 11:19:28,078 GRB Test Packet Not Triggering
+2018-10-23 11:19:28,078 Ignored
+2018-10-23 11:19:28,785 GRB Test Packet Not Triggering
+2018-10-23 11:19:28,786 Ignored
+2018-10-23 11:19:29,462 GRB Test Packet Not Triggering
+2018-10-23 11:19:29,462 Ignored
+2018-10-23 11:19:30,117 GRB Test Packet Not Triggering
+2018-10-23 11:19:30,117 Ignored
+2018-10-23 11:19:30,841 GRB Test Packet Not Triggering
+2018-10-23 11:19:30,841 Ignored
+2018-10-23 11:19:31,542 GRB Test Packet Not Triggering
+2018-10-23 11:19:31,542 Ignored
+2018-10-23 11:19:32,179 GRB Test Packet Not Triggering
+2018-10-23 11:19:32,179 Ignored
+2018-10-23 11:19:32,903 GRB Test Packet Not Triggering
+2018-10-23 11:19:32,903 Ignored
+2018-10-23 11:19:33,592 GRB Test Packet Not Triggering
+2018-10-23 11:19:33,592 Ignored
+2018-10-23 11:19:34,338 GRB Test Packet Not Triggering
+2018-10-23 11:19:34,338 Ignored
+2018-10-23 11:19:34,989 GRB Test Packet Not Triggering
+2018-10-23 11:19:34,989 Ignored
+2018-10-23 11:19:35,704 GRB Test Packet Not Triggering
+2018-10-23 11:19:35,704 Ignored
+2018-10-23 11:19:36,364 GRB Test Packet Not Triggering
+2018-10-23 11:19:36,364 Ignored
+2018-10-23 11:19:37,018 GRB Test Packet Not Triggering
+2018-10-23 11:19:37,018 Ignored
+2018-10-23 11:19:37,722 GRB Test Packet Not Triggering
+2018-10-23 11:19:37,722 Ignored
+2018-10-23 11:19:38,403 GRB Test Packet Not Triggering
+2018-10-23 11:19:38,403 Ignored
+2018-10-23 11:19:41,034 GRB Test Packet Not Triggering
+2018-10-23 11:19:41,034 Ignored
+2018-10-23 11:19:44,073 GRB Test Packet Not Triggering
+2018-10-23 11:19:44,073 Ignored
+2018-10-23 11:19:44,712 GRB Test Packet Not Triggering
+2018-10-23 11:19:44,712 Ignored
+2018-10-23 11:19:47,792 GRB Test Packet Not Triggering
+2018-10-23 11:19:47,792 Ignored
+2018-10-23 11:19:48,592 GRB Test Packet Not Triggering
+2018-10-23 11:19:48,592 Ignored
+2018-10-23 11:19:49,339 GRB Test Packet Not Triggering
+2018-10-23 11:19:49,339 Ignored
+2018-10-23 11:19:50,094 GRB Test Packet Not Triggering
+2018-10-23 11:19:50,094 Ignored
+2018-10-23 11:19:50,809 GRB Test Packet Not Triggering
+2018-10-23 11:19:50,809 Ignored
+2018-10-23 11:19:51,479 GRB Test Packet Not Triggering
+2018-10-23 11:19:51,480 Ignored
+2018-10-23 11:19:52,199 GRB Test Packet Not Triggering
+2018-10-23 11:19:52,200 Ignored
+2018-10-23 11:19:52,834 GRB Test Packet Not Triggering
+2018-10-23 11:19:52,835 Ignored
+2018-10-23 11:19:53,564 GRB Test Packet Not Triggering
+2018-10-23 11:19:53,564 Ignored
+2018-10-23 11:19:54,207 GRB Test Packet Not Triggering
+2018-10-23 11:19:54,207 Ignored
+2018-10-23 11:19:54,931 GRB Test Packet Not Triggering
+2018-10-23 11:19:54,931 Ignored
+2018-10-23 11:19:55,635 GRB Test Packet Not Triggering
+2018-10-23 11:19:55,635 Ignored
+2018-10-23 11:19:56,452 GRB Test Packet Not Triggering
+2018-10-23 11:19:56,453 Ignored
+2018-10-23 11:19:57,152 GRB Test Packet Not Triggering
+2018-10-23 11:19:57,152 Ignored
+2018-10-23 11:19:57,803 GRB Test Packet Not Triggering
+2018-10-23 11:19:57,803 Ignored
+2018-10-23 11:19:59,175 GRB Test Packet Not Triggering
+2018-10-23 11:19:59,176 Ignored
+2018-10-23 11:19:59,924 GRB Test Packet Not Triggering
+2018-10-23 11:19:59,924 Ignored
+2018-10-23 11:20:00,693 GRB Test Packet Not Triggering
+2018-10-23 11:20:00,693 Ignored
+2018-10-23 11:20:01,393 GRB Test Packet Not Triggering
+2018-10-23 11:20:01,393 Ignored
+2018-10-23 11:20:02,779 GRB Test Packet Not Triggering
+2018-10-23 11:20:02,779 Ignored
+2018-10-23 11:20:04,247 GRB Test Packet Not Triggering
+2018-10-23 11:20:04,247 Ignored
+2018-10-23 11:20:05,005 GRB Test Packet Not Triggering
+2018-10-23 11:20:05,006 Ignored
+2018-10-23 11:20:05,686 GRB Test Packet Not Triggering
+2018-10-23 11:20:05,686 Ignored
+2018-10-23 11:20:06,426 GRB Test Packet Not Triggering
+2018-10-23 11:20:06,426 Ignored
+2018-10-23 11:20:07,174 GRB Test Packet Not Triggering
+2018-10-23 11:20:07,174 Ignored
+2018-10-23 11:20:07,883 GRB Test Packet Not Triggering
+2018-10-23 11:20:07,883 Ignored
+2018-10-23 11:20:08,582 GRB Test Packet Not Triggering
+2018-10-23 11:20:08,582 Ignored
+2018-10-23 11:20:09,284 GRB Test Packet Not Triggering
+2018-10-23 11:20:09,284 Ignored
+2018-10-23 11:20:10,503 GRB Test Packet Not Triggering
+2018-10-23 11:20:10,503 Ignored
+2018-10-23 11:20:11,201 GRB Test Packet Not Triggering
+2018-10-23 11:20:11,201 Ignored
+2018-10-23 11:20:11,839 GRB Test Packet Not Triggering
+2018-10-23 11:20:11,839 Ignored
+2018-10-23 11:20:12,536 GRB Test Packet Not Triggering
+2018-10-23 11:20:12,536 Ignored
+2018-10-23 11:20:13,219 GRB Test Packet Not Triggering
+2018-10-23 11:20:13,219 Ignored
+2018-10-23 11:20:13,936 GRB Test Packet Not Triggering
+2018-10-23 11:20:13,936 Ignored
+2018-10-23 11:20:14,604 GRB Test Packet Not Triggering
+2018-10-23 11:20:14,604 Ignored
+2018-10-23 11:20:15,271 GRB Test Packet Not Triggering
+2018-10-23 11:20:15,271 Ignored
+2018-10-23 11:20:15,979 GRB Test Packet Not Triggering
+2018-10-23 11:20:15,979 Ignored
+2018-10-23 11:20:16,708 GRB Test Packet Not Triggering
+2018-10-23 11:20:16,708 Ignored
+2018-10-23 11:20:18,774 GRB Test Packet Not Triggering
+2018-10-23 11:20:18,774 Ignored
+2018-10-23 11:20:19,460 GRB Test Packet Not Triggering
+2018-10-23 11:20:19,460 Ignored
+2018-10-23 11:20:20,876 GRB Test Packet Not Triggering
+2018-10-23 11:20:20,876 Ignored
+2018-10-23 11:20:21,486 GRB Test Packet Not Triggering
+2018-10-23 11:20:21,486 Ignored
+2018-10-23 11:20:22,136 GRB Test Packet Not Triggering
+2018-10-23 11:20:22,136 Ignored
+2018-10-23 11:20:22,730 GRB Test Packet Not Triggering
+2018-10-23 11:20:22,731 Ignored
+2018-10-23 11:20:23,375 GRB Test Packet Not Triggering
+2018-10-23 11:20:23,375 Ignored
+2018-10-23 11:20:23,938 GRB Test Packet Not Triggering
+2018-10-23 11:20:23,938 Ignored
+2018-10-23 11:20:24,515 GRB Test Packet Not Triggering
+2018-10-23 11:20:24,515 Ignored
+2018-10-23 11:20:25,020 GRB Test Packet Not Triggering
+2018-10-23 11:20:25,021 Ignored
+2018-10-23 11:20:25,561 GRB Test Packet Not Triggering
+2018-10-23 11:20:25,561 Ignored
+2018-10-23 11:20:28,777 GRB Test Packet Not Triggering
+2018-10-23 11:20:28,777 Ignored
+2018-10-23 11:20:29,423 GRB Test Packet Not Triggering
+2018-10-23 11:20:29,423 Ignored
+2018-10-23 11:20:30,137 GRB Test Packet Not Triggering
+2018-10-23 11:20:30,137 Ignored
+2018-10-23 11:20:30,833 GRB Test Packet Not Triggering
+2018-10-23 11:20:30,833 Ignored
+2018-10-23 11:20:31,467 GRB Test Packet Not Triggering
+2018-10-23 11:20:31,467 Ignored
+2018-10-23 11:20:32,703 GRB Test Packet Not Triggering
+2018-10-23 11:20:32,703 Ignored
+2018-10-23 11:20:33,367 GRB Test Packet Not Triggering
+2018-10-23 11:20:33,367 Ignored
+2018-10-23 11:20:34,008 GRB Test Packet Not Triggering
+2018-10-23 11:20:34,008 Ignored
+2018-10-23 11:20:34,639 GRB Test Packet Not Triggering
+2018-10-23 11:20:34,639 Ignored
+2018-10-23 11:20:35,363 GRB Test Packet Not Triggering
+2018-10-23 11:20:35,363 Ignored
+2018-10-23 11:20:36,059 GRB Test Packet Not Triggering
+2018-10-23 11:20:36,059 Ignored
+2018-10-23 11:20:36,793 GRB Test Packet Not Triggering
+2018-10-23 11:20:36,793 Ignored
+2018-10-23 11:20:37,435 GRB Test Packet Not Triggering
+2018-10-23 11:20:37,435 Ignored
+2018-10-23 11:20:38,052 GRB Test Packet Not Triggering
+2018-10-23 11:20:38,052 Ignored
+2018-10-23 11:20:38,749 GRB Test Packet Not Triggering
+2018-10-23 11:20:38,749 Ignored
+2018-10-23 11:20:39,505 GRB Test Packet Not Triggering
+2018-10-23 11:20:39,506 Ignored
+2018-10-23 11:20:40,206 GRB Test Packet Not Triggering
+2018-10-23 11:20:40,206 Ignored
+2018-10-23 11:20:40,804 GRB Test Packet Not Triggering
+2018-10-23 11:20:40,804 Ignored
+2018-10-23 11:20:41,440 GRB Test Packet Not Triggering
+2018-10-23 11:20:41,440 Ignored
+2018-10-23 11:20:42,045 GRB Test Packet Not Triggering
+2018-10-23 11:20:42,045 Ignored
+2018-10-23 11:20:42,753 GRB Test Packet Not Triggering
+2018-10-23 11:20:42,753 Ignored
+2018-10-23 11:20:43,438 GRB Test Packet Not Triggering
+2018-10-23 11:20:43,438 Ignored
+2018-10-23 11:20:44,088 GRB Test Packet Not Triggering
+2018-10-23 11:20:44,088 Ignored
+2018-10-23 11:20:44,747 GRB Test Packet Not Triggering
+2018-10-23 11:20:44,747 Ignored
+2018-10-23 11:20:45,406 GRB Test Packet Not Triggering
+2018-10-23 11:20:45,407 Ignored
+2018-10-23 11:20:46,063 GRB Test Packet Not Triggering
+2018-10-23 11:20:46,063 Ignored
+2018-10-23 11:20:46,765 GRB Test Packet Not Triggering
+2018-10-23 11:20:46,765 Ignored
+2018-10-23 11:20:47,386 GRB Test Packet Not Triggering
+2018-10-23 11:20:47,386 Ignored
+2018-10-23 11:20:48,055 GRB Test Packet Not Triggering
+2018-10-23 11:20:48,056 Ignored
+2018-10-23 11:20:48,692 GRB Test Packet Not Triggering
+2018-10-23 11:20:48,692 Ignored
+2018-10-23 11:20:50,055 GRB Test Packet Not Triggering
+2018-10-23 11:20:50,055 Ignored
+2018-10-23 11:20:50,694 GRB Test Packet Not Triggering
+2018-10-23 11:20:50,694 Ignored
+2018-10-23 11:20:51,957 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:20:52,321 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:20:52,355 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:20:52,577 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 11:20:52,580 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:20:52,868 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:20:52,936 Creating schedule file
+2018-10-23 11:20:52,936 Schedule file created
+2018-10-23 11:20:55,437 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 11:20:55,437 Coords are Position2D(ra=215.4662, dec=-62.0301, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 11:20:56,045 GRB Test Packet Not Triggering
+2018-10-23 11:20:56,045 Ignored
+2018-10-23 11:21:02,194 GRB Test Packet Not Triggering
+2018-10-23 11:21:02,194 Ignored
+2018-10-23 11:21:02,842 GRB Test Packet Not Triggering
+2018-10-23 11:21:02,843 Ignored
+2018-10-23 11:21:03,563 GRB Test Packet Not Triggering
+2018-10-23 11:21:03,563 Ignored
+2018-10-23 11:21:04,208 GRB Test Packet Not Triggering
+2018-10-23 11:21:04,208 Ignored
+2018-10-23 11:21:04,897 GRB Test Packet Not Triggering
+2018-10-23 11:21:04,897 Ignored
+2018-10-23 11:21:05,517 GRB Test Packet Not Triggering
+2018-10-23 11:21:05,517 Ignored
+2018-10-23 11:21:06,114 GRB Test Packet Not Triggering
+2018-10-23 11:21:06,114 Ignored
+2018-10-23 11:21:06,715 GRB Test Packet Not Triggering
+2018-10-23 11:21:06,715 Ignored
+2018-10-23 11:21:07,247 GRB Test Packet Not Triggering
+2018-10-23 11:21:07,247 Ignored
+2018-10-23 11:21:07,932 GRB Test Packet Not Triggering
+2018-10-23 11:21:07,932 Ignored
+2018-10-23 11:21:08,650 GRB Test Packet Not Triggering
+2018-10-23 11:21:08,650 Ignored
+2018-10-23 11:21:09,385 GRB Test Packet Not Triggering
+2018-10-23 11:21:09,385 Ignored
+2018-10-23 11:21:10,104 GRB Test Packet Not Triggering
+2018-10-23 11:21:10,105 Ignored
+2018-10-23 11:21:10,776 GRB Test Packet Not Triggering
+2018-10-23 11:21:10,776 Ignored
+2018-10-23 11:21:11,376 GRB Test Packet Not Triggering
+2018-10-23 11:21:11,376 Ignored
+2018-10-23 11:21:12,016 GRB Test Packet Not Triggering
+2018-10-23 11:21:12,016 Ignored
+2018-10-23 11:21:12,763 GRB Test Packet Not Triggering
+2018-10-23 11:21:12,763 Ignored
+2018-10-23 11:21:13,528 GRB Test Packet Not Triggering
+2018-10-23 11:21:13,528 Ignored
+2018-10-23 11:21:14,152 GRB Test Packet Not Triggering
+2018-10-23 11:21:14,152 Ignored
+2018-10-23 11:21:14,888 GRB Test Packet Not Triggering
+2018-10-23 11:21:14,889 Ignored
+2018-10-23 11:21:15,559 GRB Test Packet Not Triggering
+2018-10-23 11:21:15,559 Ignored
+2018-10-23 11:21:16,216 GRB Test Packet Not Triggering
+2018-10-23 11:21:16,216 Ignored
+2018-10-23 11:21:16,969 GRB Test Packet Not Triggering
+2018-10-23 11:21:16,970 Ignored
+2018-10-23 11:21:17,765 GRB Test Packet Not Triggering
+2018-10-23 11:21:17,766 Ignored
+2018-10-23 11:21:18,449 GRB Test Packet Not Triggering
+2018-10-23 11:21:18,450 Ignored
+2018-10-23 11:21:19,182 GRB Test Packet Not Triggering
+2018-10-23 11:21:19,182 Ignored
+2018-10-23 11:21:19,918 GRB Test Packet Not Triggering
+2018-10-23 11:21:19,918 Ignored
+2018-10-23 11:21:20,652 GRB Test Packet Not Triggering
+2018-10-23 11:21:20,653 Ignored
+2018-10-23 11:21:21,392 GRB Test Packet Not Triggering
+2018-10-23 11:21:21,392 Ignored
+2018-10-23 11:21:22,054 GRB Test Packet Not Triggering
+2018-10-23 11:21:22,054 Ignored
+2018-10-23 11:21:22,798 GRB Test Packet Not Triggering
+2018-10-23 11:21:22,798 Ignored
+2018-10-23 11:21:23,516 GRB Test Packet Not Triggering
+2018-10-23 11:21:23,516 Ignored
+2018-10-23 11:21:24,170 GRB Test Packet Not Triggering
+2018-10-23 11:21:24,171 Ignored
+2018-10-23 11:21:24,933 GRB Test Packet Not Triggering
+2018-10-23 11:21:24,934 Ignored
+2018-10-23 11:21:25,688 GRB Test Packet Not Triggering
+2018-10-23 11:21:25,689 Ignored
+2018-10-23 11:21:26,430 GRB Test Packet Not Triggering
+2018-10-23 11:21:26,430 Ignored
+2018-10-23 11:21:27,070 GRB Test Packet Not Triggering
+2018-10-23 11:21:27,070 Ignored
+2018-10-23 11:21:27,711 GRB Test Packet Not Triggering
+2018-10-23 11:21:27,711 Ignored
+2018-10-23 11:21:28,337 GRB Test Packet Not Triggering
+2018-10-23 11:21:28,337 Ignored
+2018-10-23 11:21:29,008 GRB Test Packet Not Triggering
+2018-10-23 11:21:29,008 Ignored
+2018-10-23 11:21:29,565 GRB Test Packet Not Triggering
+2018-10-23 11:21:29,565 Ignored
+2018-10-23 11:21:30,208 GRB Test Packet Not Triggering
+2018-10-23 11:21:30,208 Ignored
+2018-10-23 11:21:30,800 GRB Test Packet Not Triggering
+2018-10-23 11:21:30,800 Ignored
+2018-10-23 11:21:31,383 GRB Test Packet Not Triggering
+2018-10-23 11:21:31,383 Ignored
+2018-10-23 11:21:32,701 GRB Test Packet Not Triggering
+2018-10-23 11:21:32,702 Ignored
+2018-10-23 11:21:33,360 GRB Test Packet Not Triggering
+2018-10-23 11:21:33,360 Ignored
+2018-10-23 11:21:34,059 GRB Test Packet Not Triggering
+2018-10-23 11:21:34,059 Ignored
+2018-10-23 11:21:34,748 GRB Test Packet Not Triggering
+2018-10-23 11:21:34,748 Ignored
+2018-10-23 11:21:35,463 GRB Test Packet Not Triggering
+2018-10-23 11:21:35,463 Ignored
+2018-10-23 11:21:36,152 GRB Test Packet Not Triggering
+2018-10-23 11:21:36,152 Ignored
+2018-10-23 11:21:36,828 GRB Test Packet Not Triggering
+2018-10-23 11:21:36,828 Ignored
+2018-10-23 11:21:37,378 GRB Test Packet Not Triggering
+2018-10-23 11:21:37,379 Ignored
+2018-10-23 11:21:37,991 GRB Test Packet Not Triggering
+2018-10-23 11:21:37,991 Ignored
+2018-10-23 11:21:38,599 GRB Test Packet Not Triggering
+2018-10-23 11:21:38,600 Ignored
+2018-10-23 11:21:39,222 GRB Test Packet Not Triggering
+2018-10-23 11:21:39,222 Ignored
+2018-10-23 11:21:39,847 GRB Test Packet Not Triggering
+2018-10-23 11:21:39,847 Ignored
+2018-10-23 11:21:40,489 GRB Test Packet Not Triggering
+2018-10-23 11:21:40,490 Ignored
+2018-10-23 11:21:41,073 GRB Test Packet Not Triggering
+2018-10-23 11:21:41,074 Ignored
+2018-10-23 11:21:41,777 GRB Test Packet Not Triggering
+2018-10-23 11:21:41,777 Ignored
+2018-10-23 11:21:42,454 GRB Test Packet Not Triggering
+2018-10-23 11:21:42,454 Ignored
+2018-10-23 11:21:43,079 GRB Test Packet Not Triggering
+2018-10-23 11:21:43,080 Ignored
+2018-10-23 11:21:43,654 GRB Test Packet Not Triggering
+2018-10-23 11:21:43,654 Ignored
+2018-10-23 11:21:44,902 GRB Test Packet Not Triggering
+2018-10-23 11:21:44,902 Ignored
+2018-10-23 11:21:45,535 GRB Test Packet Not Triggering
+2018-10-23 11:21:45,535 Ignored
+2018-10-23 11:21:46,156 GRB Test Packet Not Triggering
+2018-10-23 11:21:46,156 Ignored
+2018-10-23 11:21:46,965 GRB Test Packet Not Triggering
+2018-10-23 11:21:46,965 Ignored
+2018-10-23 11:21:47,648 GRB Test Packet Not Triggering
+2018-10-23 11:21:47,648 Ignored
+2018-10-23 11:21:48,355 GRB Test Packet Not Triggering
+2018-10-23 11:21:48,356 Ignored
+2018-10-23 11:21:48,992 GRB Test Packet Not Triggering
+2018-10-23 11:21:48,992 Ignored
+2018-10-23 11:21:49,661 GRB Test Packet Not Triggering
+2018-10-23 11:21:49,661 Ignored
+2018-10-23 11:21:50,321 GRB Test Packet Not Triggering
+2018-10-23 11:21:50,321 Ignored
+2018-10-23 11:21:50,901 GRB Test Packet Not Triggering
+2018-10-23 11:21:50,902 Ignored
+2018-10-23 11:21:51,497 GRB Test Packet Not Triggering
+2018-10-23 11:21:51,497 Ignored
+2018-10-23 11:21:52,111 GRB Test Packet Not Triggering
+2018-10-23 11:21:52,111 Ignored
+2018-10-23 11:21:52,708 GRB Test Packet Not Triggering
+2018-10-23 11:21:52,709 Ignored
+2018-10-23 11:21:53,439 GRB Test Packet Not Triggering
+2018-10-23 11:21:53,440 Ignored
+2018-10-23 11:21:54,141 GRB Test Packet Not Triggering
+2018-10-23 11:21:54,141 Ignored
+2018-10-23 11:21:54,766 GRB Test Packet Not Triggering
+2018-10-23 11:21:54,767 Ignored
+2018-10-23 11:21:55,507 GRB Test Packet Not Triggering
+2018-10-23 11:21:55,507 Ignored
+2018-10-23 11:21:56,167 GRB Test Packet Not Triggering
+2018-10-23 11:21:56,167 Ignored
+2018-10-23 11:21:56,821 GRB Test Packet Not Triggering
+2018-10-23 11:21:56,822 Ignored
+2018-10-23 11:21:57,436 GRB Test Packet Not Triggering
+2018-10-23 11:21:57,436 Ignored
+2018-10-23 11:22:04,601 GRB Test Packet Not Triggering
+2018-10-23 11:22:04,602 Ignored
+2018-10-23 11:22:05,235 GRB Test Packet Not Triggering
+2018-10-23 11:22:05,235 Ignored
+2018-10-23 11:22:05,958 GRB Test Packet Not Triggering
+2018-10-23 11:22:05,959 Ignored
+2018-10-23 11:22:06,675 GRB Test Packet Not Triggering
+2018-10-23 11:22:06,675 Ignored
+2018-10-23 11:22:07,310 GRB Test Packet Not Triggering
+2018-10-23 11:22:07,310 Ignored
+2018-10-23 11:22:07,955 GRB Test Packet Not Triggering
+2018-10-23 11:22:07,955 Ignored
+2018-10-23 11:22:08,613 GRB Test Packet Not Triggering
+2018-10-23 11:22:08,613 Ignored
+2018-10-23 11:22:09,171 GRB Test Packet Not Triggering
+2018-10-23 11:22:09,171 Ignored
+2018-10-23 11:22:09,771 GRB Test Packet Not Triggering
+2018-10-23 11:22:09,772 Ignored
+2018-10-23 11:22:10,473 GRB Test Packet Not Triggering
+2018-10-23 11:22:10,474 Ignored
+2018-10-23 11:22:11,140 GRB Test Packet Not Triggering
+2018-10-23 11:22:11,140 Ignored
+2018-10-23 11:22:11,844 GRB Test Packet Not Triggering
+2018-10-23 11:22:11,844 Ignored
+2018-10-23 11:22:12,522 GRB Test Packet Not Triggering
+2018-10-23 11:22:12,522 Ignored
+2018-10-23 11:22:13,183 GRB Test Packet Not Triggering
+2018-10-23 11:22:13,183 Ignored
+2018-10-23 11:22:13,866 GRB Test Packet Not Triggering
+2018-10-23 11:22:13,866 Ignored
+2018-10-23 11:22:14,523 GRB Test Packet Not Triggering
+2018-10-23 11:22:14,523 Ignored
+2018-10-23 11:22:15,156 GRB Test Packet Not Triggering
+2018-10-23 11:22:15,156 Ignored
+2018-10-23 11:22:15,805 GRB Test Packet Not Triggering
+2018-10-23 11:22:15,805 Ignored
+2018-10-23 11:22:16,481 GRB Test Packet Not Triggering
+2018-10-23 11:22:16,481 Ignored
+2018-10-23 11:22:17,167 GRB Test Packet Not Triggering
+2018-10-23 11:22:17,168 Ignored
+2018-10-23 11:22:17,957 GRB Test Packet Not Triggering
+2018-10-23 11:22:17,957 Ignored
+2018-10-23 11:22:18,633 GRB Test Packet Not Triggering
+2018-10-23 11:22:18,633 Ignored
+2018-10-23 11:22:19,234 GRB Test Packet Not Triggering
+2018-10-23 11:22:19,234 Ignored
+2018-10-23 11:22:19,860 GRB Test Packet Not Triggering
+2018-10-23 11:22:19,860 Ignored
+2018-10-23 11:22:20,576 GRB Test Packet Not Triggering
+2018-10-23 11:22:20,576 Ignored
+2018-10-23 11:22:21,283 GRB Test Packet Not Triggering
+2018-10-23 11:22:21,283 Ignored
+2018-10-23 11:22:21,872 GRB Test Packet Not Triggering
+2018-10-23 11:22:21,872 Ignored
+2018-10-23 11:22:22,612 GRB Test Packet Not Triggering
+2018-10-23 11:22:22,612 Ignored
+2018-10-23 11:22:23,233 GRB Test Packet Not Triggering
+2018-10-23 11:22:23,233 Ignored
+2018-10-23 11:22:23,952 GRB Test Packet Not Triggering
+2018-10-23 11:22:23,952 Ignored
+2018-10-23 11:22:24,644 GRB Test Packet Not Triggering
+2018-10-23 11:22:24,644 Ignored
+2018-10-23 11:22:25,383 GRB Test Packet Not Triggering
+2018-10-23 11:22:25,383 Ignored
+2018-10-23 11:22:26,090 GRB Test Packet Not Triggering
+2018-10-23 11:22:26,090 Ignored
+2018-10-23 11:22:26,723 GRB Test Packet Not Triggering
+2018-10-23 11:22:26,723 Ignored
+2018-10-23 11:22:27,438 GRB Test Packet Not Triggering
+2018-10-23 11:22:27,438 Ignored
+2018-10-23 11:22:28,114 GRB Test Packet Not Triggering
+2018-10-23 11:22:28,115 Ignored
+2018-10-23 11:22:28,838 GRB Test Packet Not Triggering
+2018-10-23 11:22:28,838 Ignored
+2018-10-23 11:22:29,522 GRB Test Packet Not Triggering
+2018-10-23 11:22:29,522 Ignored
+2018-10-23 11:22:30,165 GRB Test Packet Not Triggering
+2018-10-23 11:22:30,165 Ignored
+2018-10-23 11:22:30,811 GRB Test Packet Not Triggering
+2018-10-23 11:22:30,812 Ignored
+2018-10-23 11:22:31,460 GRB Test Packet Not Triggering
+2018-10-23 11:22:31,460 Ignored
+2018-10-23 11:22:32,149 GRB Test Packet Not Triggering
+2018-10-23 11:22:32,149 Ignored
+2018-10-23 11:22:32,891 GRB Test Packet Not Triggering
+2018-10-23 11:22:32,891 Ignored
+2018-10-23 11:22:33,554 GRB Test Packet Not Triggering
+2018-10-23 11:22:33,555 Ignored
+2018-10-23 11:22:34,171 GRB Test Packet Not Triggering
+2018-10-23 11:22:34,171 Ignored
+2018-10-23 11:22:34,873 GRB Test Packet Not Triggering
+2018-10-23 11:22:34,873 Ignored
+2018-10-23 11:22:35,576 GRB Test Packet Not Triggering
+2018-10-23 11:22:35,576 Ignored
+2018-10-23 11:22:36,330 GRB Test Packet Not Triggering
+2018-10-23 11:22:36,330 Ignored
+2018-10-23 11:22:37,067 GRB Test Packet Not Triggering
+2018-10-23 11:22:37,067 Ignored
+2018-10-23 11:22:37,689 GRB Test Packet Not Triggering
+2018-10-23 11:22:37,689 Ignored
+2018-10-23 11:22:38,372 GRB Test Packet Not Triggering
+2018-10-23 11:22:38,372 Ignored
+2018-10-23 11:22:39,059 GRB Test Packet Not Triggering
+2018-10-23 11:22:39,059 Ignored
+2018-10-23 11:22:39,812 GRB Test Packet Not Triggering
+2018-10-23 11:22:39,812 Ignored
+2018-10-23 11:22:40,511 GRB Test Packet Not Triggering
+2018-10-23 11:22:40,511 Ignored
+2018-10-23 11:22:41,156 GRB Test Packet Not Triggering
+2018-10-23 11:22:41,156 Ignored
+2018-10-23 11:22:41,910 GRB Test Packet Not Triggering
+2018-10-23 11:22:41,910 Ignored
+2018-10-23 11:22:42,631 GRB Test Packet Not Triggering
+2018-10-23 11:22:42,631 Ignored
+2018-10-23 11:22:43,373 GRB Test Packet Not Triggering
+2018-10-23 11:22:43,373 Ignored
+2018-10-23 11:22:43,988 GRB Test Packet Not Triggering
+2018-10-23 11:22:43,988 Ignored
+2018-10-23 11:22:44,724 GRB Test Packet Not Triggering
+2018-10-23 11:22:44,724 Ignored
+2018-10-23 11:22:46,215 GRB Test Packet Not Triggering
+2018-10-23 11:22:46,215 Ignored
+2018-10-23 11:22:46,866 GRB Test Packet Not Triggering
+2018-10-23 11:22:46,866 Ignored
+2018-10-23 11:22:47,514 GRB Test Packet Not Triggering
+2018-10-23 11:22:47,514 Ignored
+2018-10-23 11:22:48,135 GRB Test Packet Not Triggering
+2018-10-23 11:22:48,136 Ignored
+2018-10-23 11:22:48,806 GRB Test Packet Not Triggering
+2018-10-23 11:22:48,806 Ignored
+2018-10-23 11:22:49,538 GRB Test Packet Not Triggering
+2018-10-23 11:22:49,538 Ignored
+2018-10-23 11:22:50,214 GRB Test Packet Not Triggering
+2018-10-23 11:22:50,215 Ignored
+2018-10-23 11:22:50,903 GRB Test Packet Not Triggering
+2018-10-23 11:22:50,903 Ignored
+2018-10-23 11:22:51,659 GRB Test Packet Not Triggering
+2018-10-23 11:22:51,659 Ignored
+2018-10-23 11:22:53,056 GRB Test Packet Not Triggering
+2018-10-23 11:22:53,056 Ignored
+2018-10-23 11:22:53,643 GRB Test Packet Not Triggering
+2018-10-23 11:22:53,643 Ignored
+2018-10-23 11:22:54,281 GRB Test Packet Not Triggering
+2018-10-23 11:22:54,281 Ignored
+2018-10-23 11:22:54,991 GRB Test Packet Not Triggering
+2018-10-23 11:22:54,991 Ignored
+2018-10-23 11:22:55,645 GRB Test Packet Not Triggering
+2018-10-23 11:22:55,646 Ignored
+2018-10-23 11:22:56,304 GRB Test Packet Not Triggering
+2018-10-23 11:22:56,304 Ignored
+2018-10-23 11:22:56,959 GRB Test Packet Not Triggering
+2018-10-23 11:22:56,959 Ignored
+2018-10-23 11:22:57,538 GRB Test Packet Not Triggering
+2018-10-23 11:22:57,538 Ignored
+2018-10-23 11:22:58,232 GRB Test Packet Not Triggering
+2018-10-23 11:22:58,232 Ignored
+2018-10-23 11:22:58,863 GRB Test Packet Not Triggering
+2018-10-23 11:22:58,863 Ignored
+2018-10-23 11:22:59,536 GRB Test Packet Not Triggering
+2018-10-23 11:22:59,536 Ignored
+2018-10-23 11:23:00,161 GRB Test Packet Not Triggering
+2018-10-23 11:23:00,162 Ignored
+2018-10-23 11:23:00,844 GRB Test Packet Not Triggering
+2018-10-23 11:23:00,844 Ignored
+2018-10-23 11:23:01,555 GRB Test Packet Not Triggering
+2018-10-23 11:23:01,555 Ignored
+2018-10-23 11:23:02,182 GRB Test Packet Not Triggering
+2018-10-23 11:23:02,182 Ignored
+2018-10-23 11:23:02,850 GRB Test Packet Not Triggering
+2018-10-23 11:23:02,850 Ignored
+2018-10-23 11:23:03,551 GRB Test Packet Not Triggering
+2018-10-23 11:23:03,551 Ignored
+2018-10-23 11:23:04,333 GRB Test Packet Not Triggering
+2018-10-23 11:23:04,333 Ignored
+2018-10-23 11:23:05,021 GRB Test Packet Not Triggering
+2018-10-23 11:23:05,022 Ignored
+2018-10-23 11:23:05,736 GRB Test Packet Not Triggering
+2018-10-23 11:23:05,736 Ignored
+2018-10-23 11:23:06,481 GRB Test Packet Not Triggering
+2018-10-23 11:23:06,481 Ignored
+2018-10-23 11:23:07,078 GRB Test Packet Not Triggering
+2018-10-23 11:23:07,078 Ignored
+2018-10-23 11:23:08,427 GRB Test Packet Not Triggering
+2018-10-23 11:23:08,427 Ignored
+2018-10-23 11:23:09,049 GRB Test Packet Not Triggering
+2018-10-23 11:23:09,050 Ignored
+2018-10-23 11:23:09,729 GRB Test Packet Not Triggering
+2018-10-23 11:23:09,729 Ignored
+2018-10-23 11:23:10,359 GRB Test Packet Not Triggering
+2018-10-23 11:23:10,359 Ignored
+2018-10-23 11:23:10,927 GRB Test Packet Not Triggering
+2018-10-23 11:23:10,927 Ignored
+2018-10-23 11:23:11,486 GRB Test Packet Not Triggering
+2018-10-23 11:23:11,486 Ignored
+2018-10-23 11:23:12,141 GRB Test Packet Not Triggering
+2018-10-23 11:23:12,141 Ignored
+2018-10-23 11:23:12,847 GRB Test Packet Not Triggering
+2018-10-23 11:23:12,847 Ignored
+2018-10-23 11:23:13,487 GRB Test Packet Not Triggering
+2018-10-23 11:23:13,487 Ignored
+2018-10-23 11:23:16,030 GRB Test Packet Not Triggering
+2018-10-23 11:23:16,030 Ignored
+2018-10-23 11:23:16,696 GRB Test Packet Not Triggering
+2018-10-23 11:23:16,697 Ignored
+2018-10-23 11:23:17,414 GRB Test Packet Not Triggering
+2018-10-23 11:23:17,414 Ignored
+2018-10-23 11:23:18,142 GRB Test Packet Not Triggering
+2018-10-23 11:23:18,142 Ignored
+2018-10-23 11:23:18,814 GRB Test Packet Not Triggering
+2018-10-23 11:23:18,814 Ignored
+2018-10-23 11:23:19,569 GRB Test Packet Not Triggering
+2018-10-23 11:23:19,569 Ignored
+2018-10-23 11:23:20,228 GRB Test Packet Not Triggering
+2018-10-23 11:23:20,229 Ignored
+2018-10-23 11:23:20,939 GRB Test Packet Not Triggering
+2018-10-23 11:23:20,939 Ignored
+2018-10-23 11:23:21,542 GRB Test Packet Not Triggering
+2018-10-23 11:23:21,542 Ignored
+2018-10-23 11:23:22,244 GRB Test Packet Not Triggering
+2018-10-23 11:23:22,244 Ignored
+2018-10-23 11:23:22,980 GRB Test Packet Not Triggering
+2018-10-23 11:23:22,980 Ignored
+2018-10-23 11:23:23,590 GRB Test Packet Not Triggering
+2018-10-23 11:23:23,590 Ignored
+2018-10-23 11:23:24,225 GRB Test Packet Not Triggering
+2018-10-23 11:23:24,226 Ignored
+2018-10-23 11:23:24,983 GRB Test Packet Not Triggering
+2018-10-23 11:23:24,983 Ignored
+2018-10-23 11:23:25,605 GRB Test Packet Not Triggering
+2018-10-23 11:23:25,605 Ignored
+2018-10-23 11:23:26,258 GRB Test Packet Not Triggering
+2018-10-23 11:23:26,258 Ignored
+2018-10-23 11:23:26,859 GRB Test Packet Not Triggering
+2018-10-23 11:23:26,859 Ignored
+2018-10-23 11:23:27,551 GRB Test Packet Not Triggering
+2018-10-23 11:23:27,552 Ignored
+2018-10-23 11:23:28,227 GRB Test Packet Not Triggering
+2018-10-23 11:23:28,227 Ignored
+2018-10-23 11:23:28,872 GRB Test Packet Not Triggering
+2018-10-23 11:23:28,872 Ignored
+2018-10-23 11:23:30,153 GRB Test Packet Not Triggering
+2018-10-23 11:23:30,153 Ignored
+2018-10-23 11:23:30,813 GRB Test Packet Not Triggering
+2018-10-23 11:23:30,814 Ignored
+2018-10-23 11:23:31,423 GRB Test Packet Not Triggering
+2018-10-23 11:23:31,423 Ignored
+2018-10-23 11:23:32,121 GRB Test Packet Not Triggering
+2018-10-23 11:23:32,122 Ignored
+2018-10-23 11:23:32,746 GRB Test Packet Not Triggering
+2018-10-23 11:23:32,746 Ignored
+2018-10-23 11:23:33,437 GRB Test Packet Not Triggering
+2018-10-23 11:23:33,438 Ignored
+2018-10-23 11:23:34,128 GRB Test Packet Not Triggering
+2018-10-23 11:23:34,128 Ignored
+2018-10-23 11:23:34,739 GRB Test Packet Not Triggering
+2018-10-23 11:23:34,739 Ignored
+2018-10-23 11:23:35,467 GRB Test Packet Not Triggering
+2018-10-23 11:23:35,468 Ignored
+2018-10-23 11:23:36,125 GRB Test Packet Not Triggering
+2018-10-23 11:23:36,125 Ignored
+2018-10-23 11:23:36,782 GRB Test Packet Not Triggering
+2018-10-23 11:23:36,782 Ignored
+2018-10-23 11:23:37,425 GRB Test Packet Not Triggering
+2018-10-23 11:23:37,425 Ignored
+2018-10-23 11:23:38,711 GRB Test Packet Not Triggering
+2018-10-23 11:23:38,711 Ignored
+2018-10-23 11:23:39,367 GRB Test Packet Not Triggering
+2018-10-23 11:23:39,367 Ignored
+2018-10-23 11:23:40,042 GRB Test Packet Not Triggering
+2018-10-23 11:23:40,043 Ignored
+2018-10-23 11:23:40,680 GRB Test Packet Not Triggering
+2018-10-23 11:23:40,680 Ignored
+2018-10-23 11:23:41,252 GRB Test Packet Not Triggering
+2018-10-23 11:23:41,253 Ignored
+2018-10-23 11:23:41,950 GRB Test Packet Not Triggering
+2018-10-23 11:23:41,951 Ignored
+2018-10-23 11:23:42,638 GRB Test Packet Not Triggering
+2018-10-23 11:23:42,638 Ignored
+2018-10-23 11:23:43,227 GRB Test Packet Not Triggering
+2018-10-23 11:23:43,227 Ignored
+2018-10-23 11:23:43,786 GRB Test Packet Not Triggering
+2018-10-23 11:23:43,787 Ignored
+2018-10-23 11:23:44,439 GRB Test Packet Not Triggering
+2018-10-23 11:23:44,439 Ignored
+2018-10-23 11:23:45,111 GRB Test Packet Not Triggering
+2018-10-23 11:23:45,111 Ignored
+2018-10-23 11:23:45,761 GRB Test Packet Not Triggering
+2018-10-23 11:23:45,761 Ignored
+2018-10-23 11:23:47,065 GRB Test Packet Not Triggering
+2018-10-23 11:23:47,066 Ignored
+2018-10-23 11:23:47,642 GRB Test Packet Not Triggering
+2018-10-23 11:23:47,643 Ignored
+2018-10-23 11:23:48,273 GRB Test Packet Not Triggering
+2018-10-23 11:23:48,273 Ignored
+2018-10-23 11:23:48,905 GRB Test Packet Not Triggering
+2018-10-23 11:23:48,905 Ignored
+2018-10-23 11:23:52,017 GRB Test Packet Not Triggering
+2018-10-23 11:23:52,018 Ignored
+2018-10-23 11:23:52,743 GRB Test Packet Not Triggering
+2018-10-23 11:23:52,743 Ignored
+2018-10-23 11:23:53,445 GRB Test Packet Not Triggering
+2018-10-23 11:23:53,445 Ignored
+2018-10-23 11:23:54,160 GRB Test Packet Not Triggering
+2018-10-23 11:23:54,160 Ignored
+2018-10-23 11:23:54,901 GRB Test Packet Not Triggering
+2018-10-23 11:23:54,901 Ignored
+2018-10-23 11:23:55,595 GRB Test Packet Not Triggering
+2018-10-23 11:23:55,595 Ignored
+2018-10-23 11:23:56,286 GRB Test Packet Not Triggering
+2018-10-23 11:23:56,286 Ignored
+2018-10-23 11:23:56,894 GRB Test Packet Not Triggering
+2018-10-23 11:23:56,894 Ignored
+2018-10-23 11:23:57,579 GRB Test Packet Not Triggering
+2018-10-23 11:23:57,579 Ignored
+2018-10-23 11:23:58,187 GRB Test Packet Not Triggering
+2018-10-23 11:23:58,187 Ignored
+2018-10-23 11:23:58,797 GRB Test Packet Not Triggering
+2018-10-23 11:23:58,797 Ignored
+2018-10-23 11:23:59,499 GRB Test Packet Not Triggering
+2018-10-23 11:23:59,499 Ignored
+2018-10-23 11:24:00,926 GRB Test Packet Not Triggering
+2018-10-23 11:24:00,926 Ignored
+2018-10-23 11:24:01,559 GRB Test Packet Not Triggering
+2018-10-23 11:24:01,559 Ignored
+2018-10-23 11:24:02,248 GRB Test Packet Not Triggering
+2018-10-23 11:24:02,248 Ignored
+2018-10-23 11:24:02,915 GRB Test Packet Not Triggering
+2018-10-23 11:24:02,915 Ignored
+2018-10-23 11:24:03,646 GRB Test Packet Not Triggering
+2018-10-23 11:24:03,646 Ignored
+2018-10-23 11:24:04,408 GRB Test Packet Not Triggering
+2018-10-23 11:24:04,408 Ignored
+2018-10-23 11:24:05,111 GRB Test Packet Not Triggering
+2018-10-23 11:24:05,111 Ignored
+2018-10-23 11:24:05,858 GRB Test Packet Not Triggering
+2018-10-23 11:24:05,858 Ignored
+2018-10-23 11:24:06,521 GRB Test Packet Not Triggering
+2018-10-23 11:24:06,521 Ignored
+2018-10-23 11:24:07,205 GRB Test Packet Not Triggering
+2018-10-23 11:24:07,205 Ignored
+2018-10-23 11:24:07,821 GRB Test Packet Not Triggering
+2018-10-23 11:24:07,822 Ignored
+2018-10-23 11:24:08,456 GRB Test Packet Not Triggering
+2018-10-23 11:24:08,456 Ignored
+2018-10-23 11:24:09,095 GRB Test Packet Not Triggering
+2018-10-23 11:24:09,095 Ignored
+2018-10-23 11:24:09,804 GRB Test Packet Not Triggering
+2018-10-23 11:24:09,804 Ignored
+2018-10-23 11:24:10,491 GRB Test Packet Not Triggering
+2018-10-23 11:24:10,491 Ignored
+2018-10-23 11:24:11,098 GRB Test Packet Not Triggering
+2018-10-23 11:24:11,099 Ignored
+2018-10-23 11:24:11,787 GRB Test Packet Not Triggering
+2018-10-23 11:24:11,787 Ignored
+2018-10-23 11:24:12,375 GRB Test Packet Not Triggering
+2018-10-23 11:24:12,375 Ignored
+2018-10-23 11:24:12,989 GRB Test Packet Not Triggering
+2018-10-23 11:24:12,989 Ignored
+2018-10-23 11:24:14,299 GRB Test Packet Not Triggering
+2018-10-23 11:24:14,299 Ignored
+2018-10-23 11:24:15,019 GRB Test Packet Not Triggering
+2018-10-23 11:24:15,019 Ignored
+2018-10-23 11:24:15,719 GRB Test Packet Not Triggering
+2018-10-23 11:24:15,719 Ignored
+2018-10-23 11:24:17,298 GRB Test Packet Not Triggering
+2018-10-23 11:24:17,298 Ignored
+2018-10-23 11:24:18,074 GRB Test Packet Not Triggering
+2018-10-23 11:24:18,075 Ignored
+2018-10-23 11:24:18,712 GRB Test Packet Not Triggering
+2018-10-23 11:24:18,713 Ignored
+2018-10-23 11:24:19,454 GRB Test Packet Not Triggering
+2018-10-23 11:24:19,454 Ignored
+2018-10-23 11:24:20,140 GRB Test Packet Not Triggering
+2018-10-23 11:24:20,140 Ignored
+2018-10-23 11:24:21,437 GRB Test Packet Not Triggering
+2018-10-23 11:24:21,437 Ignored
+2018-10-23 11:24:22,078 GRB Test Packet Not Triggering
+2018-10-23 11:24:22,078 Ignored
+2018-10-23 11:24:22,796 GRB Test Packet Not Triggering
+2018-10-23 11:24:22,797 Ignored
+2018-10-23 11:24:23,495 GRB Test Packet Not Triggering
+2018-10-23 11:24:23,495 Ignored
+2018-10-23 11:24:24,162 GRB Test Packet Not Triggering
+2018-10-23 11:24:24,163 Ignored
+2018-10-23 11:24:24,834 GRB Test Packet Not Triggering
+2018-10-23 11:24:24,835 Ignored
+2018-10-23 11:24:25,466 GRB Test Packet Not Triggering
+2018-10-23 11:24:25,466 Ignored
+2018-10-23 11:24:26,131 GRB Test Packet Not Triggering
+2018-10-23 11:24:26,131 Ignored
+2018-10-23 11:24:26,851 GRB Test Packet Not Triggering
+2018-10-23 11:24:26,852 Ignored
+2018-10-23 11:24:27,514 GRB Test Packet Not Triggering
+2018-10-23 11:24:27,514 Ignored
+2018-10-23 11:24:28,132 GRB Test Packet Not Triggering
+2018-10-23 11:24:28,132 Ignored
+2018-10-23 11:24:28,785 GRB Test Packet Not Triggering
+2018-10-23 11:24:28,785 Ignored
+2018-10-23 11:24:29,417 GRB Test Packet Not Triggering
+2018-10-23 11:24:29,417 Ignored
+2018-10-23 11:24:36,044 GRB Test Packet Not Triggering
+2018-10-23 11:24:36,044 Ignored
+2018-10-23 11:24:41,457 GRB Test Packet Not Triggering
+2018-10-23 11:24:41,458 Ignored
+2018-10-23 11:24:42,053 GRB Test Packet Not Triggering
+2018-10-23 11:24:42,053 Ignored
+2018-10-23 11:24:43,351 GRB Test Packet Not Triggering
+2018-10-23 11:24:43,351 Ignored
+2018-10-23 11:24:47,226 GRB Test Packet Not Triggering
+2018-10-23 11:24:47,227 Ignored
+2018-10-23 11:24:47,703 GRB Test Packet Not Triggering
+2018-10-23 11:24:47,704 Ignored
+2018-10-23 11:24:48,155 GRB Test Packet Not Triggering
+2018-10-23 11:24:48,155 Ignored
+2018-10-23 11:24:48,760 GRB Test Packet Not Triggering
+2018-10-23 11:24:48,760 Ignored
+2018-10-23 11:24:49,457 GRB Test Packet Not Triggering
+2018-10-23 11:24:49,457 Ignored
+2018-10-23 11:24:50,087 GRB Test Packet Not Triggering
+2018-10-23 11:24:50,087 Ignored
+2018-10-23 11:24:50,784 GRB Test Packet Not Triggering
+2018-10-23 11:24:50,784 Ignored
+2018-10-23 11:24:51,427 GRB Test Packet Not Triggering
+2018-10-23 11:24:51,427 Ignored
+2018-10-23 11:24:52,045 GRB Test Packet Not Triggering
+2018-10-23 11:24:52,046 Ignored
+2018-10-23 11:24:52,710 GRB Test Packet Not Triggering
+2018-10-23 11:24:52,710 Ignored
+2018-10-23 11:24:53,422 GRB Test Packet Not Triggering
+2018-10-23 11:24:53,422 Ignored
+2018-10-23 11:24:54,045 GRB Test Packet Not Triggering
+2018-10-23 11:24:54,045 Ignored
+2018-10-23 11:24:54,665 GRB Test Packet Not Triggering
+2018-10-23 11:24:54,665 Ignored
+2018-10-23 11:24:55,361 GRB Test Packet Not Triggering
+2018-10-23 11:24:55,362 Ignored
+2018-10-23 11:24:55,987 GRB Test Packet Not Triggering
+2018-10-23 11:24:55,987 Ignored
+2018-10-23 11:24:56,555 GRB Test Packet Not Triggering
+2018-10-23 11:24:56,555 Ignored
+2018-10-23 11:24:58,022 GRB Test Packet Not Triggering
+2018-10-23 11:24:58,022 Ignored
+2018-10-23 11:24:58,718 GRB Test Packet Not Triggering
+2018-10-23 11:24:58,718 Ignored
+2018-10-23 11:24:59,473 GRB Test Packet Not Triggering
+2018-10-23 11:24:59,473 Ignored
+2018-10-23 11:25:00,158 GRB Test Packet Not Triggering
+2018-10-23 11:25:00,159 Ignored
+2018-10-23 11:25:00,820 GRB Test Packet Not Triggering
+2018-10-23 11:25:00,820 Ignored
+2018-10-23 11:25:01,498 GRB Test Packet Not Triggering
+2018-10-23 11:25:01,498 Ignored
+2018-10-23 11:25:02,112 GRB Test Packet Not Triggering
+2018-10-23 11:25:02,112 Ignored
+2018-10-23 11:25:02,782 GRB Test Packet Not Triggering
+2018-10-23 11:25:02,783 Ignored
+2018-10-23 11:25:03,540 GRB Test Packet Not Triggering
+2018-10-23 11:25:03,540 Ignored
+2018-10-23 11:25:04,242 GRB Test Packet Not Triggering
+2018-10-23 11:25:04,242 Ignored
+2018-10-23 11:25:05,709 GRB Test Packet Not Triggering
+2018-10-23 11:25:05,709 Ignored
+2018-10-23 11:25:06,377 GRB Test Packet Not Triggering
+2018-10-23 11:25:06,378 Ignored
+2018-10-23 11:25:07,129 GRB Test Packet Not Triggering
+2018-10-23 11:25:07,129 Ignored
+2018-10-23 11:25:07,858 GRB Test Packet Not Triggering
+2018-10-23 11:25:07,858 Ignored
+2018-10-23 11:25:08,545 GRB Test Packet Not Triggering
+2018-10-23 11:25:08,545 Ignored
+2018-10-23 11:25:09,224 GRB Test Packet Not Triggering
+2018-10-23 11:25:09,224 Ignored
+2018-10-23 11:25:09,877 GRB Test Packet Not Triggering
+2018-10-23 11:25:09,877 Ignored
+2018-10-23 11:25:10,627 GRB Test Packet Not Triggering
+2018-10-23 11:25:10,627 Ignored
+2018-10-23 11:25:11,309 GRB Test Packet Not Triggering
+2018-10-23 11:25:11,309 Ignored
+2018-10-23 11:25:11,908 GRB Test Packet Not Triggering
+2018-10-23 11:25:11,908 Ignored
+2018-10-23 11:25:12,550 GRB Test Packet Not Triggering
+2018-10-23 11:25:12,551 Ignored
+2018-10-23 11:25:14,050 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:25:14,380 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:25:14,410 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:25:14,601 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 11:25:14,604 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:25:14,900 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:25:14,904 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:25:15,132 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:25:15,197 Creating schedule file
+2018-10-23 11:25:15,197 Schedule file created
+2018-10-23 11:25:15,319 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 11:25:15,319 Coords are Position2D(ra=249.5356, dec=-10.2151, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 11:25:15,981 GRB Test Packet Not Triggering
+2018-10-23 11:25:15,981 Ignored
+2018-10-23 11:25:22,646 GRB Test Packet Not Triggering
+2018-10-23 11:25:22,646 Ignored
+2018-10-23 11:25:23,258 GRB Test Packet Not Triggering
+2018-10-23 11:25:23,258 Ignored
+2018-10-23 11:25:23,965 GRB Test Packet Not Triggering
+2018-10-23 11:25:23,966 Ignored
+2018-10-23 11:25:24,541 GRB Test Packet Not Triggering
+2018-10-23 11:25:24,541 Ignored
+2018-10-23 11:25:25,276 GRB Test Packet Not Triggering
+2018-10-23 11:25:25,276 Ignored
+2018-10-23 11:25:25,942 GRB Test Packet Not Triggering
+2018-10-23 11:25:25,942 Ignored
+2018-10-23 11:25:26,509 GRB Test Packet Not Triggering
+2018-10-23 11:25:26,509 Ignored
+2018-10-23 11:25:27,075 GRB Test Packet Not Triggering
+2018-10-23 11:25:27,075 Ignored
+2018-10-23 11:25:27,739 GRB Test Packet Not Triggering
+2018-10-23 11:25:27,739 Ignored
+2018-10-23 11:25:28,292 GRB Test Packet Not Triggering
+2018-10-23 11:25:28,292 Ignored
+2018-10-23 11:25:28,795 GRB Test Packet Not Triggering
+2018-10-23 11:25:28,795 Ignored
+2018-10-23 11:25:29,370 GRB Test Packet Not Triggering
+2018-10-23 11:25:29,371 Ignored
+2018-10-23 11:25:29,886 GRB Test Packet Not Triggering
+2018-10-23 11:25:29,886 Ignored
+2018-10-23 11:25:30,447 GRB Test Packet Not Triggering
+2018-10-23 11:25:30,447 Ignored
+2018-10-23 11:25:31,030 GRB Test Packet Not Triggering
+2018-10-23 11:25:31,031 Ignored
+2018-10-23 11:25:31,580 GRB Test Packet Not Triggering
+2018-10-23 11:25:31,580 Ignored
+2018-10-23 11:25:34,676 GRB Test Packet Not Triggering
+2018-10-23 11:25:34,677 Ignored
+2018-10-23 11:25:35,254 GRB Test Packet Not Triggering
+2018-10-23 11:25:35,254 Ignored
+2018-10-23 11:25:38,416 GRB Test Packet Not Triggering
+2018-10-23 11:25:38,416 Ignored
+2018-10-23 11:25:39,047 GRB Test Packet Not Triggering
+2018-10-23 11:25:39,047 Ignored
+2018-10-23 11:25:39,667 GRB Test Packet Not Triggering
+2018-10-23 11:25:39,667 Ignored
+2018-10-23 11:25:40,314 GRB Test Packet Not Triggering
+2018-10-23 11:25:40,314 Ignored
+2018-10-23 11:25:40,923 GRB Test Packet Not Triggering
+2018-10-23 11:25:40,923 Ignored
+2018-10-23 11:25:41,600 GRB Test Packet Not Triggering
+2018-10-23 11:25:41,601 Ignored
+2018-10-23 11:25:42,267 GRB Test Packet Not Triggering
+2018-10-23 11:25:42,267 Ignored
+2018-10-23 11:25:42,897 GRB Test Packet Not Triggering
+2018-10-23 11:25:42,898 Ignored
+2018-10-23 11:25:43,462 GRB Test Packet Not Triggering
+2018-10-23 11:25:43,462 Ignored
+2018-10-23 11:25:44,071 GRB Test Packet Not Triggering
+2018-10-23 11:25:44,071 Ignored
+2018-10-23 11:25:44,552 GRB Test Packet Not Triggering
+2018-10-23 11:25:44,552 Ignored
+2018-10-23 11:25:45,097 GRB Test Packet Not Triggering
+2018-10-23 11:25:45,098 Ignored
+2018-10-23 11:25:45,779 GRB Test Packet Not Triggering
+2018-10-23 11:25:45,779 Ignored
+2018-10-23 11:25:46,412 GRB Test Packet Not Triggering
+2018-10-23 11:25:46,412 Ignored
+2018-10-23 11:25:47,052 GRB Test Packet Not Triggering
+2018-10-23 11:25:47,052 Ignored
+2018-10-23 11:25:47,743 GRB Test Packet Not Triggering
+2018-10-23 11:25:47,744 Ignored
+2018-10-23 11:25:48,332 GRB Test Packet Not Triggering
+2018-10-23 11:25:48,333 Ignored
+2018-10-23 11:25:49,020 GRB Test Packet Not Triggering
+2018-10-23 11:25:49,020 Ignored
+2018-10-23 11:25:49,718 GRB Test Packet Not Triggering
+2018-10-23 11:25:49,718 Ignored
+2018-10-23 11:25:50,453 GRB Test Packet Not Triggering
+2018-10-23 11:25:50,454 Ignored
+2018-10-23 11:25:51,128 GRB Test Packet Not Triggering
+2018-10-23 11:25:51,128 Ignored
+2018-10-23 11:25:51,838 GRB Test Packet Not Triggering
+2018-10-23 11:25:51,838 Ignored
+2018-10-23 11:25:52,552 GRB Test Packet Not Triggering
+2018-10-23 11:25:52,552 Ignored
+2018-10-23 11:25:53,353 GRB Test Packet Not Triggering
+2018-10-23 11:25:53,354 Ignored
+2018-10-23 11:25:53,990 GRB Test Packet Not Triggering
+2018-10-23 11:25:53,990 Ignored
+2018-10-23 11:25:54,650 GRB Test Packet Not Triggering
+2018-10-23 11:25:54,650 Ignored
+2018-10-23 11:25:55,208 GRB Test Packet Not Triggering
+2018-10-23 11:25:55,208 Ignored
+2018-10-23 11:25:55,830 GRB Test Packet Not Triggering
+2018-10-23 11:25:55,830 Ignored
+2018-10-23 11:25:56,452 GRB Test Packet Not Triggering
+2018-10-23 11:25:56,452 Ignored
+2018-10-23 11:25:57,123 GRB Test Packet Not Triggering
+2018-10-23 11:25:57,123 Ignored
+2018-10-23 11:25:57,827 GRB Test Packet Not Triggering
+2018-10-23 11:25:57,827 Ignored
+2018-10-23 11:25:58,542 GRB Test Packet Not Triggering
+2018-10-23 11:25:58,543 Ignored
+2018-10-23 11:25:59,146 GRB Test Packet Not Triggering
+2018-10-23 11:25:59,146 Ignored
+2018-10-23 11:25:59,804 GRB Test Packet Not Triggering
+2018-10-23 11:25:59,804 Ignored
+2018-10-23 11:26:00,463 GRB Test Packet Not Triggering
+2018-10-23 11:26:00,463 Ignored
+2018-10-23 11:26:01,100 GRB Test Packet Not Triggering
+2018-10-23 11:26:01,101 Ignored
+2018-10-23 11:26:01,762 GRB Test Packet Not Triggering
+2018-10-23 11:26:01,762 Ignored
+2018-10-23 11:26:02,471 GRB Test Packet Not Triggering
+2018-10-23 11:26:02,471 Ignored
+2018-10-23 11:26:03,068 GRB Test Packet Not Triggering
+2018-10-23 11:26:03,068 Ignored
+2018-10-23 11:26:03,746 GRB Test Packet Not Triggering
+2018-10-23 11:26:03,746 Ignored
+2018-10-23 11:26:04,466 GRB Test Packet Not Triggering
+2018-10-23 11:26:04,466 Ignored
+2018-10-23 11:26:05,291 GRB Test Packet Not Triggering
+2018-10-23 11:26:05,291 Ignored
+2018-10-23 11:26:05,972 GRB Test Packet Not Triggering
+2018-10-23 11:26:05,972 Ignored
+2018-10-23 11:26:06,650 GRB Test Packet Not Triggering
+2018-10-23 11:26:06,650 Ignored
+2018-10-23 11:26:07,296 GRB Test Packet Not Triggering
+2018-10-23 11:26:07,296 Ignored
+2018-10-23 11:26:07,879 GRB Test Packet Not Triggering
+2018-10-23 11:26:07,879 Ignored
+2018-10-23 11:26:08,585 GRB Test Packet Not Triggering
+2018-10-23 11:26:08,585 Ignored
+2018-10-23 11:26:09,266 GRB Test Packet Not Triggering
+2018-10-23 11:26:09,266 Ignored
+2018-10-23 11:26:09,892 GRB Test Packet Not Triggering
+2018-10-23 11:26:09,893 Ignored
+2018-10-23 11:26:10,537 GRB Test Packet Not Triggering
+2018-10-23 11:26:10,537 Ignored
+2018-10-23 11:26:11,176 GRB Test Packet Not Triggering
+2018-10-23 11:26:11,176 Ignored
+2018-10-23 11:26:17,189 GRB Test Packet Not Triggering
+2018-10-23 11:26:17,189 Ignored
+2018-10-23 11:26:17,857 GRB Test Packet Not Triggering
+2018-10-23 11:26:17,857 Ignored
+2018-10-23 11:26:18,474 GRB Test Packet Not Triggering
+2018-10-23 11:26:18,475 Ignored
+2018-10-23 11:26:19,126 GRB Test Packet Not Triggering
+2018-10-23 11:26:19,126 Ignored
+2018-10-23 11:26:19,848 GRB Test Packet Not Triggering
+2018-10-23 11:26:19,848 Ignored
+2018-10-23 11:26:20,561 GRB Test Packet Not Triggering
+2018-10-23 11:26:20,561 Ignored
+2018-10-23 11:26:21,163 GRB Test Packet Not Triggering
+2018-10-23 11:26:21,163 Ignored
+2018-10-23 11:26:21,794 GRB Test Packet Not Triggering
+2018-10-23 11:26:21,794 Ignored
+2018-10-23 11:26:22,471 GRB Test Packet Not Triggering
+2018-10-23 11:26:22,471 Ignored
+2018-10-23 11:26:23,169 GRB Test Packet Not Triggering
+2018-10-23 11:26:23,169 Ignored
+2018-10-23 11:26:24,483 GRB Test Packet Not Triggering
+2018-10-23 11:26:24,483 Ignored
+2018-10-23 11:26:25,202 GRB Test Packet Not Triggering
+2018-10-23 11:26:25,202 Ignored
+2018-10-23 11:26:25,783 GRB Test Packet Not Triggering
+2018-10-23 11:26:25,783 Ignored
+2018-10-23 11:26:26,417 GRB Test Packet Not Triggering
+2018-10-23 11:26:26,418 Ignored
+2018-10-23 11:26:26,844 GRB Test Packet Not Triggering
+2018-10-23 11:26:26,844 Ignored
+2018-10-23 11:26:27,439 GRB Test Packet Not Triggering
+2018-10-23 11:26:27,439 Ignored
+2018-10-23 11:26:28,167 GRB Test Packet Not Triggering
+2018-10-23 11:26:28,167 Ignored
+2018-10-23 11:26:28,792 GRB Test Packet Not Triggering
+2018-10-23 11:26:28,792 Ignored
+2018-10-23 11:26:29,399 GRB Test Packet Not Triggering
+2018-10-23 11:26:29,399 Ignored
+2018-10-23 11:26:30,012 GRB Test Packet Not Triggering
+2018-10-23 11:26:30,012 Ignored
+2018-10-23 11:26:30,566 GRB Test Packet Not Triggering
+2018-10-23 11:26:30,566 Ignored
+2018-10-23 11:26:31,091 GRB Test Packet Not Triggering
+2018-10-23 11:26:31,091 Ignored
+2018-10-23 11:26:31,577 GRB Test Packet Not Triggering
+2018-10-23 11:26:31,577 Ignored
+2018-10-23 11:26:32,204 GRB Test Packet Not Triggering
+2018-10-23 11:26:32,204 Ignored
+2018-10-23 11:26:32,766 GRB Test Packet Not Triggering
+2018-10-23 11:26:32,766 Ignored
+2018-10-23 11:26:33,347 GRB Test Packet Not Triggering
+2018-10-23 11:26:33,347 Ignored
+2018-10-23 11:26:33,830 GRB Test Packet Not Triggering
+2018-10-23 11:26:33,830 Ignored
+2018-10-23 11:26:34,378 GRB Test Packet Not Triggering
+2018-10-23 11:26:34,378 Ignored
+2018-10-23 11:26:34,972 GRB Test Packet Not Triggering
+2018-10-23 11:26:34,972 Ignored
+2018-10-23 11:26:35,601 GRB Test Packet Not Triggering
+2018-10-23 11:26:35,601 Ignored
+2018-10-23 11:26:36,178 GRB Test Packet Not Triggering
+2018-10-23 11:26:36,178 Ignored
+2018-10-23 11:26:36,805 GRB Test Packet Not Triggering
+2018-10-23 11:26:36,805 Ignored
+2018-10-23 11:26:37,396 GRB Test Packet Not Triggering
+2018-10-23 11:26:37,396 Ignored
+2018-10-23 11:26:38,051 GRB Test Packet Not Triggering
+2018-10-23 11:26:38,052 Ignored
+2018-10-23 11:26:38,737 GRB Test Packet Not Triggering
+2018-10-23 11:26:38,737 Ignored
+2018-10-23 11:26:39,412 GRB Test Packet Not Triggering
+2018-10-23 11:26:39,412 Ignored
+2018-10-23 11:26:40,123 GRB Test Packet Not Triggering
+2018-10-23 11:26:40,123 Ignored
+2018-10-23 11:26:40,708 GRB Test Packet Not Triggering
+2018-10-23 11:26:40,708 Ignored
+2018-10-23 11:26:41,339 GRB Test Packet Not Triggering
+2018-10-23 11:26:41,339 Ignored
+2018-10-23 11:26:42,158 GRB Test Packet Not Triggering
+2018-10-23 11:26:42,158 Ignored
+2018-10-23 11:26:42,929 GRB Test Packet Not Triggering
+2018-10-23 11:26:42,929 Ignored
+2018-10-23 11:26:43,621 GRB Test Packet Not Triggering
+2018-10-23 11:26:43,622 Ignored
+2018-10-23 11:26:45,114 GRB Test Packet Not Triggering
+2018-10-23 11:26:45,114 Ignored
+2018-10-23 11:26:45,798 GRB Test Packet Not Triggering
+2018-10-23 11:26:45,798 Ignored
+2018-10-23 11:26:51,046 GRB Test Packet Not Triggering
+2018-10-23 11:26:51,046 Ignored
+2018-10-23 11:26:51,750 GRB Test Packet Not Triggering
+2018-10-23 11:26:51,750 Ignored
+2018-10-23 11:26:52,447 GRB Test Packet Not Triggering
+2018-10-23 11:26:52,447 Ignored
+2018-10-23 11:26:53,209 GRB Test Packet Not Triggering
+2018-10-23 11:26:53,210 Ignored
+2018-10-23 11:26:53,879 GRB Test Packet Not Triggering
+2018-10-23 11:26:53,880 Ignored
+2018-10-23 11:26:54,487 GRB Test Packet Not Triggering
+2018-10-23 11:26:54,487 Ignored
+2018-10-23 11:26:55,141 GRB Test Packet Not Triggering
+2018-10-23 11:26:55,141 Ignored
+2018-10-23 11:26:55,858 GRB Test Packet Not Triggering
+2018-10-23 11:26:55,859 Ignored
+2018-10-23 11:26:56,558 GRB Test Packet Not Triggering
+2018-10-23 11:26:56,558 Ignored
+2018-10-23 11:26:57,254 GRB Test Packet Not Triggering
+2018-10-23 11:26:57,254 Ignored
+2018-10-23 11:26:57,874 GRB Test Packet Not Triggering
+2018-10-23 11:26:57,874 Ignored
+2018-10-23 11:26:58,496 GRB Test Packet Not Triggering
+2018-10-23 11:26:58,497 Ignored
+2018-10-23 11:26:59,081 GRB Test Packet Not Triggering
+2018-10-23 11:26:59,081 Ignored
+2018-10-23 11:26:59,696 GRB Test Packet Not Triggering
+2018-10-23 11:26:59,697 Ignored
+2018-10-23 11:27:00,380 GRB Test Packet Not Triggering
+2018-10-23 11:27:00,381 Ignored
+2018-10-23 11:27:01,105 GRB Test Packet Not Triggering
+2018-10-23 11:27:01,105 Ignored
+2018-10-23 11:27:01,811 GRB Test Packet Not Triggering
+2018-10-23 11:27:01,811 Ignored
+2018-10-23 11:27:02,455 GRB Test Packet Not Triggering
+2018-10-23 11:27:02,456 Ignored
+2018-10-23 11:27:03,097 GRB Test Packet Not Triggering
+2018-10-23 11:27:03,097 Ignored
+2018-10-23 11:27:04,409 GRB Test Packet Not Triggering
+2018-10-23 11:27:04,409 Ignored
+2018-10-23 11:27:09,819 GRB Test Packet Not Triggering
+2018-10-23 11:27:09,819 Ignored
+2018-10-23 11:27:10,553 GRB Test Packet Not Triggering
+2018-10-23 11:27:10,553 Ignored
+2018-10-23 11:27:11,190 GRB Test Packet Not Triggering
+2018-10-23 11:27:11,190 Ignored
+2018-10-23 11:27:11,876 GRB Test Packet Not Triggering
+2018-10-23 11:27:11,876 Ignored
+2018-10-23 11:27:12,496 GRB Test Packet Not Triggering
+2018-10-23 11:27:12,496 Ignored
+2018-10-23 11:27:13,122 GRB Test Packet Not Triggering
+2018-10-23 11:27:13,122 Ignored
+2018-10-23 11:27:13,731 GRB Test Packet Not Triggering
+2018-10-23 11:27:13,731 Ignored
+2018-10-23 11:27:14,419 GRB Test Packet Not Triggering
+2018-10-23 11:27:14,419 Ignored
+2018-10-23 11:27:14,931 GRB Test Packet Not Triggering
+2018-10-23 11:27:14,931 Ignored
+2018-10-23 11:27:15,502 GRB Test Packet Not Triggering
+2018-10-23 11:27:15,502 Ignored
+2018-10-23 11:27:16,100 GRB Test Packet Not Triggering
+2018-10-23 11:27:16,101 Ignored
+2018-10-23 11:27:16,786 GRB Test Packet Not Triggering
+2018-10-23 11:27:16,786 Ignored
+2018-10-23 11:27:17,352 GRB Test Packet Not Triggering
+2018-10-23 11:27:17,352 Ignored
+2018-10-23 11:27:18,022 GRB Test Packet Not Triggering
+2018-10-23 11:27:18,022 Ignored
+2018-10-23 11:27:18,649 GRB Test Packet Not Triggering
+2018-10-23 11:27:18,650 Ignored
+2018-10-23 11:27:19,336 GRB Test Packet Not Triggering
+2018-10-23 11:27:19,336 Ignored
+2018-10-23 11:27:19,924 GRB Test Packet Not Triggering
+2018-10-23 11:27:19,924 Ignored
+2018-10-23 11:27:20,542 GRB Test Packet Not Triggering
+2018-10-23 11:27:20,542 Ignored
+2018-10-23 11:27:21,190 GRB Test Packet Not Triggering
+2018-10-23 11:27:21,190 Ignored
+2018-10-23 11:27:21,914 GRB Test Packet Not Triggering
+2018-10-23 11:27:21,915 Ignored
+2018-10-23 11:27:22,569 GRB Test Packet Not Triggering
+2018-10-23 11:27:22,569 Ignored
+2018-10-23 11:27:23,326 GRB Test Packet Not Triggering
+2018-10-23 11:27:23,326 Ignored
+2018-10-23 11:27:23,980 GRB Test Packet Not Triggering
+2018-10-23 11:27:23,980 Ignored
+2018-10-23 11:27:24,628 GRB Test Packet Not Triggering
+2018-10-23 11:27:24,628 Ignored
+2018-10-23 11:27:25,193 GRB Test Packet Not Triggering
+2018-10-23 11:27:25,193 Ignored
+2018-10-23 11:27:25,798 GRB Test Packet Not Triggering
+2018-10-23 11:27:25,798 Ignored
+2018-10-23 11:27:26,416 GRB Test Packet Not Triggering
+2018-10-23 11:27:26,416 Ignored
+2018-10-23 11:27:26,971 GRB Test Packet Not Triggering
+2018-10-23 11:27:26,972 Ignored
+2018-10-23 11:27:27,540 GRB Test Packet Not Triggering
+2018-10-23 11:27:27,541 Ignored
+2018-10-23 11:27:28,225 GRB Test Packet Not Triggering
+2018-10-23 11:27:28,225 Ignored
+2018-10-23 11:27:28,882 GRB Test Packet Not Triggering
+2018-10-23 11:27:28,882 Ignored
+2018-10-23 11:27:29,573 GRB Test Packet Not Triggering
+2018-10-23 11:27:29,573 Ignored
+2018-10-23 11:27:30,144 GRB Test Packet Not Triggering
+2018-10-23 11:27:30,144 Ignored
+2018-10-23 11:27:30,764 GRB Test Packet Not Triggering
+2018-10-23 11:27:30,764 Ignored
+2018-10-23 11:27:31,281 GRB Test Packet Not Triggering
+2018-10-23 11:27:31,281 Ignored
+2018-10-23 11:27:31,831 GRB Test Packet Not Triggering
+2018-10-23 11:27:31,831 Ignored
+2018-10-23 11:27:32,338 GRB Test Packet Not Triggering
+2018-10-23 11:27:32,339 Ignored
+2018-10-23 11:27:32,974 GRB Test Packet Not Triggering
+2018-10-23 11:27:32,974 Ignored
+2018-10-23 11:27:33,590 GRB Test Packet Not Triggering
+2018-10-23 11:27:33,590 Ignored
+2018-10-23 11:27:34,138 GRB Test Packet Not Triggering
+2018-10-23 11:27:34,139 Ignored
+2018-10-23 11:27:34,727 GRB Test Packet Not Triggering
+2018-10-23 11:27:34,727 Ignored
+2018-10-23 11:27:35,452 GRB Test Packet Not Triggering
+2018-10-23 11:27:35,452 Ignored
+2018-10-23 11:27:36,097 GRB Test Packet Not Triggering
+2018-10-23 11:27:36,097 Ignored
+2018-10-23 11:27:36,742 GRB Test Packet Not Triggering
+2018-10-23 11:27:36,743 Ignored
+2018-10-23 11:27:37,241 GRB Test Packet Not Triggering
+2018-10-23 11:27:37,242 Ignored
+2018-10-23 11:27:37,981 GRB Test Packet Not Triggering
+2018-10-23 11:27:37,982 Ignored
+2018-10-23 11:27:38,575 GRB Test Packet Not Triggering
+2018-10-23 11:27:38,575 Ignored
+2018-10-23 11:27:39,219 GRB Test Packet Not Triggering
+2018-10-23 11:27:39,219 Ignored
+2018-10-23 11:27:39,913 GRB Test Packet Not Triggering
+2018-10-23 11:27:39,913 Ignored
+2018-10-23 11:27:40,489 GRB Test Packet Not Triggering
+2018-10-23 11:27:40,489 Ignored
+2018-10-23 11:27:41,079 GRB Test Packet Not Triggering
+2018-10-23 11:27:41,079 Ignored
+2018-10-23 11:27:41,698 GRB Test Packet Not Triggering
+2018-10-23 11:27:41,698 Ignored
+2018-10-23 11:27:42,141 GRB Test Packet Not Triggering
+2018-10-23 11:27:42,141 Ignored
+2018-10-23 11:27:42,792 GRB Test Packet Not Triggering
+2018-10-23 11:27:42,792 Ignored
+2018-10-23 11:27:44,563 GRB Test Packet Not Triggering
+2018-10-23 11:27:44,563 Ignored
+2018-10-23 11:27:47,504 GRB Test Packet Not Triggering
+2018-10-23 11:27:47,504 Ignored
+2018-10-23 11:27:48,028 GRB Test Packet Not Triggering
+2018-10-23 11:27:48,029 Ignored
+2018-10-23 11:27:48,620 GRB Test Packet Not Triggering
+2018-10-23 11:27:48,620 Ignored
+2018-10-23 11:27:49,303 GRB Test Packet Not Triggering
+2018-10-23 11:27:49,303 Ignored
+2018-10-23 11:27:52,511 GRB Test Packet Not Triggering
+2018-10-23 11:27:52,511 Ignored
+2018-10-23 11:27:53,175 GRB Test Packet Not Triggering
+2018-10-23 11:27:53,175 Ignored
+2018-10-23 11:27:57,671 GRB Test Packet Not Triggering
+2018-10-23 11:27:57,671 Ignored
+2018-10-23 11:27:58,379 GRB Test Packet Not Triggering
+2018-10-23 11:27:58,379 Ignored
+2018-10-23 11:27:59,028 GRB Test Packet Not Triggering
+2018-10-23 11:27:59,028 Ignored
+2018-10-23 11:27:59,608 GRB Test Packet Not Triggering
+2018-10-23 11:27:59,608 Ignored
+2018-10-23 11:28:00,240 GRB Test Packet Not Triggering
+2018-10-23 11:28:00,240 Ignored
+2018-10-23 11:28:00,865 GRB Test Packet Not Triggering
+2018-10-23 11:28:00,865 Ignored
+2018-10-23 11:28:01,331 GRB Test Packet Not Triggering
+2018-10-23 11:28:01,331 Ignored
+2018-10-23 11:28:01,780 GRB Test Packet Not Triggering
+2018-10-23 11:28:01,781 Ignored
+2018-10-23 11:28:02,218 GRB Test Packet Not Triggering
+2018-10-23 11:28:02,218 Ignored
+2018-10-23 11:28:02,654 GRB Test Packet Not Triggering
+2018-10-23 11:28:02,654 Ignored
+2018-10-23 11:28:03,206 GRB Test Packet Not Triggering
+2018-10-23 11:28:03,206 Ignored
+2018-10-23 11:28:03,790 GRB Test Packet Not Triggering
+2018-10-23 11:28:03,790 Ignored
+2018-10-23 11:31:41,945 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:31:42,262 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:31:42,297 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:31:42,500 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 11:31:42,503 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:31:42,754 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:31:42,759 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:31:43,052 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:31:43,125 Creating schedule file
+2018-10-23 11:31:43,125 Schedule file created
+2018-10-23 11:31:43,222 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 11:31:43,223 Coords are Position2D(ra=251.7492, dec=-45.8503, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 11:38:00,715 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:38:01,055 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:38:01,097 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:38:01,258 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 11:38:01,260 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:38:01,521 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:38:01,526 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:38:01,829 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:38:01,833 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 11:38:02,107 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 11:38:02,187 Creating schedule file
+2018-10-23 11:38:02,188 Schedule file created
+2018-10-23 11:38:02,328 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 11:38:02,328 Coords are Position2D(ra=13.967, dec=-47.3799, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 12:39:30,191 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 12:39:30,191 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 12:40:46,600 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 12:40:46,600 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 12:41:42,260 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:41:42,608 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:41:42,637 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:41:42,861 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 12:41:42,863 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:41:43,150 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:41:43,214 Creating schedule file
+2018-10-23 12:41:43,214 Schedule file created
+2018-10-23 12:41:43,263 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 12:41:43,263 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 12:42:17,855 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:42:18,199 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:42:18,227 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:42:18,529 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 12:42:18,532 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:42:18,770 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:42:18,848 Creating schedule file
+2018-10-23 12:42:18,848 Schedule file created
+2018-10-23 12:42:18,960 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 12:42:18,961 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 12:45:51,153 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:45:51,409 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:45:51,436 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:45:51,593 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 12:45:51,596 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:45:51,815 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:45:51,892 Creating schedule file
+2018-10-23 12:45:51,892 Schedule file created
+2018-10-23 12:45:51,988 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 12:45:51,988 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 12:58:36,054 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 12:58:36,054 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 12:58:36,808 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:58:37,162 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:58:37,183 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:58:37,394 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 12:58:37,396 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:58:37,617 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:58:37,621 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:58:37,882 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:58:37,888 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:58:38,171 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:58:38,176 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:58:38,560 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:58:38,625 Creating schedule file
+2018-10-23 12:58:38,625 Schedule file created
+2018-10-23 12:59:57,310 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 12:59:57,310 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 12:59:58,063 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:59:58,408 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:59:58,430 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:59:58,659 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 12:59:58,662 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:59:58,898 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:59:58,902 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:59:59,183 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:59:59,188 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:59:59,482 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:59:59,488 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 12:59:59,773 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 12:59:59,859 Creating schedule file
+2018-10-23 12:59:59,859 Schedule file created
+2018-10-23 13:01:06,907 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:01:07,163 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:01:07,192 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:01:07,425 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:01:07,428 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:01:07,709 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:01:07,790 Creating schedule file
+2018-10-23 13:01:07,790 Schedule file created
+2018-10-23 13:01:07,894 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 13:01:07,895 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:09:08,665 Flare Star HD 8357 Detected >> TRIGGERING!
+2018-10-23 13:09:08,666 Coords are Position2D(ra=20.7863, dec=7.4438, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:09:09,376 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:09:09,720 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:09:09,742 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:09:09,943 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:09:09,946 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:09:10,217 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:09:10,221 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:09:10,462 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:09:10,467 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:09:10,738 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:09:10,811 Creating schedule file
+2018-10-23 13:09:10,811 Schedule file created
+2018-10-23 13:11:41,113 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 13:11:41,113 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:11:41,847 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:42,194 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:42,214 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:42,438 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:11:42,441 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:42,698 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:42,702 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:42,926 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:42,930 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:43,148 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:43,152 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:43,370 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:43,442 Creating schedule file
+2018-10-23 13:11:43,442 Schedule file created
+2018-10-23 13:11:46,245 Flare Star HD 8357 Detected >> TRIGGERING!
+2018-10-23 13:11:46,245 Coords are Position2D(ra=20.7863, dec=7.4438, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:11:46,911 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:47,237 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:47,258 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:47,287 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:11:47,290 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:47,570 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:47,576 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:47,866 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:47,870 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:11:48,113 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:11:48,217 Creating schedule file
+2018-10-23 13:11:48,217 Schedule file created
+2018-10-23 13:13:48,393 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:13:48,701 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:13:48,729 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:13:48,938 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:13:48,941 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:13:49,190 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:13:49,287 Creating schedule file
+2018-10-23 13:13:49,287 Schedule file created
+2018-10-23 13:13:49,387 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 13:13:49,387 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:23:26,515 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:26,872 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:26,900 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:27,124 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:23:27,126 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:27,405 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:27,476 Creating schedule file
+2018-10-23 13:23:27,476 Schedule file created
+2018-10-23 13:23:27,573 SWIFT Short GRB >> TRIGGERING!
+2018-10-23 13:23:27,574 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:23:31,811 Flare Star HD 8357 Detected >> TRIGGERING!
+2018-10-23 13:23:31,811 Coords are Position2D(ra=20.7863, dec=7.4438, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:23:32,508 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:32,855 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:32,881 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:33,107 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:23:33,110 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:33,397 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:33,401 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:33,627 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:33,631 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:33,851 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:33,929 Creating schedule file
+2018-10-23 13:23:33,930 Schedule file created
+2018-10-23 13:23:39,830 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 13:23:39,830 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:23:40,548 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:40,874 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:40,895 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:41,120 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:23:41,122 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:41,403 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:41,407 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:41,685 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:41,689 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:41,961 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:41,965 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:23:42,227 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:23:42,309 Creating schedule file
+2018-10-23 13:23:42,309 Schedule file created
+2018-10-23 13:25:41,467 Flare Star HR1099 Detected >> TRIGGERING!
+2018-10-23 13:25:41,467 Coords are Position2D(ra=54.3079, dec=1.34, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:25:42,232 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:42,660 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:42,684 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:42,907 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:25:42,909 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:43,194 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:43,199 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:43,483 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:43,577 Creating schedule file
+2018-10-23 13:25:43,577 Schedule file created
+2018-10-23 13:25:51,478 Flare Star HR1099 Detected >> TRIGGERING!
+2018-10-23 13:25:51,478 Coords are Position2D(ra=54.012, dec=0.4319, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:25:52,137 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:52,471 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:52,493 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:52,696 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:25:52,698 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:52,977 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:52,981 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:53,204 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:53,269 Creating schedule file
+2018-10-23 13:25:53,269 Schedule file created
+2018-10-23 13:25:57,062 Flare Star UV Cet Detected >> TRIGGERING!
+2018-10-23 13:25:57,062 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:25:57,770 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:58,026 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:58,047 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:58,213 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:25:58,216 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:58,579 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:58,583 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:58,811 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:58,815 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:59,033 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:59,037 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:25:59,259 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:25:59,336 Creating schedule file
+2018-10-23 13:25:59,336 Schedule file created
+2018-10-23 13:26:06,902 Flare Star AT Mic Detected >> TRIGGERING!
+2018-10-23 13:26:06,902 Coords are Position2D(ra=310.463, dec=-32.435, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:26:07,611 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:08,052 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:08,081 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:08,285 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:26:08,288 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:08,580 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:08,584 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:08,836 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:08,840 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:09,082 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:09,087 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:09,387 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:09,464 Creating schedule file
+2018-10-23 13:26:09,464 Schedule file created
+2018-10-23 13:26:14,613 Flare Star HR 1099 Detected >> TRIGGERING!
+2018-10-23 13:26:14,614 Coords are Position2D(ra=54.0579, dec=0.3669, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:26:15,279 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:15,617 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:15,640 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:15,864 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:26:15,867 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:16,104 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:16,109 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:16,372 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:16,445 Creating schedule file
+2018-10-23 13:26:16,446 Schedule file created
+2018-10-23 13:26:17,130 Flare Star HR 1099 Detected >> TRIGGERING!
+2018-10-23 13:26:17,131 Coords are Position2D(ra=54.0579, dec=0.3669, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:26:17,808 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:18,138 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:18,158 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:18,520 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:26:18,523 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:18,756 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 502 1873
+2018-10-23 13:26:26,928 Flare Star AT Mic Detected >> TRIGGERING!
+2018-10-23 13:26:26,928 Coords are Position2D(ra=310.463, dec=-32.435, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:26:27,676 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:28,017 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:28,047 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:28,269 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:26:28,271 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:28,542 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:28,546 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:28,791 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:28,796 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:29,091 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:29,097 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:29,377 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:29,464 Creating schedule file
+2018-10-23 13:26:29,464 Schedule file created
+2018-10-23 13:26:40,997 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 13:26:40,997 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:26:41,718 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:42,055 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:42,076 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:42,299 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:26:42,302 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:42,538 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:42,542 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:42,801 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:42,806 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:43,085 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:43,090 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:26:43,364 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:26:43,431 Creating schedule file
+2018-10-23 13:26:43,431 Schedule file created
+2018-10-23 13:30:45,500 Flare Star HR1099 Detected >> TRIGGERING!
+2018-10-23 13:30:45,500 Coords are Position2D(ra=54.3079, dec=1.34, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:30:46,253 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:30:46,506 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:30:46,526 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:30:46,687 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:30:46,690 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:30:46,909 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:30:46,913 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:30:47,133 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:30:47,202 Creating schedule file
+2018-10-23 13:30:47,202 Schedule file created
+2018-10-23 13:30:55,140 Flare Star HR1099 Detected >> TRIGGERING!
+2018-10-23 13:30:55,140 Coords are Position2D(ra=54.012, dec=0.4319, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:30:55,803 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:30:56,150 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:30:56,171 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:30:56,372 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:30:56,375 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:30:56,651 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:30:56,655 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:30:56,878 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:30:56,952 Creating schedule file
+2018-10-23 13:30:56,952 Schedule file created
+2018-10-23 13:31:00,861 Flare Star UV Cet Detected >> TRIGGERING!
+2018-10-23 13:31:00,861 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:31:01,517 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:01,821 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:01,841 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:02,054 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:31:02,056 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:02,290 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:02,296 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:02,547 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:02,551 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:02,772 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:02,778 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:03,023 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:03,096 Creating schedule file
+2018-10-23 13:31:03,097 Schedule file created
+2018-10-23 13:31:14,953 Flare Star AT Mic Detected >> TRIGGERING!
+2018-10-23 13:31:14,953 Coords are Position2D(ra=310.463, dec=-32.435, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:31:15,614 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:15,946 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:15,974 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:16,177 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:31:16,180 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:16,424 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:16,429 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:16,673 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:16,679 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:16,978 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:16,982 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:17,267 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:17,338 Creating schedule file
+2018-10-23 13:31:17,338 Schedule file created
+2018-10-23 13:31:22,645 Flare Star HR 1099 Detected >> TRIGGERING!
+2018-10-23 13:31:22,646 Coords are Position2D(ra=54.0579, dec=0.3669, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:31:23,435 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:23,779 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:23,799 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:23,976 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:31:23,979 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:24,200 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:24,204 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:24,423 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:24,516 Creating schedule file
+2018-10-23 13:31:24,517 Schedule file created
+2018-10-23 13:31:25,297 Flare Star HR 1099 Detected >> TRIGGERING!
+2018-10-23 13:31:25,297 Coords are Position2D(ra=54.0579, dec=0.3669, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:31:25,987 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:26,305 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:26,325 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:26,547 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:31:26,550 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:26,779 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:26,785 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:27,051 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:30,553 Creating schedule file
+2018-10-23 13:31:30,553 Schedule file created
+2018-10-23 13:31:38,522 Flare Star AT Mic Detected >> TRIGGERING!
+2018-10-23 13:31:38,522 Coords are Position2D(ra=310.463, dec=-32.435, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:31:39,225 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:39,571 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:39,599 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:39,804 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:31:39,807 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:40,039 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:40,044 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:40,337 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:40,344 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:40,598 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:40,603 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:40,899 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:40,973 Creating schedule file
+2018-10-23 13:31:40,974 Schedule file created
+2018-10-23 13:31:53,000 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 13:31:53,000 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:31:53,748 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:54,060 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:54,080 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:54,237 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:31:54,240 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:54,458 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:54,461 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:54,681 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:54,686 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:54,937 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:54,940 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:31:55,204 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:31:55,276 Creating schedule file
+2018-10-23 13:31:55,277 Schedule file created
+2018-10-23 13:54:10,799 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 13:54:10,799 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:54:11,603 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:54:11,935 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:54:11,955 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:54:12,157 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:54:12,160 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:54:12,417 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:54:12,421 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:54:12,711 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:54:12,717 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:54:12,994 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:54:12,998 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:54:13,251 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:54:13,330 Creating schedule file
+2018-10-23 13:54:13,330 Schedule file created
+2018-10-23 13:55:07,259 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 13:55:07,259 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:55:07,943 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:55:08,276 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:55:08,297 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:55:08,530 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:55:08,533 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:55:08,803 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:55:08,808 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:55:09,070 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:55:09,074 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:55:09,355 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:55:09,359 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:55:09,582 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:55:09,650 Creating schedule file
+2018-10-23 13:55:09,650 Schedule file created
+2018-10-23 13:59:48,176 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-23 13:59:48,176 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-23 13:59:48,865 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:59:49,115 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:59:49,136 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:59:49,361 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-23 13:59:49,363 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:59:49,639 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:59:49,643 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:59:49,883 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:59:49,888 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:59:50,145 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:59:50,151 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-23 13:59:50,402 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-23 13:59:50,479 Creating schedule file
+2018-10-23 13:59:50,479 Schedule file created
+2018-10-24 15:02:26,457 Flare Star HD 8357 Detected >> TRIGGERING!
+2018-10-24 15:02:26,458 Coords are Position2D(ra=20.7863, dec=7.4438, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-24 15:02:27,385 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:02:27,635 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:02:27,659 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:02:27,815 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-24 15:02:27,818 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:02:28,036 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:02:28,040 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:02:28,259 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:02:28,324 Creating schedule file
+2018-10-24 15:02:28,324 Schedule file created
+2018-10-24 15:02:28,398 Starting new HTTPS connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:02:28,627 https://www.narrabri.atnf.csiro.au:443 "POST /cgi-bin/obstools/rapid_response/rapid_response_service.py HTTP/1.1" 500 557
+2018-10-24 15:07:20,104 Flare Star HD 8357 Detected >> TRIGGERING!
+2018-10-24 15:07:20,104 Coords are Position2D(ra=20.7863, dec=7.4438, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-24 15:07:20,772 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:07:21,024 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:07:21,045 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:07:21,071 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-24 15:07:21,073 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:07:21,292 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:07:21,295 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:07:21,513 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:07:21,584 Creating schedule file
+2018-10-24 15:07:21,584 Schedule file created
+2018-10-24 15:07:21,625 Starting new HTTPS connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:07:21,720 https://www.narrabri.atnf.csiro.au:443 "POST /cgi-bin/obstools/rapid_response/rapid_response_service.py HTTP/1.1" 500 557
+2018-10-24 15:09:28,267 Flare Star HD 8357 Detected >> TRIGGERING!
+2018-10-24 15:09:28,267 Coords are Position2D(ra=20.7863, dec=7.4438, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-24 15:09:28,964 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:09:29,216 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:09:29,240 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:09:29,400 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-24 15:09:29,402 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:09:29,625 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:09:29,629 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:09:29,852 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:09:29,920 Creating schedule file
+2018-10-24 15:09:29,920 Schedule file created
+2018-10-24 15:09:29,962 Starting new HTTPS connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:09:30,053 https://www.narrabri.atnf.csiro.au:443 "POST /cgi-bin/obstools/rapid_response/rapid_response_service.py HTTP/1.1" 500 557
+2018-10-24 15:15:20,914 Flare Star HD 8357 Detected >> TRIGGERING!
+2018-10-24 15:15:20,914 Coords are Position2D(ra=20.7863, dec=7.4438, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-24 15:15:21,756 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:15:22,007 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:15:22,028 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:15:22,056 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-24 15:15:22,058 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:15:22,277 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:15:22,281 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:15:22,500 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:15:22,566 Creating schedule file
+2018-10-24 15:15:22,566 Schedule file created
+2018-10-24 15:15:22,662 Starting new HTTPS connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:15:22,753 https://www.narrabri.atnf.csiro.au:443 "POST /cgi-bin/obstools/rapid_response/rapid_response_service.py HTTP/1.1" 500 557
+2018-10-24 15:19:17,107 Flare Star HD 8357 Detected >> TRIGGERING!
+2018-10-24 15:19:17,107 Coords are Position2D(ra=20.7863, dec=7.4438, err=0.05, units='deg', system='UTC-FK5-GEO')
+2018-10-24 15:19:17,881 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:19:18,133 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:19:18,152 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:19:18,309 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-24 15:19:18,312 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:19:18,562 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:19:18,566 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:19:18,788 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:19:18,870 Creating schedule file
+2018-10-24 15:19:18,871 Schedule file created
+2018-10-24 15:19:18,944 Starting new HTTPS connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:19:20,206 https://www.narrabri.atnf.csiro.au:443 "POST /cgi-bin/obstools/rapid_response/rapid_response_service.py HTTP/1.1" 200 None
+2018-10-24 15:20:53,234 Flare Star Flare from UV Cet Detected >> TRIGGERING!
+2018-10-24 15:20:53,234 Coords are Position2D(ra=24.756, dec=-17.9499, err=0.5, units='deg', system='UTC-FK5-GEO')
+2018-10-24 15:20:53,919 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:20:54,169 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:20:54,190 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:20:54,346 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-24 15:20:54,349 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:20:54,568 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:20:54,654 Creating schedule file
+2018-10-24 15:20:54,654 Schedule file created
+2018-10-24 15:20:57,946 Starting new HTTPS connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:20:59,144 https://www.narrabri.atnf.csiro.au:443 "POST /cgi-bin/obstools/rapid_response/rapid_response_service.py HTTP/1.1" 200 None
+2018-10-24 15:21:29,037 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:21:29,285 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:21:29,313 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:21:29,469 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/obstools/web_monica/monicainterface_json.pl HTTP/1.1" 200 None
+2018-10-24 15:21:29,472 Starting new HTTP connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:21:29,691 http://www.narrabri.atnf.csiro.au:80 "POST /cgi-bin/Calibrators/new/caldb_v3.pl HTTP/1.1" 200 None
+2018-10-24 15:21:29,765 Creating schedule file
+2018-10-24 15:21:29,765 Schedule file created
+2018-10-24 15:21:29,826 Starting new HTTPS connection (1): www.narrabri.atnf.csiro.au
+2018-10-24 15:21:31,011 https://www.narrabri.atnf.csiro.au:443 "POST /cgi-bin/obstools/rapid_response/rapid_response_service.py HTTP/1.1" 200 None
+2018-10-24 15:21:31,113 SWIFT Short GRB >> TRIGGERING!
+2018-10-24 15:21:31,114 Coords are Position2D(ra=19.9443, dec=-30.3376, err=0.05, units='deg', system='UTC-FK5-GEO')
