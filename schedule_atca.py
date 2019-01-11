@@ -51,6 +51,22 @@ def send_mail(ra, dec, details, subject):
     # Send out email alert
     os.system("mail -s \"Triggering ATCA: "+subject+"\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com < Email.txt")
 
+def send_SMS(ra, dec, details, subject):
+    # Send out email alert:
+    f = open('Email.txt','w')
+    time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
+    f.write('Triggering ATCA:')
+    f.write('\n')
+    f.write("Time is "+time)
+    f.write('\n')
+    f.write('Coordinates: RA = '+(ra)+' Dec = '+str(dec))
+    f.write('\n')
+    f.write('Source: ')
+    f.write(details)
+    f.close()
+    # Send out email alert
+    os.system("mail -s \"Triggering ATCA: "+subject+"\" mebell.GRB@groups.smsbroadcast.com.au  < Email.txt")
+
 ################################
 
 ra_in   = sys.argv[1]
@@ -167,10 +183,13 @@ rapidObj['minimumTime'] = 2.0
 # Send out email from our end. ATCA will also send a bunch
 if what == "SHORT_GRB":
    send_mail(ra, dec, details, subject='Short GRB')
+   send_SMS(ra, dec, details, subject='Short GRB')
 if what == "MAXI":
    send_mail(ra, dec, details, subject='MAXI Flare Star')
+   send_SMS(ra, dec, details, subject='MAXI Flare Star')
 if what == "SWIFT":
    send_mail(ra, dec, details, subject='SWIFT Flare Star')
+   send_SMS(ra, dec, details, subject='SWIFT Flare Star')
 
 # Send the request.
 send = True # Toggle to actually trigger or not
