@@ -12,6 +12,7 @@ import voeventparse
 import os
 import logging
 from time import gmtime, strftime
+import voeventparse as vp
 
 logging.basicConfig(filename='atca.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
 logger = logging.getLogger('notifier')
@@ -76,7 +77,7 @@ def handle_grb(v):
     if short:
        coords = voeventparse.pull_astro_coords(v)
        c = voeventparse.get_event_position(v)
-       if c.dec > 10.0:
+       if c.dec > 15.0:
           send_mail("GRB above declination cutoff of +10 degrees  "+web_link, "Short GRB above Dec cutoff")
        else:
           os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link+' '+'SHORT_GRB')
@@ -235,6 +236,7 @@ def get_flare_DEC(name):
     return dec_dict[name] 
 
 def handle_flare_star(v):
+    n = Notifier()
     ivorn = v.attrib['ivorn']
     name, tel = get_name(v)
     if tel == "SWIFT":
@@ -246,13 +248,13 @@ def handle_flare_star(v):
        #web_link = 'http://gcn.gsfc.nasa.gov/maxi.html'
     coords = voeventparse.pull_astro_coords(v)
     c = voeventparse.get_event_position(v)
-    if c.dec > 10.0:
-       send_mail("Flare Star above "+name+" declination cutoff of +10 degrees", "Flare Star above 10 degrees")
-       n.send_notification(title="Flare Star above "+name+" declination cutoff of +10 degrees", text = "Coords are {}".format(coords))
+    sub = vp.prettystr(v.What.Description)
+    if "The sub-sub-threshold Swift-BAT trigger position notice" in sub:
+       send_mail("Flare Star "+name+" sub-sub threshold trigger", "Not triggering")
+       n.send_notification(title="Flare Star "+name+" sub-sub threshold burst ", text = "Coords are {}".format(coords))
     else:
         ra =  get_flare_RA(name)
         dec = get_flare_DEC(name)
-        n = Notifier()
         n.send_notification(title="Flare Star "+name+" Detected >> TRIGGERING!", text = "Coords are {}".format(coords))
         os.system('python schedule_atca.py '+str(ra)+' '+str(dec)+' '+web_link+' '+tel)
 
