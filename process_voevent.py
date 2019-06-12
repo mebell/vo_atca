@@ -64,7 +64,7 @@ def is_grb(v):
 def is_short(v):
     INTEG_TIME = v.find(".//Param[@name='Integ_Time']").attrib['value']
     RATE_SIGNIF = v.find(".//Param[@name='Rate_Signif']").attrib['value']
-    if (float(INTEG_TIME) < 1.0) and (float(RATE_SIGNIF) > 0.0):
+    if (float(INTEG_TIME) < 1.025) and (float(RATE_SIGNIF) > 0.0):
        return True
     else: 
        return False
@@ -105,35 +105,34 @@ def get_name(v):
            tel = 'MAXI'
     return name, tel
 
-def is_flare_star(v):
-    flare_stars = ['Wolf424', 
+flare_stars =     ['Wolf424',
                    'YZ_CMi',
-                   'YZCMi', 
-                   'YZ CMi', 
-                   'CN_Leo', 
-                   'CNLeo', 
-                   'CN Leo', 
-                   'V1054Oph', 
-                   'V645Cen', 
-                   'ROSS1280', 
-                   'DM-216267', 
-                   'V1216Sgr', 
-                   'HR_1099', 
-                   'HR 1099', 
-                   'HR1099', 
-                   'CF_Tuc', 
-                   'CFTuc', 
-                   'CF Tuc', 
-                   'AT_Mic', 
-                   'AT Mic', 
-                   'ATMic', 
-                   'AU_Mic', 
-                   'AUMic', 
-                   'AU Mic', 
-                   'UV_Cet', 
+                   'YZCMi',
+                   'YZ CMi',
+                   'CN_Leo',
+                   'CNLeo',
+                   'CN Leo',
+                   'V1054Oph',
+                   'V645Cen',
+                   'ROSS1280',
+                   'DM-216267',
+                   'V1216Sgr',
+                   'HR_1099',
+                   'HR 1099',
+                   'HR1099',
+                   'CF_Tuc',
+                   'CFTuc',
+                   'CF Tuc',
+                   'AT_Mic',
+                   'AT Mic',
+                   'ATMic',
+                   'AU_Mic',
+                   'AUMic',
+                   'AU Mic',
+                   'UV_Cet',
                    'UV Cet',
-                   'Flare from UV Cet', 
-                   'UVCet', 
+                   'Flare from UV Cet',
+                   'UVCet',
                    'HD 8357',
                    'HD_8357',
                    'HD8357',
@@ -144,13 +143,22 @@ def is_flare_star(v):
                    'GT_Mus',
                    'GTMus']
 
+def is_flare_star(v):
     name, tel = get_name(v)
     if name is not None:
-          for star in flare_stars:
-              if star == name:
-                 return True
+       for star in flare_stars:
+           if (star in name) or (star == name):
+              return True
     else:
-       return False 
+       return False
+
+def get_flare_name(v):
+    name, tel = get_name(v)
+    if name is not None:
+       for star in flare_stars:
+           if (star in name) or (star == name):
+              return star
+
 
 def get_flare_RA(name):
     ra_dict = {'Wolf424'  : '12:33:17.383', 
@@ -238,7 +246,10 @@ def get_flare_DEC(name):
 def handle_flare_star(v):
     n = Notifier()
     ivorn = v.attrib['ivorn']
-    name, tel = get_name(v)
+    name_not_used, tel = get_name(v)
+    name = get_flare_name(v)
+    print name_not_used
+    print name
     if tel == "SWIFT":
        TrigID   = v.find(".//Param[@name='TrigID']").attrib['value']
        web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'

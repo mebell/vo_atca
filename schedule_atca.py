@@ -156,12 +156,12 @@ rapidObj = { 'schedule': schedString }
 # The authentication token needs to go with it, and we point to the file that
 # contains the token.
 if what=="SHORT_GRB":
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2018OCT.jwt"
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2019APR.jwt"
         # The name of the main target needs to be specified.
         rapidObj['nameTarget'] = "SHORT_GRB"
 
 if (what=="MAXI") or (what=="SWIFT"):
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3200_2018OCT.jwt"
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3200_2019APR.jwt"
         # The name of the main target needs to be specified.
         rapidObj['nameTarget'] = "FLARE_STAR"
 
@@ -173,7 +173,7 @@ rapidObj['email'] = "martinbell81@googlemail.com"
 rapidObj['usePreviousFrequencies'] = False
 
 # Because this is a test run, we'll specify a few parameters to just try things out.
-rapidObj['test'] = False
+rapidObj['test'] = True
 #rapidObj['emailOnly'] = "Martin.Bell@csiro.au"
 rapidObj['noTimeLimit'] = True
 rapidObj['noScoreLimit'] = True
@@ -192,7 +192,7 @@ if what == "SWIFT":
    send_SMS(ra, dec, details, subject='SWIFT Flare Star')
 
 # Send the request.
-send = True # Toggle to actually trigger or not
+send = False # Toggle to actually trigger or not
 if send:
    request = arrApi.api(rapidObj)
    try:
