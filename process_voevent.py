@@ -32,6 +32,22 @@ def main():
           handle_flare_star(v)
     return 0
 
+def send_SMS(ra, dec, details, subject):
+    # Send out email alert:
+    f = open('Email.txt','w')
+    time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
+    f.write('Triggering ATCA:')
+    f.write('\n')
+    f.write("Time is "+time)
+    f.write('\n')
+    f.write('Coordinates: RA = '+(ra)+' Dec = '+str(dec))
+    f.write('\n')
+    f.write('Source: ')
+    f.write(details)
+    f.close()
+    # Send out email alert
+    os.system("mail -s \"Triggering ATCA: "+subject+"\" mebell.GRB@groups.smsbroadcast.com.au  < Email.txt")
+
 def send_mail(details, subject):
     # Send out email alert:
     f = open('False_Email.txt','w')
@@ -43,7 +59,24 @@ def send_mail(details, subject):
     f.write(details)
     f.close()
     # Send out email alert
-    os.system("mail -s \"Not Triggering ATCA: "+subject+"\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com < False_Email.txt")
+    os.system("mail -s \"Not Triggering ATCA: "+subject+"\" atcatriggering@gmail.com, gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com < False_Email.txt")
+
+def mid_grb_email(details, subject, ra, dec):
+    # Send out email alert:
+    f = open('Mid_Email.txt','w')
+    f.write('RA='+ra)
+    f.write('\n')
+    f.write('DEC='+dec)
+    f.write('\n')
+    time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
+    f.write('Mid duration GRB. Please check the link and respond to this email with "YES" if trigger is to proceed:')
+    f.write('\n')
+    f.write("Time is "+time)
+    f.write('\n')
+    f.write(details)
+    f.close()
+    # Send out email alert
+    os.system("mail -s \"Mid Duration GRB: "+time+"\" atcatriggering@gmail.com, gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com < Mid_Email.txt")
 
 def is_grb(v):
     ivorn = v.attrib['ivorn']
@@ -64,17 +97,19 @@ def is_grb(v):
 def is_short(v):
     INTEG_TIME = v.find(".//Param[@name='Integ_Time']").attrib['value']
     RATE_SIGNIF = v.find(".//Param[@name='Rate_Signif']").attrib['value']
-    if (float(INTEG_TIME) < 1.025) and (float(RATE_SIGNIF) > 0.0):
-       return True
+    if (float(INTEG_TIME) < 0.257) and (float(RATE_SIGNIF) > 0.0):
+       return 'short'
+    if (float(INTEG_TIME) > 0.257) and (float(INTEG_TIME) < 1.025) and (float(RATE_SIGNIF) > 0.0):
+       return 'mid'
     else: 
-       return False
+       return 'long'
 
 def handle_grb(v):
     ivorn = v.attrib['ivorn']
     TrigID = v.find(".//Param[@name='TrigID']").attrib['value']
     web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'
-    short = is_short(v) # Work out if it is short or long: 
-    if short:
+    grb_length = is_short(v) # Work out if it is short or long: 
+    if grb_length == 'short':
        coords = voeventparse.pull_astro_coords(v)
        c = voeventparse.get_event_position(v)
        if c.dec > 15.0:
@@ -83,7 +118,18 @@ def handle_grb(v):
           os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link+' '+'SHORT_GRB')
           n = Notifier()
           n.send_notification(title="SWIFT Short GRB >> TRIGGERING!", text = "Coords are {}".format(coords))
-    else:
+    if grb_length == 'mid': 
+       coords = voeventparse.pull_astro_coords(v)
+       c = voeventparse.get_event_position(v)
+       if c.dec > 15.0:
+          send_mail("GRB above declination cutoff of +10 degrees  "+web_link, "Mid GRB above Dec cutoff")
+       else:
+          n = Notifier()
+          n.send_notification(title="SWIFT Mid GRB >> ON HOLD!", text = "Coords are {}".format(coords))
+          mid_grb_email('Please check:'+web_link, "Mid duration GRB", str(c.ra), str(c.dec))
+          # Send out SMS  
+          #send_SMS(c.ra, c.dec, web_link, subject='Mid GRB')
+    if grb_length == 'long':
        send_mail("Long GRB not triggering "+web_link, "Long GRB") 
 
 def get_name(v):
@@ -185,8 +231,8 @@ def get_flare_RA(name):
                'AU_Mic'   : '20:45:09.53147', 
                'AUMic'    : '20:45:09.53147', 
                'AU Mic'   : '20:45:09.53147', 
-               'UV_Cet'   : '01:39:01.54', 
-               'UV Cet'   : '01:39:01.54', 
+               'UV_Cet'   : '01:39:05.81', 
+               'UV Cet'   : '01:39:05.81', 
                'UVCet'    : '01:39:01.54', 
                'Flare from UV Cet'    : '01:39:01.54', 
                'UV Cet'   : '01:39:01.54', 
@@ -227,8 +273,8 @@ def get_flare_DEC(name):
                'AU_Mic'   :  '-31:20:27.2425', 
                'AU Mic'   :  '-31:20:27.2425', 
                'AUMic'    :  '-31:20:27.2425', 
-               'UV_Cet'   :  '-17:57:00.4', 
-               'UVCet'    :  '-17:57:00.4', 
+               'UV_Cet'   :  '-17:56:50.02', 
+               'UVCet'    :  '-17:56:50.02', 
                'Flare from UV Cet'    :  '-17:57:00.4', 
                'UV Cet'   :  '-17:57:00.4', 
                'HD 8357'  :  '07:25:09.336',
@@ -248,8 +294,6 @@ def handle_flare_star(v):
     ivorn = v.attrib['ivorn']
     name_not_used, tel = get_name(v)
     name = get_flare_name(v)
-    print name_not_used
-    print name
     if tel == "SWIFT":
        TrigID   = v.find(".//Param[@name='TrigID']").attrib['value']
        web_link = 'https://gcn.gsfc.nasa.gov/other/'+TrigID+'.swift'

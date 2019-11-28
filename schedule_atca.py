@@ -49,7 +49,7 @@ def send_mail(ra, dec, details, subject):
     f.write(details)
     f.close()
     # Send out email alert
-    os.system("mail -s \"Triggering ATCA: "+subject+"\" martinbell81@googlemail.com, gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com < Email.txt")
+    os.system("mail -s \"Triggering ATCA: "+subject+"\" gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com, atcatriggering@gmail.com < Email.txt")
 
 def send_SMS(ra, dec, details, subject):
     # Send out email alert:
@@ -74,8 +74,7 @@ dec_in  = sys.argv[2]
 details = sys.argv[3]
 what    = sys.argv[4]
 
-print "VO Details:"
-print details
+print what
 
 if what=="SHORT_GRB":
    ra = deg2hms(float(ra_in))
@@ -156,12 +155,12 @@ rapidObj = { 'schedule': schedString }
 # The authentication token needs to go with it, and we point to the file that
 # contains the token.
 if what=="SHORT_GRB":
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2019APR.jwt"
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2019OCT.jwt"
         # The name of the main target needs to be specified.
         rapidObj['nameTarget'] = "SHORT_GRB"
 
 if (what=="MAXI") or (what=="SWIFT"):
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3200_2019APR.jwt"
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3200_2019OCT.jwt"
         # The name of the main target needs to be specified.
         rapidObj['nameTarget'] = "FLARE_STAR"
 
@@ -173,7 +172,7 @@ rapidObj['email'] = "martinbell81@googlemail.com"
 rapidObj['usePreviousFrequencies'] = False
 
 # Because this is a test run, we'll specify a few parameters to just try things out.
-rapidObj['test'] = True
+rapidObj['test'] = False
 #rapidObj['emailOnly'] = "Martin.Bell@csiro.au"
 rapidObj['noTimeLimit'] = True
 rapidObj['noScoreLimit'] = True
@@ -182,17 +181,20 @@ rapidObj['minimumTime'] = 2.0
 
 # Send out email from our end. ATCA will also send a bunch
 if what == "SHORT_GRB":
+   send = True
    send_mail(ra, dec, details, subject='Short GRB')
-   send_SMS(ra, dec, details, subject='Short GRB')
+   #send_SMS(ra, dec, details, subject='Short GRB')
 if what == "MAXI":
+   send = True
    send_mail(ra, dec, details, subject='MAXI Flare Star')
-   send_SMS(ra, dec, details, subject='MAXI Flare Star')
+   #send_SMS(ra, dec, details, subject='MAXI Flare Star')
 if what == "SWIFT":
+   send = True
    send_mail(ra, dec, details, subject='SWIFT Flare Star')
-   send_SMS(ra, dec, details, subject='SWIFT Flare Star')
+   #send_SMS(ra, dec, details, subject='SWIFT Flare Star')
 
 # Send the request.
-send = False # Toggle to actually trigger or not
+#send = True # Toggle to actually trigger or not
 if send:
    request = arrApi.api(rapidObj)
    try:
