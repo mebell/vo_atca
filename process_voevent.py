@@ -36,11 +36,11 @@ def send_SMS(ra, dec, details, subject):
     # Send out email alert:
     f = open('Email.txt','w')
     time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
-    f.write('Triggering ATCA:')
+    f.write('ATCA Trigger:')
     f.write('\n')
     f.write("Time is "+time)
     f.write('\n')
-    f.write('Coordinates: RA = '+(ra)+' Dec = '+str(dec))
+    f.write('Coordinates: RA = '+(str(ra))+' Dec = '+str(dec))
     f.write('\n')
     f.write('Source: ')
     f.write(details)
@@ -128,7 +128,7 @@ def handle_grb(v):
           n.send_notification(title="SWIFT Mid GRB >> ON HOLD!", text = "Coords are {}".format(coords))
           mid_grb_email('Please check:'+web_link, "Mid duration GRB", str(c.ra), str(c.dec))
           # Send out SMS  
-          #send_SMS(c.ra, c.dec, web_link, subject='Mid GRB')
+          send_SMS(c.ra, c.dec, web_link, subject='Mid GRB')
     if grb_length == 'long':
        send_mail("Long GRB not triggering "+web_link, "Long GRB") 
 

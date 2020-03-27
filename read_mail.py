@@ -4,6 +4,8 @@ from httplib2 import Http
 from oauth2client import file, client, tools
 from oauth2client.tools import argparser, run_flow
 import time
+import datetime
+
 
 # Setup the Gmail API
 SCOPES = 'https://www.googleapis.com/auth/gmail.readonly'
@@ -17,6 +19,7 @@ service = build('gmail', 'v1', http=creds.authorize(Http()))
 dates = []
 
 while True:
+      try:
 	# Read the email in a loop
 	results = service.users().messages().list(userId='me', maxResults=1).execute()
 	# get the message id from the results object
@@ -30,6 +33,7 @@ while True:
            print "Email trigger found, parsing trigger"
 	   # get the ra and dec
 	   text = body.split(' ')
+           print body
 	   ra = [s for s in text if "RA" in s]
 	   ra = float(ra[0].split('=')[1])
 	   dec = [s for s in text if "DEC" in s]
@@ -43,4 +47,7 @@ while True:
            else:
               print "Trigger already sent"
         time.sleep(20) # Delay before re-checking email. 
-
+      except KeyboardInterrupt:
+        break
+      except: 
+        print str(datetime.datetime.now())+': Code could not retrieve mail'

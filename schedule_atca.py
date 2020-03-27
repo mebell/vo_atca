@@ -176,25 +176,24 @@ rapidObj['test'] = False
 #rapidObj['emailOnly'] = "Martin.Bell@csiro.au"
 rapidObj['noTimeLimit'] = True
 rapidObj['noScoreLimit'] = True
-#rapidObj['noEmail'] = True
 rapidObj['minimumTime'] = 2.0
 
 # Send out email from our end. ATCA will also send a bunch
 if what == "SHORT_GRB":
    send = True
    send_mail(ra, dec, details, subject='Short GRB')
-   #send_SMS(ra, dec, details, subject='Short GRB')
+   send_SMS(ra, dec, details, subject='Short GRB')
 if what == "MAXI":
    send = True
    send_mail(ra, dec, details, subject='MAXI Flare Star')
-   #send_SMS(ra, dec, details, subject='MAXI Flare Star')
+   send_SMS(ra, dec, details, subject='MAXI Flare Star')
 if what == "SWIFT":
    send = True
    send_mail(ra, dec, details, subject='SWIFT Flare Star')
-   #send_SMS(ra, dec, details, subject='SWIFT Flare Star')
+   send_SMS(ra, dec, details, subject='SWIFT Flare Star')
 
 # Send the request.
-#send = True # Toggle to actually trigger or not
+send = True # Toggle to actually trigger or not
 if send:
    request = arrApi.api(rapidObj)
    try:
