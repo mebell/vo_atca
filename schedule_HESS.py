@@ -74,61 +74,46 @@ dec_in  = sys.argv[2]
 details = sys.argv[3]
 what    = sys.argv[4]
 
-print what
-
-if what=="SHORT_GRB":
-   ra = deg2hms(float(ra_in))
-   dec = deg2dms(float(dec_in))
-else:
-   ra  = ra_in
-   dec = dec_in
-
-print "RA, Dec:"
-print ra, dec
+ra = deg2hms(float(ra_in))
+dec = deg2dms(float(dec_in))
 
 # Make a new schedule.
 schedule = cabb.schedule()
 
-# Add a scan to look at the VO coordinates.
-if what == "SHORT_GRB":
-	scan1 = schedule.addScan(
-	    { 'source': "SHORT_GRB", 'rightAscension': ra, 'declination': dec,
-	      'freq1': 5500, 'freq2': 9000, 'project': "C3204", 'scanLength': "00:20:00", 'scanType': "Dwell" }
-	)
-
-if (what == "SWIFT") or (what == "MAXI"):
-        scan1 = schedule.addScan(
-            { 'source': "FLARE_STAR", 'rightAscension': ra, 'declination': dec,
-              'freq1': 5500, 'freq2': 9000, 'project': "C3200", 'scanLength': "00:20:00", 'scanType': "Dwell" }
+# Scan 1
+scan1 = schedule.addScan(
+            { 'source': "HESS", 'rightAscension': ra, 'declination': dec,
+              'freq1': 5500, 'freq2': 9000, 'project': "C3374", 'scanLength': "00:15:00", 'scanType': "Dwell" }
         )
 
-# Since we definitely want to get onto source as quickly as possible, we tell the
-# library not to go to the calibrator first.
-schedule.disablePriorCalibration()
-
-# Request a list of nearby calibrators from the ATCA calibrator database.
-calList = scan1.findCalibrator()
-
-# Ask for the library to choose the best one for the current array. We first need to
-# get the current array from MoniCA.
-currentArray = cabb.monica_information.getArray()
+calList = scan1.findCalibrator() # Get calibrators 
+currentArray = cabb.monica_information.getArray() # Get the current array
 # And pass this as the arggument to the calibrator selector.
-bestCal = calList.getBestCalibrator(currentArray)
-
+bestCal = calList.getBestCalibrator(currentArray) # And pass this as the arggument to the calibrator selector.
 print "Calibrator chosen: %s, %.1f degrees away" % (bestCal['calibrator'].getName(),
                                                     bestCal['distance'])
+calScan = schedule.addCalibrator(bestCal['calibrator'], scan1, { 'scanLength': "00:02:00" }) # Add to the schedule
 
-# We add this calibrator to the schedule, attaching it to the scan it
-# will be the calibrator for. We'll ask to observe the calibrator for 2
-# minutes.
-calScan = schedule.addCalibrator(bestCal['calibrator'], scan1, { 'scanLength': "00:02:00" })
-
-# We want the schedule to run for about 12 hours, so we want another 36 copies
-# of these two scans. Remembering that the library will take care of
-# associating a calibrator to each source, we only need to copy the source
-# scan.
-for i in xrange(0, 32): 
+# Loop around both of those scans
+for i in xrange(0, 1): 
     schedule.copyScans([ scan1.getId() ])
+
+# Scan 2
+scan2 = schedule.addScan(
+            { 'source': "HESS", 'rightAscension': ra, 'declination': dec,
+              'freq1': 16700, 'freq2': 21200, 'project': "C3374", 'scanLength': "00:05:00", 'scanType': "Dwell" }
+        )
+ 
+calList = scan2.findCalibrator() # Get calibrators 
+# And pass this as the arggument to the calibrator selector.
+bestCal = calList.getBestCalibrator(currentArray) # And pass this as the arggument to the calibrator selector.
+print "Calibrator chosen: %s, %.1f degrees away" % (bestCal['calibrator'].getName(),
+                                                    bestCal['distance'])
+calScan = schedule.addCalibrator(bestCal['calibrator'], scan2, { 'scanLength': "00:02:00" }) # Add to the schedule
+
+# Loop around both of those scans
+for i in xrange(0, 5): 
+    schedule.copyScans([ scan2.getId() ])
 
 # Tell the library that we won't be looping, so there will be a calibrator scan at the
 # end of the schedule.
@@ -154,15 +139,9 @@ rapidObj = { 'schedule': schedString }
 
 # The authentication token needs to go with it, and we point to the file that
 # contains the token.
-if what=="SHORT_GRB":
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2020APR.jwt"
-        # The name of the main target needs to be specified.
-        rapidObj['nameTarget'] = "SHORT_GRB"
-
-if (what=="MAXI") or (what=="SWIFT"):
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3200_2020APR.jwt"
-        # The name of the main target needs to be specified.
-        rapidObj['nameTarget'] = "FLARE_STAR"
+rapidObj['authenticationTokenFile'] = "authorisation_token_C3374_2020APR.jwt"
+# The name of the main target needs to be specified.
+rapidObj['nameTarget'] = "MAXI"
 
 # So does the name of the calibrator.
 rapidObj['nameCalibrator'] = bestCal['calibrator'].getName()
@@ -172,28 +151,20 @@ rapidObj['email'] = "martinbell81@googlemail.com"
 rapidObj['usePreviousFrequencies'] = False
 
 # Because this is a test run, we'll specify a few parameters to just try things out.
-rapidObj['test'] = False
+rapidObj['test'] = True
 #rapidObj['emailOnly'] = "Martin.Bell@csiro.au"
 rapidObj['noTimeLimit'] = True
 rapidObj['noScoreLimit'] = True
 rapidObj['minimumTime'] = 2.0
 
 # Send out email from our end. ATCA will also send a bunch
-if what == "SHORT_GRB":
-   send = True
-   send_mail(ra, dec, details, subject='Short GRB')
-   send_SMS(ra, dec, details, subject='Short GRB')
-if what == "MAXI":
-   send = True
-   send_mail(ra, dec, details, subject='MAXI Flare Star')
-   #send_SMS(ra, dec, details, subject='MAXI Flare Star')
-if what == "SWIFT":
-   send = True
-   send_mail(ra, dec, details, subject='SWIFT Flare Star')
-   send_SMS(ra, dec, details, subject='SWIFT Flare Star')
+send = True
+if send:
+   send_mail(ra, dec, details, subject='HESS GRB')
+   send_SMS(ra, dec, details, subject='HESS GRB')
 
 # Send the request.
-send = True # Toggle to actually trigger or not
+send = False # Toggle to actually trigger or not
 if send:
    request = arrApi.api(rapidObj)
    try:

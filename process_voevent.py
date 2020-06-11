@@ -113,7 +113,7 @@ def handle_grb(v):
        coords = voeventparse.pull_astro_coords(v)
        c = voeventparse.get_event_position(v)
        if c.dec > 15.0:
-          send_mail("GRB above declination cutoff of +10 degrees  "+web_link, "Short GRB above Dec cutoff")
+          send_mail("GRB above declination cutoff of +15 degrees  "+web_link, "Short GRB above Dec cutoff")
        else:
           os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link+' '+'SHORT_GRB')
           n = Notifier()
@@ -122,7 +122,7 @@ def handle_grb(v):
        coords = voeventparse.pull_astro_coords(v)
        c = voeventparse.get_event_position(v)
        if c.dec > 15.0:
-          send_mail("GRB above declination cutoff of +10 degrees  "+web_link, "Mid GRB above Dec cutoff")
+          send_mail("GRB above declination cutoff of +15 degrees  "+web_link, "Mid GRB above Dec cutoff")
        else:
           n = Notifier()
           n.send_notification(title="SWIFT Mid GRB >> ON HOLD!", text = "Coords are {}".format(coords))
