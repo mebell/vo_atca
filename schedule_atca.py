@@ -35,37 +35,6 @@ def deg2dms(deg, format='%02d:%02d:%05.2f'):
     s = signchar + format % sex
     return s
 
-def send_mail(ra, dec, details, subject):
-    # Send out email alert:
-    f = open('Email.txt','w')
-    time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
-    f.write('Triggering ATCA:')
-    f.write('\n')
-    f.write("Time is "+time)
-    f.write('\n')
-    f.write('Coordinates: RA = '+(ra)+' Dec = '+str(dec))
-    f.write('\n')
-    f.write('Source: ')
-    f.write(details)
-    f.close()
-    # Send out email alert
-    os.system("mail -s \"Triggering ATCA: "+subject+"\" gemma.anderson@curtin.edu.au, gemma_anderson@hotmail.com, atcatriggering@gmail.com < Email.txt")
-
-def send_SMS(ra, dec, details, subject):
-    # Send out email alert:
-    f = open('Email.txt','w')
-    time = strftime("%Y-%m-%d-T%H:%M:%S", gmtime())
-    f.write('Triggering ATCA:')
-    f.write('\n')
-    f.write("Time is "+time)
-    f.write('\n')
-    f.write('Coordinates: RA = '+(ra)+' Dec = '+str(dec))
-    f.write('\n')
-    f.write('Source: ')
-    f.write(details)
-    f.close()
-    # Send out email alert
-    os.system("mail -s \"Triggering ATCA: "+subject+"\" mebell.GRB@groups.smsbroadcast.com.au  < Email.txt")
 
 ################################
 
@@ -74,7 +43,7 @@ dec_in  = sys.argv[2]
 details = sys.argv[3]
 what    = sys.argv[4]
 
-print what
+print(what)
 
 if what=="SHORT_GRB":
    ra = deg2hms(float(ra_in))
@@ -83,8 +52,8 @@ else:
    ra  = ra_in
    dec = dec_in
 
-print "RA, Dec:"
-print ra, dec
+print("RA, Dec:")
+print(ra, dec)
 
 # Make a new schedule.
 schedule = cabb.schedule()
@@ -115,8 +84,8 @@ currentArray = cabb.monica_information.getArray()
 # And pass this as the arggument to the calibrator selector.
 bestCal = calList.getBestCalibrator(currentArray)
 
-print "Calibrator chosen: %s, %.1f degrees away" % (bestCal['calibrator'].getName(),
-                                                    bestCal['distance'])
+print("Calibrator chosen: %s, %.1f degrees away" % (bestCal['calibrator'].getName(),
+                                                    bestCal['distance']))
 
 # We add this calibrator to the schedule, attaching it to the scan it
 # will be the calibrator for. We'll ask to observe the calibrator for 2
@@ -127,7 +96,7 @@ calScan = schedule.addCalibrator(bestCal['calibrator'], scan1, { 'scanLength': "
 # of these two scans. Remembering that the library will take care of
 # associating a calibrator to each source, we only need to copy the source
 # scan.
-for i in xrange(0, 32): 
+for i in range(0, 32): 
     schedule.copyScans([ scan1.getId() ])
 
 # Tell the library that we won't be looping, so there will be a calibrator scan at the
@@ -155,7 +124,7 @@ rapidObj = { 'schedule': schedString }
 # The authentication token needs to go with it, and we point to the file that
 # contains the token.
 if what=="SHORT_GRB":
-        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2020APR.jwt"
+        rapidObj['authenticationTokenFile'] = "authorisation_token_C3204_2021OCT.jwt"
         # The name of the main target needs to be specified.
         rapidObj['nameTarget'] = "SHORT_GRB"
 
@@ -178,19 +147,6 @@ rapidObj['noTimeLimit'] = True
 rapidObj['noScoreLimit'] = True
 rapidObj['minimumTime'] = 2.0
 
-# Send out email from our end. ATCA will also send a bunch
-if what == "SHORT_GRB":
-   send = True
-   send_mail(ra, dec, details, subject='Short GRB')
-   send_SMS(ra, dec, details, subject='Short GRB')
-if what == "MAXI":
-   send = True
-   send_mail(ra, dec, details, subject='MAXI Flare Star')
-   #send_SMS(ra, dec, details, subject='MAXI Flare Star')
-if what == "SWIFT":
-   send = True
-   send_mail(ra, dec, details, subject='SWIFT Flare Star')
-   send_SMS(ra, dec, details, subject='SWIFT Flare Star')
 
 # Send the request.
 send = True # Toggle to actually trigger or not

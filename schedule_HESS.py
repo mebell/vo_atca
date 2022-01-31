@@ -81,6 +81,9 @@ dec = deg2dms(float(dec_in))
 schedule = cabb.schedule()
 
 # Scan 1
+
+# ADD REFOCUS
+
 scan1 = schedule.addScan(
             { 'source': "HESS", 'rightAscension': ra, 'declination': dec,
               'freq1': 5500, 'freq2': 9000, 'project': "C3374", 'scanLength': "00:15:00", 'scanType': "Dwell" }
@@ -95,24 +98,31 @@ print "Calibrator chosen: %s, %.1f degrees away" % (bestCal['calibrator'].getNam
 calScan = schedule.addCalibrator(bestCal['calibrator'], scan1, { 'scanLength': "00:02:00" }) # Add to the schedule
 
 # Loop around both of those scans
-for i in xrange(0, 1): 
+for i in xrange(0, 2): 
     schedule.copyScans([ scan1.getId() ])
 
 # Scan 2
-scan2 = schedule.addScan(
-            { 'source': "HESS", 'rightAscension': ra, 'declination': dec,
-              'freq1': 16700, 'freq2': 21200, 'project': "C3374", 'scanLength': "00:05:00", 'scanType': "Dwell" }
-        )
- 
+
+# ADD REFOCUS 
+# ADD POINT UPDATE
+# RENAME THESE SCANS
+
 calList = scan2.findCalibrator() # Get calibrators 
 # And pass this as the arggument to the calibrator selector.
 bestCal = calList.getBestCalibrator(currentArray) # And pass this as the arggument to the calibrator selector.
 print "Calibrator chosen: %s, %.1f degrees away" % (bestCal['calibrator'].getName(),
                                                     bestCal['distance'])
+
 calScan = schedule.addCalibrator(bestCal['calibrator'], scan2, { 'scanLength': "00:02:00" }) # Add to the schedule
 
+
+scan2 = schedule.addScan(
+            { 'source': "HESS", 'rightAscension': ra, 'declination': dec,
+              'freq1': 16700, 'freq2': 21200, 'project': "C3374", 'scanLength': "00:05:00", 'scanType': "Dwell" }
+        )
+ 
 # Loop around both of those scans
-for i in xrange(0, 5): 
+for i in xrange(0, 6): 
     schedule.copyScans([ scan2.getId() ])
 
 # Tell the library that we won't be looping, so there will be a calibrator scan at the
@@ -139,7 +149,7 @@ rapidObj = { 'schedule': schedString }
 
 # The authentication token needs to go with it, and we point to the file that
 # contains the token.
-rapidObj['authenticationTokenFile'] = "authorisation_token_C3374_2020APR.jwt"
+rapidObj['authenticationTokenFile'] = "authorisation_token_C3374_2021OCT.jwt"
 # The name of the main target needs to be specified.
 rapidObj['nameTarget'] = "MAXI"
 
@@ -164,7 +174,7 @@ if send:
    send_SMS(ra, dec, details, subject='HESS GRB')
 
 # Send the request.
-send = False # Toggle to actually trigger or not
+send = True # Toggle to actually trigger or not
 if send:
    request = arrApi.api(rapidObj)
    try:

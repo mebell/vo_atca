@@ -19,10 +19,11 @@ logger = logging.getLogger('notifier')
 logger.handlers.append(logging.StreamHandler(sys.stdout))
 
 from fourpiskytools.notify import Notifier
+import telegram
 
 def main():
     stdin = sys.stdin.read()
-    v = voeventparse.loads(stdin)
+    v = voeventparse.loads(stdin.encode())
     ivorn = v.attrib['ivorn']
     if ('SWIFT' in ivorn): 
        if is_grb(v):
@@ -31,6 +32,15 @@ def main():
        if is_flare_star(v):
           handle_flare_star(v)
     return 0
+
+
+def send_telegram(msg):
+        my_token='2018144625:AAGoeQ-fxs39Yr_gI4pVJRDxpAUZLfSU9ko'
+        my_chat_id = '-1001120164696'
+        #my_chat_id='1789575416'
+        bot=telegram.Bot(token=my_token)
+        bot.sendMessage(chat_id=my_chat_id, text=msg)
+
 
 def send_SMS(ra, dec, details, subject):
     # Send out email alert:
@@ -97,7 +107,9 @@ def is_grb(v):
 def is_short(v):
     INTEG_TIME = v.find(".//Param[@name='Integ_Time']").attrib['value']
     RATE_SIGNIF = v.find(".//Param[@name='Rate_Signif']").attrib['value']
-    if (float(INTEG_TIME) < 0.257) and (float(RATE_SIGNIF) > 0.0):
+    if (float(INTEG_TIME) < 0.033):
+       return 'mag'  
+    if (float(INTEG_TIME) < 0.257) and (float(INTEG_TIME) > 0.033) and (float(RATE_SIGNIF) > 0.0):
        return 'short'
     if (float(INTEG_TIME) > 0.257) and (float(INTEG_TIME) < 1.025) and (float(RATE_SIGNIF) > 0.0):
        return 'mid'
@@ -113,24 +125,38 @@ def handle_grb(v):
        coords = voeventparse.pull_astro_coords(v)
        c = voeventparse.get_event_position(v)
        if c.dec > 15.0:
-          send_mail("GRB above declination cutoff of +15 degrees  "+web_link, "Short GRB above Dec cutoff")
+          send_telegram("GRB above declination cutoff of +15 degrees  "+web_link) 
+          #send_mail("GRB above declination cutoff of +15 degrees  "+web_link, "Short GRB above Dec cutoff")
        else:
           os.system('python schedule_atca.py '+str(c.ra)+' '+str(c.dec)+' '+web_link+' '+'SHORT_GRB')
           n = Notifier()
           n.send_notification(title="SWIFT Short GRB >> TRIGGERING!", text = "Coords are {}".format(coords))
+          send_telegram("SHORT GRB TRIGGERING  "+web_link)
     if grb_length == 'mid': 
        coords = voeventparse.pull_astro_coords(v)
        c = voeventparse.get_event_position(v)
        if c.dec > 15.0:
-          send_mail("GRB above declination cutoff of +15 degrees  "+web_link, "Mid GRB above Dec cutoff")
+          send_telegram("GRB above declination cutoff of +15 degrees  "+web_link)
+          #send_mail("GRB above declination cutoff of +15 degrees  "+web_link, "Mid GRB above Dec cutoff")
        else:
           n = Notifier()
           n.send_notification(title="SWIFT Mid GRB >> ON HOLD!", text = "Coords are {}".format(coords))
-          mid_grb_email('Please check:'+web_link, "Mid duration GRB", str(c.ra), str(c.dec))
+          #mid_grb_email('Please check:'+web_link, "Mid duration GRB", str(c.ra), str(c.dec))
+          send_telegram('Please check:'+web_link+" Mid duration GRB RA=" +str(c.ra)+' DEC='+str(c.dec))
           # Send out SMS  
-          send_SMS(c.ra, c.dec, web_link, subject='Mid GRB')
+          #send_SMS(c.ra, c.dec, web_link, subject='Mid GRB')
     if grb_length == 'long':
-       send_mail("Long GRB not triggering "+web_link, "Long GRB") 
+       #send_mail("Long GRB not triggering "+web_link, "Long GRB") 
+       send_telegram("Long GRB not triggering "+web_link) 
+    if grb_length == 'mag':
+       coords = voeventparse.pull_astro_coords(v)
+       c = voeventparse.get_event_position(v)
+       if c.dec > 15.0:
+          send_telegram("GRB / Magnetar above declination cutoff of +15 degrees  "+web_link)
+       else:
+          n = Notifier()
+          n.send_notification(title="SWIFT / Magnetar >> ON HOLD!", text = "Coords are {}".format(coords))
+          send_telegram('Please check:'+web_link+" Magnetar RA=" +str(c.ra)+' DEC='+str(c.dec))
 
 def get_name(v):
     name = 'None'
@@ -305,7 +331,8 @@ def handle_flare_star(v):
     c = voeventparse.get_event_position(v)
     sub = vp.prettystr(v.What.Description)
     if "The sub-sub-threshold Swift-BAT trigger position notice" in sub:
-       send_mail("Flare Star "+name+" sub-sub threshold trigger", "Not triggering")
+       #send_mail("Flare Star "+name+" sub-sub threshold trigger", "Not triggering")
+       send_telegram("Flare Star "+name+" sub-sub threshold trigger", "Not triggering")
        n.send_notification(title="Flare Star "+name+" sub-sub threshold burst ", text = "Coords are {}".format(coords))
     else:
         ra =  get_flare_RA(name)
